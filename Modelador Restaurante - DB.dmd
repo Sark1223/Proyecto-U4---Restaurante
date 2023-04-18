@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelador Restaurante - DB" id="5E106D5C-8BBD-3DBA-2B84-ED81B3E764F0" version="3.5">
+<createdBy>edwin</createdBy>
+<createdTime>2023-04-18 19:33:17 UTC</createdTime>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5E106D5C-8BBD-3DBA-2B84-ED81B3E764F0</designId>
+</OSDM_Design>

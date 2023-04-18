@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" mainViewID="5831D5D7-B047-B967-1ECE-72371BDC77CD">
+<createdBy>edwin</createdBy>
+<createdTime>2023-04-18 19:33:54 UTC</createdTime>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>
