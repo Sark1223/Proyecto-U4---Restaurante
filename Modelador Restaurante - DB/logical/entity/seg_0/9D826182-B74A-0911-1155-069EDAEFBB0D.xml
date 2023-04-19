@@ -28,6 +28,34 @@
 <dataTypeSize>8</dataTypeSize>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="DESCRIPCION" id="60876DC8-0474-36D6-436C-5128249C1F07">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:10:36 UTC</createdTime>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<engineerTo>
+<item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLATO_ID" id="4BC9473C-166E-DFAF-0495-7E2DF856D77F">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:16:54 UTC</createdTime>
+<generatorID>7241292B-4265-4F70-F0D7-B8437101B478</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<engineerTo>
+<item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
+</engineerTo>
+<referedAttribute>2E69AE6E-A01A-39EA-9380-3D86A2A3710B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="86EA855A-FC45-2FA5-FA1A-DFF7D1E8778C" name="RECETA PK">

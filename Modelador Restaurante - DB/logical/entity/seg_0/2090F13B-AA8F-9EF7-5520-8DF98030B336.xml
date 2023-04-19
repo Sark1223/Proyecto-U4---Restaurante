@@ -15,45 +15,46 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="PLATO_ID" id="CE26BC19-6926-286D-741D-1ABE7DDB53F9">
-<createdBy>edwin</createdBy>
-<createdTime>2023-04-18 19:49:18 UTC</createdTime>
+<Attribute name="PLATO_ID" id="F1715AB0-6588-BFC8-6285-F49AD414E35E">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:06:33 UTC</createdTime>
+<generatorID>61CED013-4327-B8BE-481F-2CABBC468961</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
+<referedAttribute>2E69AE6E-A01A-39EA-9380-3D86A2A3710B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INGREDIENTE_ID" id="9083B050-FDAC-BEF0-47A7-2C369E8590EE">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:07:17 UTC</createdTime>
+<generatorID>783C5494-03C0-4A43-AFE3-ADB839F5ABF6</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<engineerTo>
+<item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
+</engineerTo>
+<referedAttribute>A527A68D-303C-A124-9FD2-3009DFD3A51D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="PASO_ID" id="A34A88BF-62F9-E536-831F-404CD021B7B7">
-<createdBy>edwin</createdBy>
-<createdTime>2023-04-18 19:50:06 UTC</createdTime>
+<Attribute name="CANTIDAD" id="21360FC4-7C60-F3D4-D187-3DB7F41DDB97">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:07:24 UTC</createdTime>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>4,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="PROCESO_DESCRIPCION" id="547EAFFA-90B6-F7E7-276C-39019085539A">
-<createdBy>edwin</createdBy>
-<createdTime>2023-04-18 19:51:49 UTC</createdTime>
-<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
-<engineerTo>
-<item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -66,8 +67,8 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>CE26BC19-6926-286D-741D-1ABE7DDB53F9</attributeRef>
-<attributeRef>A34A88BF-62F9-E536-831F-404CD021B7B7</attributeRef>
+<attributeRef>F1715AB0-6588-BFC8-6285-F49AD414E35E</attributeRef>
+<attributeRef>9083B050-FDAC-BEF0-47A7-2C369E8590EE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

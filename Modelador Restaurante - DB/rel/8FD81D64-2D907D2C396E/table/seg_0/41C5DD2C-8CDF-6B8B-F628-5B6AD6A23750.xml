@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41C5DD2C-8CDF-6B8B-F628-5B6AD6A23750" name="INGREDIENTE">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>045696EA-3043-8D0C-B000-4708AB925A13</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INGREDIENTE_ID" id="410E5BFE-07D9-A73F-C46E-72A0DF9F2B43">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>A527A68D-303C-A124-9FD2-3009DFD3A51D</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INGREDIENTE_NOMBRE" id="9120F757-C2A2-ABCC-1AEA-46B4C864F826">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>4F0CAEBA-BF30-6E83-6383-19413DF18489</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INGREDIENTE_UNIDAD" id="66F8FB7D-E1F1-3008-AF6D-01C18271A181">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>75FEE0E2-9921-27AA-FC0C-1C37AC6D4EBF</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INGREDIENTE_CANTIDAD" id="5222EAAC-3710-816A-8089-C3447EFE8C0C">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>B265352D-7957-1855-7695-E94297AAA06F</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A494282-9043-CA33-E52E-EDF027C8BCDD" name="INGREDIENTE_PK">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<generatorID>F2B22C71-E96D-F43C-4925-B9CD33CA4941</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="410E5BFE-07D9-A73F-C46E-72A0DF9F2B43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
