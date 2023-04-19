@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79C3E98D-C4CA-F234-7B7F-28DA784FCCE0" name="RECETA">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>9D826182-B74A-0911-1155-069EDAEFBB0D</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO_PASO" id="9FEA6140-6B96-5F54-D526-76231583FD89">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>62AB32E2-F120-3111-11C3-7FCFF109071D</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLATO_PLATO_ID" id="9B5F4908-7969-444E-E8E4-4F85B094E0D1">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>71E9F072-177F-3FA7-AC0E-4310AF06A86F</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="977C90DD-25B9-D3ED-D466-C850292BAC62" referredColumn="B40FA074-534A-BF7E-A81C-40DC3B537ABD"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="638EEAA2-3BB2-4D40-BDF9-DC8D23873A97">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>60876DC8-0474-36D6-436C-5128249C1F07</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="810445F6-20AD-0557-F817-84A36A19BE33" name="RECETA_PK">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>86EA855A-FC45-2FA5-FA1A-DFF7D1E8778C</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B5F4908-7969-444E-E8E4-4F85B094E0D1"/>
+<colUsage columnID="9FEA6140-6B96-5F54-D526-76231583FD89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B0CA9F9-ABB4-67F7-B438-4F6A57C791BB" name="RECETA_PLATO_FK">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>52E88EFB-D69C-56B6-14F5-00B173E79468</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B5F4908-7969-444E-E8E4-4F85B094E0D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

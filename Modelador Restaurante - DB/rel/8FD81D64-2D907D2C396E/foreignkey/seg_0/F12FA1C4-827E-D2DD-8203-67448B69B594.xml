@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F12FA1C4-827E-D2DD-8203-67448B69B594" containerWithKeyObject="C2F0EC8C-1D44-F10A-6E32-265AF2F0B64D" localFKIndex="DF6C2875-0D82-5823-9EC4-00529330762E" name="PLATILLO_INGREDIENTE_PLATO_FK">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>61CED013-4327-B8BE-481F-2CABBC468961</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<referredTableLongName>PLATILLO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>02B3C072-63A1-F430-226A-3D94698BBCB6</referredTableID>
+<keyObject>008A745F-A965-6150-776C-39F9836A5CD4</keyObject>
+<referredKeyID>008A745F-A965-6150-776C-39F9836A5CD4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PLATO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

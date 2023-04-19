@@ -1,31 +1,31 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAB4184E-BAAC-1F10-B07E-593F1AAF02A1" name="PLATO">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02B3C072-63A1-F430-226A-3D94698BBCB6" name="PLATILLO">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>34CBC593-0838-14E4-E8BA-12B2EA3B0900</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<ordsAlias>plato</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PLATO_ID" id="0FB2A2D1-F7FB-BAE7-A6D9-242B541DB26C">
+<Column name="PLATO_ID" id="B40FA074-534A-BF7E-A81C-40DC3B537ABD">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>2E69AE6E-A01A-39EA-9380-3D86A2A3710B</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PLATO_NOMBRE" id="A26A40B8-0C82-7688-938D-8F2C52B2BC45">
+<Column name="PLATO_NOMBRE" id="4869DB29-B564-E3EB-BC76-39C0E44CB24F">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>DC99B459-D750-4954-93E9-602590DA5C36</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -33,9 +33,9 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PLATO_DESCRIPCION" id="0713096B-E1D0-1BA4-6935-3C1C53C0025B">
+<Column name="PLATO_DESCRIPCION" id="68EA7E17-3833-2A34-F11B-977214BC51B7">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>61B1ADEC-9EE1-2908-5C4A-0B3F8398368E</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -45,45 +45,46 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PLATO_DIFICULTAD" id="584B846A-D5B3-AD18-2031-7D05937FAF39">
+<Column name="PLATO_DIFICULTAD" id="5B0B78C8-7977-6FEE-C781-D0E4CCBDA440">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>AB11F1FA-DDD0-EFAC-183B-0C87A6B5F6BB</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PLATO_FOTO" id="9CCAE916-5DE2-B8A0-8D25-FDA5037109B9">
+<Column name="PLATO_FOTO" id="DD47303F-4045-9C7B-1C63-B3CF489CE0E5">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>61F0BC14-6FA1-1065-7B71-56E7808CF998</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT010</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PLATO_PRECIOF" id="D51E4169-D2AF-EA82-C363-198B33FA899C">
+<Column name="PLATO_PRECIOF" id="EF9E34FF-35A0-C5AC-473C-72BE2046D5C4">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>43E9D723-A011-9229-00F4-6C5225D8AF27</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CATEGORIA_CATEGORIA_ID" id="55B60339-BA22-0B21-76C0-1F033A9A2EF0">
+<Column name="CATEGORIA_CATEGORIA_ID" id="38F8A0E5-B4B5-6BDC-1AA6-BD81896E0072">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>D633FA4C-F728-F4E3-CD2A-3C7E68E0D667</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -94,32 +95,32 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9740620E-C742-716E-098F-D40DDC2D17D4" referredColumn="C95DEF6C-BFE4-0B7F-FAF3-6E6EDD94907E"/>
+<colAssociation fkAssociation="D5C1A4CE-5131-17BA-48D8-8E5156806B70" referredColumn="6D538F84-F80E-8778-930F-4CD0A229ADE7"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="287E27EB-1EA6-691B-C15E-86000AA57452" name="PLATO_PK">
+<ind_PK_UK id="008A745F-A965-6150-776C-39F9836A5CD4" name="PLATO_PK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>1135FF73-750B-4B82-E433-D0B0EB2C6E38</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="0FB2A2D1-F7FB-BAE7-A6D9-242B541DB26C"/>
+<colUsage columnID="B40FA074-534A-BF7E-A81C-40DC3B537ABD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="07342B8C-C372-2C6C-08B2-A42CECC77BFC" name="PLATO_CATEGORIA_FK">
+<ind_PK_UK id="DBC870FC-39F6-B89B-30C2-46C40F0BFFC5" name="PLATO_CATEGORIA_FK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>ED4E826C-9C9A-5ECC-F7B0-CFDBF02EABA7</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="55B60339-BA22-0B21-76C0-1F033A9A2EF0"/>
+<colUsage columnID="38F8A0E5-B4B5-6BDC-1AA6-BD81896E0072"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

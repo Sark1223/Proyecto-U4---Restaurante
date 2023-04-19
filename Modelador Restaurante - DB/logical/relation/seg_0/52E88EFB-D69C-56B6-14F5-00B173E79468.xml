@@ -1,13 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_6" directorySegmentName="seg_0" id="7241292B-4265-4F70-F0D7-B8437101B478">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_8" directorySegmentName="seg_0" id="52E88EFB-D69C-56B6-14F5-00B173E79468">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:16:54 UTC</createdTime>
+<createdTime>2023-04-19 14:42:09 UTC</createdTime>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
 <sourcePk>1135FF73-750B-4B82-E433-D0B0EB2C6E38</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>realiza</nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

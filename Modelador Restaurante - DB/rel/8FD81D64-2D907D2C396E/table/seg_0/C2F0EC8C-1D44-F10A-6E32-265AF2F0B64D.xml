@@ -1,32 +1,32 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88075B09-C536-7069-5ABA-74ADB824AE9E" name="LISTA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2F0EC8C-1D44-F10A-6E32-265AF2F0B64D" name="PLATILLO_INGREDIENTE">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>2090F13B-AA8F-9EF7-5520-8DF98030B336</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PLATO_PLATO_ID" id="83783973-F866-A44A-DEE4-DE4D6A0C41A7">
+<Column name="PLATO_ID" id="EAAF9AF0-C811-504C-1501-D753FC6D5E14">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>F1715AB0-6588-BFC8-6285-F49AD414E35E</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
+<dataTypeSize>3</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="10561E0D-BF86-9D94-05EB-14C7AF6B803B" referredColumn="0FB2A2D1-F7FB-BAE7-A6D9-242B541DB26C"/>
+<colAssociation fkAssociation="F12FA1C4-827E-D2DD-8203-67448B69B594" referredColumn="B40FA074-534A-BF7E-A81C-40DC3B537ABD"/>
 </associations>
 </Column>
-<Column name="INGREDIENTE_INGREDIENTE_ID" id="8D434411-AF4D-74FD-3FA2-4D70E33B0C64">
+<Column name="INGREDIENTE_ID" id="F2E31023-2C75-6E9E-C8FD-214CC4A5E0A4">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>9083B050-FDAC-BEF0-47A7-2C369E8590EE</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,54 +37,57 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1C4F144F-112E-F1FD-8DE4-95217940B52E" referredColumn="410E5BFE-07D9-A73F-C46E-72A0DF9F2B43"/>
+<colAssociation fkAssociation="E467B8F1-BD2C-99D3-2C90-E5922185F7E0" referredColumn="C70F0EE5-E826-A714-C386-165E4F91ABA1"/>
 </associations>
 </Column>
-<Column name="CANTIDAD" id="A3EF41BC-F153-88A4-6516-3B9630664B91">
+<Column name="CANTIDAD_INGRE_PLATO" id="F9A89264-E254-32E0-5CDF-C4699A74B3AA">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>21360FC4-7C60-F3D4-D187-3DB7F41DDB97</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,6,3</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4E515EDC-8AB5-1398-41BB-691EDD9E8E53" name="LISTA_PK">
+<ind_PK_UK id="80A3A09F-3077-E56C-8B23-88A45898805E" name="PLATILLO_INGREDIENTE_PK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>753A5DD9-7C28-00EC-BEF4-F1E8FBAFC184</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="83783973-F866-A44A-DEE4-DE4D6A0C41A7"/>
-<colUsage columnID="8D434411-AF4D-74FD-3FA2-4D70E33B0C64"/>
+<colUsage columnID="EAAF9AF0-C811-504C-1501-D753FC6D5E14"/>
+<colUsage columnID="F2E31023-2C75-6E9E-C8FD-214CC4A5E0A4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1CFD3411-5DA8-C027-4093-C7A2E3C565E4" name="LISTA_PLATO_FK">
+<ind_PK_UK id="DF6C2875-0D82-5823-9EC4-00529330762E" name="PLATILLO_INGREDIENTE_PLATO_FK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>61CED013-4327-B8BE-481F-2CABBC468961</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="83783973-F866-A44A-DEE4-DE4D6A0C41A7"/>
+<colUsage columnID="EAAF9AF0-C811-504C-1501-D753FC6D5E14"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2375A5AF-1CDB-51D0-B4D4-9779AB0B90A8" name="LISTA_INGREDIENTE_FK">
+<ind_PK_UK id="D948B67F-6FF5-9560-9EF8-210F77B52296" name="PLATILLO_INGREDIENTE_INGREDIENTE_FK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>783C5494-03C0-4A43-AFE3-ADB839F5ABF6</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8D434411-AF4D-74FD-3FA2-4D70E33B0C64"/>
+<colUsage columnID="F2E31023-2C75-6E9E-C8FD-214CC4A5E0A4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

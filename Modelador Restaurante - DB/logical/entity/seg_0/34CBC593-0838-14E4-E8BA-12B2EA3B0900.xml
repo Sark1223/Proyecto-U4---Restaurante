@@ -35,7 +35,6 @@
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -62,11 +61,11 @@
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>8 CHAR</dataTypeSize>
+<ownDataTypeParameters>8 CHAR,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="PLATO_FOTO" id="61F0BC14-6FA1-1065-7B71-56E7808CF998">
 <createdBy>edwin</createdBy>
@@ -75,7 +74,6 @@
 <engineerTo>
 <item key="8FD81D64-9694-A8CD-C5C3-2D907D2C396E" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT010</logicalDatatype>
@@ -92,7 +90,9 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CATEGORIA_ID" id="D633FA4C-F728-F4E3-CD2A-3C7E68E0D667">
 <createdBy>perro</createdBy>

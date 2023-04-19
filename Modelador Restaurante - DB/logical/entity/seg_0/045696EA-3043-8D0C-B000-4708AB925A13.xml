@@ -56,7 +56,7 @@
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="INGREDIENTE_CANTIDAD" id="B265352D-7957-1855-7695-E94297AAA06F">
+<Attribute name="INGREDIENTE_CANTIDAD_ALMACEN" id="B265352D-7957-1855-7695-E94297AAA06F">
 <createdBy>edwin</createdBy>
 <createdTime>2023-04-18 19:48:15 UTC</createdTime>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>

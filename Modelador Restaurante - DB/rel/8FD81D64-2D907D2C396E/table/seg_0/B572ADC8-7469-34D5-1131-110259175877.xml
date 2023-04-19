@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C803462F-5275-7A44-1F32-F6430B895C78" name="CATEGORIA">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B572ADC8-7469-34D5-1131-110259175877" name="CATEGORIA">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>81C9DCED-1BE1-611A-9EC7-F9AAD565D7E5</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CATEGORIA_ID" id="C95DEF6C-BFE4-0B7F-FAF3-6E6EDD94907E">
+<Column name="CATEGORIA_ID" id="6D538F84-F80E-8778-930F-4CD0A229ADE7">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>299FE5B3-7F23-6E66-4218-876F8212DEF4</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>3,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CATEGORIA_NOMBRE" id="D7BBD292-9F84-4734-1E64-11D1AF93CA02">
+<Column name="CATEGORIA_NOMBRE" id="5793CE0A-E992-B664-0F85-62157FD4BD1F">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>E3C47BBF-1098-6BDA-A2DD-8BCBAB956007</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -33,9 +33,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CATEGORIA_DESCRIPCION" id="879D23A1-DCA3-7D90-4B8E-2E6CE216B5FD">
+<Column name="CATEGORIA_DESCRIPCION" id="23A33921-4ED4-331A-4886-1C46863139C0">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>02CEBD2D-1543-77F8-A3F1-FA9B13E4109B</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -46,18 +46,30 @@
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="CATEGORIA_ENCARGADO" id="2C3BE316-45D1-982F-7587-877217AF6F69">
+<createdBy>perro</createdBy>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
+<generatorID>21825801-A794-6DA2-DC39-7901D755D508</generatorID>
+<ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="69336362-639C-2CA3-BF33-005E0B57A096" name="CATEGORIA_PK">
+<ind_PK_UK id="96603FA5-CCBB-4FB7-69B5-5FF1AA10600E" name="CATEGORIA_PK">
 <createdBy>perro</createdBy>
-<createdTime>2023-04-19 05:08:35 UTC</createdTime>
+<createdTime>2023-04-19 14:52:21 UTC</createdTime>
 <generatorID>EB75E4D2-50E8-98F2-641E-F20734560ABE</generatorID>
 <ownerDesignName>Modelador Restaurante - DB</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C95DEF6C-BFE4-0B7F-FAF3-6E6EDD94907E"/>
+<colUsage columnID="6D538F84-F80E-8778-930F-4CD0A229ADE7"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
