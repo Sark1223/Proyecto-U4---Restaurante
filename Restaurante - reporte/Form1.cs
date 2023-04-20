@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurante___reporte.PL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,11 +37,7 @@ namespace Restaurante___reporte
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void mas_menos_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
+       
         private void mas_menos_MouseClick(object sender, MouseEventArgs e)
         {
             if (Panel_Menu.Width == 79)
@@ -57,6 +54,76 @@ namespace Restaurante___reporte
                 mas_menos.Location = new Point(72, 202);
                 Contenedor_menu.Width = 105;
             }
+        }
+
+        //VARIABLES AUXILIARES - OPCIONES DEL MENU
+        Panel PanelAnterior, PanelActual, Panel1cmd;
+        bool primerCmd = true;
+
+        //colores de los comandos elegidos
+        public void ComandoActivo(Panel panel)
+        {
+            panel.BackColor = Color.FromArgb(242, 164, 68);
+        }
+
+        public void ComandoSleep(Panel panel)
+        {
+            panel.BackColor = Color.FromArgb(242, 237, 228);
+        }
+
+        //mantiene el color diferente el el comando usado actualmente
+        public void Ponerfoco()
+        {
+            if (primerCmd == true)
+            {
+                ComandoActivo(PanelActual);
+                PanelAnterior = PanelActual;
+                primerCmd = false;
+                Panel_datos_restaurante.Visible = false;
+            }
+            else
+            {
+                ComandoSleep(PanelAnterior);
+                ComandoActivo(PanelActual);
+                PanelAnterior = PanelActual;
+            }
+
+        }
+
+        public void AbrirForm(object mas)
+        {
+            if (this.Panel_Contenedor.Controls.Count > 0)
+            {
+                this.Panel_Contenedor.Controls.RemoveAt(0);
+            }
+
+            Form admin = mas as Form;
+            admin.TopLevel = false;
+            admin.Dock = DockStyle.Fill;
+            this.Panel_Contenedor.Controls.Add(admin);
+            this.Panel_Contenedor.Tag = admin;
+
+            admin.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (this.Panel_Contenedor.Controls.Count > 0)
+            {
+                this.Panel_Contenedor.Controls.RemoveAt(0);
+            }
+
+            Panel_datos_restaurante.Visible = true;
+        }
+
+        //OBJETOS DE FORMAS
+        frmPlatillos platillos = new frmPlatillos();
+
+        private void cmdPlatillo_Click(object sender, EventArgs e)
+        {
+            AbrirForm(platillos);
+            PanelActual = cmdPlatillo;
+            Ponerfoco();
         }
     }
 }
