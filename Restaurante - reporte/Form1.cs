@@ -118,6 +118,22 @@ namespace Restaurante___reporte
 
         //OBJETOS DE FORMAS
         frmPlatillos platillos = new frmPlatillos();
+        frmIngredientes ingredientes = new frmIngredientes();
+        frmCategoria categoria = new frmCategoria();
+
+        private void cmdIngrediente_Click(object sender, EventArgs e)
+        {
+            AbrirForm(ingredientes);
+            PanelActual = cmdIngredientes;
+            Ponerfoco();
+        }
+
+        private void cmdCategoria_Click(object sender, EventArgs e)
+        {
+            AbrirForm(categoria);
+            PanelActual = cmdCategorias;
+            Ponerfoco();
+        }
 
         private void cmdPlatillo_Click(object sender, EventArgs e)
         {
@@ -125,5 +141,11 @@ namespace Restaurante___reporte
             PanelActual = cmdPlatillo;
             Ponerfoco();
         }
+
+        private void pbIngredientes_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

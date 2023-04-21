@@ -12,3 +12,19 @@ C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaura
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.CopyComplete
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmPlatillos.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.exe.config
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.exe
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.pdb
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.AssemblyReference.cache
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.SuggestedBindingRedirects.cache
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.Form1.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmEditarPlatillo.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmPlatillos.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.Properties.Resources.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.GenerateResource.cache
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.CoreCompileInputs.cache
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.csproj.CopyComplete
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.exe
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.pdb
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmCategoria.resources
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmIngredientes.resources

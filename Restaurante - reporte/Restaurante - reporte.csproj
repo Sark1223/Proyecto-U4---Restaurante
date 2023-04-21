@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmEditarPlatillo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,13 +74,25 @@
     <Compile Include="PL\frmPlatillos.Designer.cs">
       <DependentUpon>frmPlatillos.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmIngredientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmIngredientes.Designer.cs">
+      <DependentUpon>frmIngredientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\frmEditarPlatillo.resx">
       <DependentUpon>frmEditarPlatillo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmIngredientes.resx">
+      <DependentUpon>frmIngredientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmPlatillos.resx">
       <DependentUpon>frmPlatillos.cs</DependentUpon>
@@ -173,6 +191,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\agregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocinando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cocinando1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-archivo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Restaurante___reporte.PL
 {
-    public partial class frmPlatillos : Form
+    public partial class frmCategoria : Form
     {
-        public frmPlatillos()
+        public frmCategoria()
         {
             InitializeComponent();
         }
 
-        private void frmPlatillos_Load(object sender, EventArgs e)
+        private void frmCategoria_Load(object sender, EventArgs e)
         {
 
         }

@@ -73,6 +73,16 @@ namespace Restaurante___reporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap agregar_archivo {
+            get {
+                object obj = ResourceManager.GetObject("agregar-archivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aplicaciones_anadir {
             get {
                 object obj = ResourceManager.GetObject("aplicaciones-anadir", resourceCulture);
@@ -86,6 +96,26 @@ namespace Restaurante___reporte.Properties {
         internal static System.Drawing.Bitmap categorias {
             get {
                 object obj = ResourceManager.GetObject("categorias", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cocinando {
+            get {
+                object obj = ResourceManager.GetObject("cocinando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cocinando1 {
+            get {
+                object obj = ResourceManager.GetObject("cocinando1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
