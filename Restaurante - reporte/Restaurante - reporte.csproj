@@ -124,18 +124,6 @@
     <None Include="Resources\limon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lista.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\lista %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\restaurante.png" />
   </ItemGroup>
   <ItemGroup>
@@ -143,12 +131,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\categorias.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eliminar-aplicaciones %281%29.png" />
@@ -172,9 +154,6 @@
     <None Include="Resources\sale-de.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\potos-dorados.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\forma-abstracta.png" />
   </ItemGroup>
   <ItemGroup>
@@ -194,9 +173,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cocinando.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cocinando1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\agregar-archivo.png" />

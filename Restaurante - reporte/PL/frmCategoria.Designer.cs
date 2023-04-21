@@ -50,7 +50,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(238)))), ((int)(((byte)(200)))));
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(285, 9);
             this.label8.Name = "label8";
@@ -60,7 +60,7 @@
             // 
             // txtIngredienteCant
             // 
-            this.txtIngredienteCant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.txtIngredienteCant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtIngredienteCant.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteCant.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteCant.ForeColor = System.Drawing.Color.Black;
@@ -79,7 +79,7 @@
             // 
             // txtIngredienteNombre
             // 
-            this.txtIngredienteNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.txtIngredienteNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtIngredienteNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteNombre.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteNombre.ForeColor = System.Drawing.Color.Black;
@@ -98,7 +98,7 @@
             // 
             // txtIngredienteId
             // 
-            this.txtIngredienteId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.txtIngredienteId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtIngredienteId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteId.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteId.ForeColor = System.Drawing.Color.Black;
@@ -157,7 +157,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Location = new System.Drawing.Point(345, 240);
             this.richTextBox1.Name = "richTextBox1";
@@ -200,7 +200,7 @@
             // btnAgregarCategoria
             // 
             this.btnAgregarCategoria.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            this.btnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.btnAgregarCategoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
             this.btnAgregarCategoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregarCategoria.BorderRadius = 0;
             this.btnAgregarCategoria.ButtonText = "Agregar";
@@ -236,7 +236,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAgregarCategoria);
             this.Controls.Add(this.panel7);

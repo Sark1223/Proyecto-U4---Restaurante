@@ -113,16 +113,6 @@ namespace Restaurante___reporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cocinando1 {
-            get {
-                object obj = ResourceManager.GetObject("cocinando1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap eliminar_aplicaciones__1_ {
             get {
                 object obj = ResourceManager.GetObject("eliminar-aplicaciones (1)", resourceCulture);
