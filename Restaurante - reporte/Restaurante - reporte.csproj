@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\frmEditarPlatillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\frmEditarPlatillo.Designer.cs">
+      <DependentUpon>frmEditarPlatillo.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\frmPlatillos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\frmEditarPlatillo.resx">
+      <DependentUpon>frmEditarPlatillo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmPlatillos.resx">
       <DependentUpon>frmPlatillos.cs</DependentUpon>
