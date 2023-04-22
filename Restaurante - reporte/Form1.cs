@@ -123,9 +123,7 @@ namespace Restaurante___reporte
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
         {
-            AbrirForm(ingredientes);
-            PanelActual = cmdIngredientes;
-            Ponerfoco();
+            ingredientes.ShowDialog();
         }
 
         private void cmdCategoria_Click(object sender, EventArgs e)

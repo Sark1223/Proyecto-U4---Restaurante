@@ -177,5 +177,17 @@
   <ItemGroup>
     <None Include="Resources\agregar-archivo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca-de-verificacion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca-de-verificacion %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

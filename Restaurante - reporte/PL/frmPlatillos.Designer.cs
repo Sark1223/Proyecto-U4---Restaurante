@@ -60,7 +60,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(416, 9);
+            this.label8.Location = new System.Drawing.Point(416, 3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 28);
             this.label8.TabIndex = 5;
@@ -90,7 +90,7 @@
             // 
             this.lblDificultad.AutoSize = true;
             this.lblDificultad.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDificultad.Location = new System.Drawing.Point(430, 102);
+            this.lblDificultad.Location = new System.Drawing.Point(423, 102);
             this.lblDificultad.Name = "lblDificultad";
             this.lblDificultad.Size = new System.Drawing.Size(120, 19);
             this.lblDificultad.TabIndex = 12;
@@ -120,7 +120,7 @@
             this.textBox2.Location = new System.Drawing.Point(207, 48);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 188);
+            this.textBox2.Size = new System.Drawing.Size(195, 188);
             this.textBox2.TabIndex = 18;
             this.textBox2.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
@@ -128,7 +128,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(430, 48);
+            this.label5.Location = new System.Drawing.Point(423, 48);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 19);
             this.label5.TabIndex = 17;
@@ -138,7 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(430, 150);
+            this.label3.Location = new System.Drawing.Point(423, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 16;
