@@ -43,17 +43,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvTablaDB = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -70,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 17);
+            this.label1.Location = new System.Drawing.Point(224, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 28);
             this.label1.TabIndex = 8;
@@ -80,7 +84,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 251);
+            this.label2.Location = new System.Drawing.Point(10, 247);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 28);
             this.label2.TabIndex = 10;
@@ -90,7 +94,7 @@
             // 
             this.lblDificultad.AutoSize = true;
             this.lblDificultad.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDificultad.Location = new System.Drawing.Point(423, 102);
+            this.lblDificultad.Location = new System.Drawing.Point(423, 98);
             this.lblDificultad.Name = "lblDificultad";
             this.lblDificultad.Size = new System.Drawing.Size(120, 19);
             this.lblDificultad.TabIndex = 12;
@@ -98,6 +102,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel12);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -109,7 +117,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(203, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 432);
+            this.panel1.Size = new System.Drawing.Size(593, 442);
             this.panel1.TabIndex = 13;
             // 
             // textBox2
@@ -117,7 +125,7 @@
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
-            this.textBox2.Location = new System.Drawing.Point(207, 48);
+            this.textBox2.Location = new System.Drawing.Point(207, 44);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(195, 188);
@@ -128,7 +136,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(423, 48);
+            this.label5.Location = new System.Drawing.Point(423, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 19);
             this.label5.TabIndex = 17;
@@ -138,7 +146,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(423, 150);
+            this.label3.Location = new System.Drawing.Point(423, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 16;
@@ -149,10 +157,10 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
-            this.textBox1.Location = new System.Drawing.Point(6, 282);
+            this.textBox1.Location = new System.Drawing.Point(6, 278);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(581, 147);
+            this.textBox1.Size = new System.Drawing.Size(581, 154);
             this.textBox1.TabIndex = 15;
             this.textBox1.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
@@ -161,21 +169,12 @@
             this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
-            this.txtDescripcion.Location = new System.Drawing.Point(15, 203);
+            this.txtDescripcion.Location = new System.Drawing.Point(15, 199);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(180, 45);
             this.txtDescripcion.TabIndex = 14;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(15, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -252,6 +251,38 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 83;
             // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel12.Location = new System.Drawing.Point(15, 22);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(2, 171);
+            this.panel12.TabIndex = 64;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel4.Location = new System.Drawing.Point(15, 191);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(179, 2);
+            this.panel4.TabIndex = 63;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel2.Location = new System.Drawing.Point(15, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(179, 2);
+            this.panel2.TabIndex = 65;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel3.Location = new System.Drawing.Point(193, 22);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 171);
+            this.panel3.TabIndex = 66;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Restaurante___reporte.Properties.Resources.agregar;
@@ -261,6 +292,16 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.foto;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 171);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // frmPlatillos
             // 
@@ -279,9 +320,9 @@
             this.Load += new System.EventHandler(this.frmPlatillos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +347,9 @@
         public System.Windows.Forms.DataGridView dgvTablaDB;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel4;
     }
 }

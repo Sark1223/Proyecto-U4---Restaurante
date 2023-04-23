@@ -133,6 +133,26 @@ namespace Restaurante___reporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap estilo_grafico {
+            get {
+                object obj = ResourceManager.GetObject("estilo-grafico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap estilo_grafico__1_ {
+            get {
+                object obj = ResourceManager.GetObject("estilo-grafico (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forma_abstracta {
             get {
                 object obj = ResourceManager.GetObject("forma-abstracta", resourceCulture);
@@ -156,6 +176,16 @@ namespace Restaurante___reporte.Properties {
         internal static System.Drawing.Bitmap forma_abstracta1 {
             get {
                 object obj = ResourceManager.GetObject("forma-abstracta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto {
+            get {
+                object obj = ResourceManager.GetObject("foto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
