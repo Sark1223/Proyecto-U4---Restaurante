@@ -1,4 +1,5 @@
-﻿using Restaurante___reporte.PL;
+﻿using Restaurante___reporte.DAL;
+using Restaurante___reporte.PL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -120,6 +121,7 @@ namespace Restaurante___reporte
         frmPlatillos platillos = new frmPlatillos();
         frmIngredientes ingredientes = new frmIngredientes();
         frmCategoria categoria = new frmCategoria();
+        Editar_Categoria editar_categoria = new Editar_Categoria();
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
         {   
@@ -128,6 +130,9 @@ namespace Restaurante___reporte
 
         private void cmdCategoria_Click(object sender, EventArgs e)
         {
+            //Refrescar tabla
+            categoria.dgvTablaCategoria.DataSource = editar_categoria.TablaCategoria().Tables[0];
+
             categoria.ShowDialog();
             //Form1_Load(sender, e);
             //AbrirForm(categoria);

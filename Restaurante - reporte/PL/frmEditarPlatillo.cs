@@ -47,20 +47,25 @@ namespace Restaurante___reporte.PL
 
         private void frmEditarPlatillo_Load(object sender, EventArgs e)
         {
-
+            if (lblTitle.Text == "AGREGAR PLATILLO")
+            {
+                editar_plato.LlenarCBCategoria(cbCategoria);
+                //conexion.RellenarCB_1(cbCiudad, "SELECT * FROM CIUDAD", "-- Selecione Ciudad --");
+                //conexion.RellenarCB_2(cbPropietario, "SELECT * FROM PROPIETARIO", "-- Selecione Propietario --");
+            }
+            primeraApertura = false;
         }
 
 
         //METODOS PLATILLO-------------------------------------------
         public void RecuperarInforcionPlatillo()
         {
-            //platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
-            //platilloBLL.plato_nombre = txtNombre.Text;
-            //platilloBLL.plato_dificultad = cbDificultad.Text;
-            //platilloBLL.plato_preciof = float.Parse(txtPrecio.Text);
-            //platilloBLL.plato_foto
-            //platilloBLL.plato
-            //platilloBLL.plato
+            platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
+            platilloBLL.plato_nombre = txtNombre.Text;
+            platilloBLL.plato_dificultad = cbDificultad.Text;
+            platilloBLL.plato_preciof = float.Parse(txtPrecio.Text);
+            platilloBLL.plato_descripcion = txtDescripcion.Text;
+            //platilloBLL.categoria_id = cbCategoria.Text;
         }
 
         //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
@@ -209,6 +214,15 @@ namespace Restaurante___reporte.PL
             //        txtIdFarmacia.SelectAll();
             //    }
             //}
+        }
+
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategoria.SelectedIndex > 0)
+            {
+                platilloBLL.categoria_id = conexion.captar_info_1("SELECT * FROM CIUDAD WHERE nombre_ciudad='" + cbCiudad.Text + "'");
+
+            }
         }
 
         private void agregarIngrediente_MouseLeave(object sender, EventArgs e)

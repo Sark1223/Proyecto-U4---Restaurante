@@ -242,6 +242,7 @@
             this.cbCategoria.Size = new System.Drawing.Size(148, 26);
             this.cbCategoria.TabIndex = 43;
             this.cbCategoria.Text = "-- Categoria --";
+            this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -617,6 +618,7 @@
             // rdPanel
             // 
             this.rdPanel.ElipseRadius = 20;
+            this.rdPanel.TargetControl = this;
             // 
             // bunifuThinButton21
             // 
@@ -717,7 +719,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.panel13);
             this.Controls.Add(this.txtInstruccion);
             this.Controls.Add(this.lblInstruccion);
             this.Controls.Add(this.txtPaso_no);
@@ -759,6 +760,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pbFotoPlatillo);
             this.Controls.Add(this.cmdExaminar);
+            this.Controls.Add(this.panel13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditarPlatillo";
             this.Text = "frmEditarPlatillo";

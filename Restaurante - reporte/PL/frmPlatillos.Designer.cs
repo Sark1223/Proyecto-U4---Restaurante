@@ -47,17 +47,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvTablaDB = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -84,7 +84,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 247);
+            this.label2.Location = new System.Drawing.Point(10, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 28);
             this.label2.TabIndex = 10;
@@ -94,7 +94,7 @@
             // 
             this.lblDificultad.AutoSize = true;
             this.lblDificultad.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDificultad.Location = new System.Drawing.Point(423, 98);
+            this.lblDificultad.Location = new System.Drawing.Point(467, 98);
             this.lblDificultad.Name = "lblDificultad";
             this.lblDificultad.Size = new System.Drawing.Size(120, 19);
             this.lblDificultad.TabIndex = 12;
@@ -115,9 +115,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(222, 37);
+            this.panel1.Location = new System.Drawing.Point(234, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(574, 442);
+            this.panel1.Size = new System.Drawing.Size(634, 514);
             this.panel1.TabIndex = 13;
             // 
             // panel3
@@ -156,11 +156,11 @@
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
             this.textBox2.Location = new System.Drawing.Point(207, 44);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 188);
+            this.textBox2.Size = new System.Drawing.Size(241, 222);
             this.textBox2.TabIndex = 18;
             this.textBox2.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
@@ -168,7 +168,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(423, 44);
+            this.label5.Location = new System.Drawing.Point(467, 44);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 19);
             this.label5.TabIndex = 17;
@@ -178,7 +178,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(423, 146);
+            this.label3.Location = new System.Drawing.Point(467, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 16;
@@ -188,11 +188,11 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
-            this.textBox1.Location = new System.Drawing.Point(6, 278);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
+            this.textBox1.Location = new System.Drawing.Point(6, 340);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(581, 154);
+            this.textBox1.Size = new System.Drawing.Size(622, 171);
             this.textBox1.TabIndex = 15;
             this.textBox1.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
@@ -200,13 +200,23 @@
             // 
             this.txtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F);
+            this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
             this.txtDescripcion.Location = new System.Drawing.Point(15, 199);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(180, 45);
+            this.txtDescripcion.Size = new System.Drawing.Size(180, 67);
             this.txtDescripcion.TabIndex = 14;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.foto;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(180, 171);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -229,7 +239,7 @@
             this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTablaDB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvTablaDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvTablaDB.BackgroundColor = System.Drawing.Color.White;
+            this.dgvTablaDB.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.dgvTablaDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTablaDB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvTablaDB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -254,7 +264,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTablaDB.EnableHeadersVisualStyles = false;
-            this.dgvTablaDB.Location = new System.Drawing.Point(8, 37);
+            this.dgvTablaDB.Location = new System.Drawing.Point(13, 42);
             this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvTablaDB.Name = "dgvTablaDB";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -268,7 +278,7 @@
             this.dgvTablaDB.RowHeadersVisible = false;
             this.dgvTablaDB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvTablaDB.RowTemplate.Height = 30;
-            this.dgvTablaDB.Size = new System.Drawing.Size(177, 432);
+            this.dgvTablaDB.Size = new System.Drawing.Size(202, 509);
             this.dgvTablaDB.TabIndex = 29;
             // 
             // Column3
@@ -283,34 +293,25 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 83;
             // 
-            // pictureBox2
+            // cmdAgregarPatillo
             // 
-            this.pictureBox2.Image = global::Restaurante___reporte.Properties.Resources.agregar;
-            this.pictureBox2.Location = new System.Drawing.Point(145, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 27);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.foto;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 171);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.cmdAgregarPatillo.Image = global::Restaurante___reporte.Properties.Resources.agregar;
+            this.cmdAgregarPatillo.Location = new System.Drawing.Point(177, 12);
+            this.cmdAgregarPatillo.Name = "cmdAgregarPatillo";
+            this.cmdAgregarPatillo.Size = new System.Drawing.Size(38, 27);
+            this.cmdAgregarPatillo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdAgregarPatillo.TabIndex = 15;
+            this.cmdAgregarPatillo.TabStop = false;
+            this.cmdAgregarPatillo.Click += new System.EventHandler(this.cmdAgregarPatillo_Click);
             // 
             // frmPlatillos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.ClientSize = new System.Drawing.Size(800, 481);
+            this.ClientSize = new System.Drawing.Size(880, 565);
             this.Controls.Add(this.dgvTablaDB);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.cmdAgregarPatillo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
@@ -320,9 +321,9 @@
             this.Load += new System.EventHandler(this.frmPlatillos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,7 +344,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox cmdAgregarPatillo;
         public System.Windows.Forms.DataGridView dgvTablaDB;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;

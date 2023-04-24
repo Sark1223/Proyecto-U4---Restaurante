@@ -17,9 +17,17 @@ namespace Restaurante___reporte.PL
             InitializeComponent();
         }
 
+        //Objetos de clase
+        frmEditarPlatillo frmEditarPlatillo = new frmEditarPlatillo();
+
         private void frmPlatillos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdAgregarPatillo_Click(object sender, EventArgs e)
+        {
+            frmEditarPlatillo.ShowDialog();
         }
     }
 }

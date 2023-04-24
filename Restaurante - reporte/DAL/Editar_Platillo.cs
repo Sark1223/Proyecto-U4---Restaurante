@@ -24,7 +24,7 @@ namespace Restaurante___reporte.DAL
         public bool AgregarPlatillo(PlatilloBLL platillo)
         {
             SqlCommand agregar = new SqlCommand(
-        "insert into CIUDAD(plato_id," +
+        "insert into PLATILLO(plato_id," +
                            "plato_nombre," +
                            "plato_descripcion," +
                            "plato_dificultad," +
@@ -33,16 +33,16 @@ namespace Restaurante___reporte.DAL
                            "categoria_id)" +
         "values(@id,@nombre,@descripcion,@dififultad,@foto,@precio,@categoria)");
             {
-            agregar.Parameters.AddWithValue("id", platillo.plato_id);
-            agregar.Parameters.AddWithValue("nombre", platillo.plato_nombre);
-            agregar.Parameters.AddWithValue("descripcion", platillo.plato_descripcion);
-            agregar.Parameters.AddWithValue("dififultad", platillo.plato_dificultad);
-            agregar.Parameters.AddWithValue("foto", platillo.plato_foto);
-            agregar.Parameters.AddWithValue("precio", platillo.plato_preciof);
-            agregar.Parameters.AddWithValue("categoria", platillo.categoria_id);
+                agregar.Parameters.AddWithValue("id", platillo.plato_id);
+                agregar.Parameters.AddWithValue("nombre", platillo.plato_nombre);
+                agregar.Parameters.AddWithValue("descripcion", platillo.plato_descripcion);
+                agregar.Parameters.AddWithValue("dififultad", platillo.plato_dificultad);
+                agregar.Parameters.AddWithValue("foto", platillo.plato_foto);
+                agregar.Parameters.AddWithValue("precio", platillo.plato_preciof);
+                agregar.Parameters.AddWithValue("categoria", platillo.categoria_id);
 
-            conexion.ejecutarComandoSinRetorno(agregar);
- }
+                conexion.ejecutarComandoSinRetorno(agregar);
+            }
             return true;
 
         }
@@ -76,6 +76,11 @@ namespace Restaurante___reporte.DAL
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public void LlenarCBCategoria(ComboBox cbCategoria)
+        {
+            conexion.RellenarCB(cbCategoria, "SELECT * FROM CATEGORIA", "-- Categoria --", 1);
         }
 
     }

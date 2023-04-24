@@ -56,6 +56,7 @@
     <Compile Include="BLL\Platillo_IngredienteBLL.cs" />
     <Compile Include="BLL\Platillo_ProcedimientoBLL.cs" />
     <Compile Include="DAL\Conexion.cs" />
+    <Compile Include="DAL\Editar_Categoria.cs" />
     <Compile Include="DAL\Editar_Platillo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
