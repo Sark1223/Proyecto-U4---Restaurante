@@ -122,15 +122,17 @@ namespace Restaurante___reporte
         frmCategoria categoria = new frmCategoria();
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
-        {
+        {   
             ingredientes.ShowDialog();
         }
 
         private void cmdCategoria_Click(object sender, EventArgs e)
         {
-            AbrirForm(categoria);
-            PanelActual = cmdCategorias;
-            Ponerfoco();
+            categoria.ShowDialog();
+            //Form1_Load(sender, e);
+            //AbrirForm(categoria);
+            //PanelActual = cmdCategorias;
+            //Ponerfoco();
         }
 
         private void cmdPlatillo_Click(object sender, EventArgs e)

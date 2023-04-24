@@ -132,9 +132,6 @@
   <metadata name="RadioIngredientes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>513, 17</value>
   </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -144,4 +141,21 @@
   <metadata name="RadioPanel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 42</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJcAAAAiCAYAAABSmEu/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJiSURBVHhe7Zu/SxthHIcd3To6urWbbt2CS8Gl0MGhUAf/
+        BZ100s2/wG6lHQQ7FCwIIliKVtEQxFak2pgfnCaNOb2Qy48aU1v96ue9y2nMNVTv3snPAw8IMZke7t73
+        /d51/C5WhFIdMi6qTcZFtcm4qDYZF9Um46LabBtXPV+SwpuUZAY2xIisyV73Z9npmKcPWDSAFvafx8Sa
+        SkrNKPq2A/8Zl/3hQBJXP/Tz5Vcpvc/Jr6WCnBk1IQ8bNIAWKh9NyQ1tqUas10nfhlriQonZwU056I/J
+        n3zd/UlC/Plrn6nI9p9FpRYvNLXUFBfCSvV8Eftt1v0qIf9HdeFY0k9X5WTL8o8LVyyGRe4LbpdYj7XE
+        hTUWboWEBOFoNC7mxO51XNgVYmHGNRYJysXpuaR7V6QaM524sKXEooyQMLAmU3I4vO3EhTMLbC0JCYPT
+        b2W1MVRxJR8vS/1H1f2IkGDg1rjbueDEFX+0qM4rCAkLnOaruPAHIWHixYVLGC5lhISFFxeGkZwbkjDx
+        4sJcCMf3hIQBNofYJKq4zIkdORqLux8REgz7XVayrzaduDBsTD1Z5rqLhELmxYYUpw0nLnX1Gvsux+MJ
+        92NC7kdpJqceLkVTXlyYLxqRdalFbfffCLkbmE3jDth4OtWLC2LYiKEjT+vJXUFYRl9USnMZr6emuGB5
+        MafmQtZk0v0aIe2pzJrqinUzLNgSF8QtMj+yrUrEyp+P4pDbYFyIdyvwjgUefPB7UcM3roYoEVvKva5P
+        6lCM0oaYR2PhjrfD/NqBbeOiNIiMi2qTcVFtMi6qTcZFNVmRS2xxI7oZFoAjAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

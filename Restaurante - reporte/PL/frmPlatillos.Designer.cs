@@ -38,6 +38,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblDificultad = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,10 +52,6 @@
             this.dgvTablaDB = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -115,10 +115,42 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(203, 37);
+            this.panel1.Location = new System.Drawing.Point(222, 37);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 442);
+            this.panel1.Size = new System.Drawing.Size(574, 442);
             this.panel1.TabIndex = 13;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel3.Location = new System.Drawing.Point(193, 22);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(2, 171);
+            this.panel3.TabIndex = 66;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel2.Location = new System.Drawing.Point(15, 22);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(179, 2);
+            this.panel2.TabIndex = 65;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel12.Location = new System.Drawing.Point(15, 22);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(2, 171);
+            this.panel12.TabIndex = 64;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.panel4.Location = new System.Drawing.Point(15, 191);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(179, 2);
+            this.panel4.TabIndex = 63;
             // 
             // textBox2
             // 
@@ -222,7 +254,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvTablaDB.EnableHeadersVisualStyles = false;
-            this.dgvTablaDB.Location = new System.Drawing.Point(13, 37);
+            this.dgvTablaDB.Location = new System.Drawing.Point(8, 37);
             this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvTablaDB.Name = "dgvTablaDB";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -250,38 +282,6 @@
             this.Column4.HeaderText = "Column4";
             this.Column4.Name = "Column4";
             this.Column4.Width = 83;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.panel12.Location = new System.Drawing.Point(15, 22);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(2, 171);
-            this.panel12.TabIndex = 64;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.panel4.Location = new System.Drawing.Point(15, 191);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(179, 2);
-            this.panel4.TabIndex = 63;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.panel2.Location = new System.Drawing.Point(15, 22);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 2);
-            this.panel2.TabIndex = 65;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.panel3.Location = new System.Drawing.Point(193, 22);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(2, 171);
-            this.panel3.TabIndex = 66;
             // 
             // pictureBox2
             // 

@@ -42,5 +42,10 @@ namespace Restaurante___reporte.PL
         private void txtIngredienteCant_Click(object sender, EventArgs e)
         {
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
     }
 }

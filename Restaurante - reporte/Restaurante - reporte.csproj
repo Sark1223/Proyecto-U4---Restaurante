@@ -205,5 +205,26 @@
   <ItemGroup>
     <None Include="Resources\estilo-grafico %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar ingrediente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar comida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar categoria.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

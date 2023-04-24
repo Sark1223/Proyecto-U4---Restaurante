@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngredientes));
             this.label8 = new System.Windows.Forms.Label();
             this.lblIgredienteId = new System.Windows.Forms.Label();
             this.lblIngredienteNombre = new System.Windows.Forms.Label();
@@ -44,16 +45,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtIngredienteCant = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnAgregarIngrediente = new ns1.BunifuFlatButton();
             this.comboMed = new ns1.BunifuDropdown();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.RadioAgregar = new ns1.BunifuElipse(this.components);
-            this.btnEditarIngrediente = new ns1.BunifuFlatButton();
-            this.btnEliminarIngrediente = new ns1.BunifuFlatButton();
-            this.btnBuscarIngrediente = new ns1.BunifuFlatButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.RadioEditar = new ns1.BunifuElipse(this.components);
             this.RadioBuscar = new ns1.BunifuElipse(this.components);
@@ -65,9 +62,16 @@
             this.Panel = new System.Windows.Forms.Panel();
             this.RadioPanel = new ns1.BunifuElipse(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new ns1.BunifuImageButton();
+            this.btnBuscarIngrediente = new ns1.BunifuFlatButton();
+            this.btnEliminarIngrediente = new ns1.BunifuFlatButton();
+            this.btnEditarIngrediente = new ns1.BunifuFlatButton();
+            this.btnAgregarIngrediente = new ns1.BunifuFlatButton();
+            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
             this.Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -84,7 +88,7 @@
             // 
             this.lblIgredienteId.AutoSize = true;
             this.lblIgredienteId.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIgredienteId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.lblIgredienteId.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblIgredienteId.Location = new System.Drawing.Point(14, 23);
             this.lblIgredienteId.Name = "lblIgredienteId";
             this.lblIgredienteId.Size = new System.Drawing.Size(102, 21);
@@ -95,7 +99,7 @@
             // 
             this.lblIngredienteNombre.AutoSize = true;
             this.lblIngredienteNombre.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIngredienteNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.lblIngredienteNombre.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblIngredienteNombre.Location = new System.Drawing.Point(146, 23);
             this.lblIngredienteNombre.Name = "lblIngredienteNombre";
             this.lblIngredienteNombre.Size = new System.Drawing.Size(72, 21);
@@ -106,7 +110,7 @@
             // 
             this.lblUnidadMedida.AutoSize = true;
             this.lblUnidadMedida.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnidadMedida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.lblUnidadMedida.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblUnidadMedida.Location = new System.Drawing.Point(16, 104);
             this.lblUnidadMedida.Name = "lblUnidadMedida";
             this.lblUnidadMedida.Size = new System.Drawing.Size(156, 21);
@@ -117,7 +121,7 @@
             // 
             this.lblCantidadAlmacen.AutoSize = true;
             this.lblCantidadAlmacen.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadAlmacen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.lblCantidadAlmacen.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblCantidadAlmacen.Location = new System.Drawing.Point(185, 104);
             this.lblCantidadAlmacen.Name = "lblCantidadAlmacen";
             this.lblCantidadAlmacen.Size = new System.Drawing.Size(179, 21);
@@ -134,7 +138,7 @@
             // 
             // txtIngredienteId
             // 
-            this.txtIngredienteId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.txtIngredienteId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.txtIngredienteId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteId.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteId.ForeColor = System.Drawing.Color.Black;
@@ -148,7 +152,7 @@
             // 
             // txtIngredienteNombre
             // 
-            this.txtIngredienteNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.txtIngredienteNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.txtIngredienteNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteNombre.ForeColor = System.Drawing.Color.Black;
@@ -169,7 +173,7 @@
             // 
             // txtIngredienteCant
             // 
-            this.txtIngredienteCant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.txtIngredienteCant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.txtIngredienteCant.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteCant.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteCant.ForeColor = System.Drawing.Color.Black;
@@ -187,41 +191,6 @@
             this.panel3.Size = new System.Drawing.Size(160, 2);
             this.panel3.TabIndex = 19;
             // 
-            // btnAgregarIngrediente
-            // 
-            this.btnAgregarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.btnAgregarIngrediente.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregarIngrediente.BorderRadius = 0;
-            this.btnAgregarIngrediente.ButtonText = "Agregar";
-            this.btnAgregarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarIngrediente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAgregarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAgregarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.cocinando;
-            this.btnAgregarIngrediente.Iconimage_right = null;
-            this.btnAgregarIngrediente.Iconimage_right_Selected = null;
-            this.btnAgregarIngrediente.Iconimage_Selected = null;
-            this.btnAgregarIngrediente.IconMarginLeft = 0;
-            this.btnAgregarIngrediente.IconMarginRight = 0;
-            this.btnAgregarIngrediente.IconRightVisible = true;
-            this.btnAgregarIngrediente.IconRightZoom = 0D;
-            this.btnAgregarIngrediente.IconVisible = true;
-            this.btnAgregarIngrediente.IconZoom = 90D;
-            this.btnAgregarIngrediente.IsTab = false;
-            this.btnAgregarIngrediente.Location = new System.Drawing.Point(420, 13);
-            this.btnAgregarIngrediente.Margin = new System.Windows.Forms.Padding(6);
-            this.btnAgregarIngrediente.Name = "btnAgregarIngrediente";
-            this.btnAgregarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnAgregarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnAgregarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAgregarIngrediente.selected = false;
-            this.btnAgregarIngrediente.Size = new System.Drawing.Size(140, 50);
-            this.btnAgregarIngrediente.TabIndex = 22;
-            this.btnAgregarIngrediente.Text = "Agregar";
-            this.btnAgregarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarIngrediente.Textcolor = System.Drawing.Color.Black;
-            this.btnAgregarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // comboMed
             // 
             this.comboMed.BackColor = System.Drawing.Color.Transparent;
@@ -235,9 +204,9 @@
         "ml",
         "pz"};
             this.comboMed.Location = new System.Drawing.Point(2, 3);
-            this.comboMed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.comboMed.Margin = new System.Windows.Forms.Padding(5);
             this.comboMed.Name = "comboMed";
-            this.comboMed.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.comboMed.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.comboMed.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
             this.comboMed.selectedIndex = -1;
             this.comboMed.Size = new System.Drawing.Size(156, 32);
@@ -280,111 +249,6 @@
             this.RadioAgregar.ElipseRadius = 20;
             this.RadioAgregar.TargetControl = this.btnAgregarIngrediente;
             // 
-            // btnEditarIngrediente
-            // 
-            this.btnEditarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.btnEditarIngrediente.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditarIngrediente.BorderRadius = 0;
-            this.btnEditarIngrediente.ButtonText = "Editar";
-            this.btnEditarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditarIngrediente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnEditarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEditarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.cocinando;
-            this.btnEditarIngrediente.Iconimage_right = null;
-            this.btnEditarIngrediente.Iconimage_right_Selected = null;
-            this.btnEditarIngrediente.Iconimage_Selected = null;
-            this.btnEditarIngrediente.IconMarginLeft = 0;
-            this.btnEditarIngrediente.IconMarginRight = 0;
-            this.btnEditarIngrediente.IconRightVisible = true;
-            this.btnEditarIngrediente.IconRightZoom = 0D;
-            this.btnEditarIngrediente.IconVisible = true;
-            this.btnEditarIngrediente.IconZoom = 90D;
-            this.btnEditarIngrediente.IsTab = false;
-            this.btnEditarIngrediente.Location = new System.Drawing.Point(420, 70);
-            this.btnEditarIngrediente.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEditarIngrediente.Name = "btnEditarIngrediente";
-            this.btnEditarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnEditarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnEditarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEditarIngrediente.selected = false;
-            this.btnEditarIngrediente.Size = new System.Drawing.Size(140, 50);
-            this.btnEditarIngrediente.TabIndex = 39;
-            this.btnEditarIngrediente.Text = "Editar";
-            this.btnEditarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarIngrediente.Textcolor = System.Drawing.Color.Black;
-            this.btnEditarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnEliminarIngrediente
-            // 
-            this.btnEliminarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.btnEliminarIngrediente.BackColor = System.Drawing.Color.Transparent;
-            this.btnEliminarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminarIngrediente.BorderRadius = 0;
-            this.btnEliminarIngrediente.ButtonText = "Eliminar";
-            this.btnEliminarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminarIngrediente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnEliminarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnEliminarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.cocinando;
-            this.btnEliminarIngrediente.Iconimage_right = null;
-            this.btnEliminarIngrediente.Iconimage_right_Selected = null;
-            this.btnEliminarIngrediente.Iconimage_Selected = null;
-            this.btnEliminarIngrediente.IconMarginLeft = 0;
-            this.btnEliminarIngrediente.IconMarginRight = 0;
-            this.btnEliminarIngrediente.IconRightVisible = true;
-            this.btnEliminarIngrediente.IconRightZoom = 0D;
-            this.btnEliminarIngrediente.IconVisible = true;
-            this.btnEliminarIngrediente.IconZoom = 90D;
-            this.btnEliminarIngrediente.IsTab = false;
-            this.btnEliminarIngrediente.Location = new System.Drawing.Point(420, 127);
-            this.btnEliminarIngrediente.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEliminarIngrediente.Name = "btnEliminarIngrediente";
-            this.btnEliminarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnEliminarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnEliminarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnEliminarIngrediente.selected = false;
-            this.btnEliminarIngrediente.Size = new System.Drawing.Size(140, 50);
-            this.btnEliminarIngrediente.TabIndex = 40;
-            this.btnEliminarIngrediente.Text = "Eliminar";
-            this.btnEliminarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarIngrediente.Textcolor = System.Drawing.Color.Black;
-            this.btnEliminarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // btnBuscarIngrediente
-            // 
-            this.btnBuscarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.btnBuscarIngrediente.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarIngrediente.BorderRadius = 0;
-            this.btnBuscarIngrediente.ButtonText = "Buscar";
-            this.btnBuscarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarIngrediente.DisabledColor = System.Drawing.Color.Gray;
-            this.btnBuscarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnBuscarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.cocinando;
-            this.btnBuscarIngrediente.Iconimage_right = null;
-            this.btnBuscarIngrediente.Iconimage_right_Selected = null;
-            this.btnBuscarIngrediente.Iconimage_Selected = null;
-            this.btnBuscarIngrediente.IconMarginLeft = 0;
-            this.btnBuscarIngrediente.IconMarginRight = 0;
-            this.btnBuscarIngrediente.IconRightVisible = true;
-            this.btnBuscarIngrediente.IconRightZoom = 0D;
-            this.btnBuscarIngrediente.IconVisible = true;
-            this.btnBuscarIngrediente.IconZoom = 90D;
-            this.btnBuscarIngrediente.IsTab = false;
-            this.btnBuscarIngrediente.Location = new System.Drawing.Point(20, 189);
-            this.btnBuscarIngrediente.Margin = new System.Windows.Forms.Padding(6);
-            this.btnBuscarIngrediente.Name = "btnBuscarIngrediente";
-            this.btnBuscarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnBuscarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.btnBuscarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnBuscarIngrediente.selected = false;
-            this.btnBuscarIngrediente.Size = new System.Drawing.Size(116, 50);
-            this.btnBuscarIngrediente.TabIndex = 41;
-            this.btnBuscarIngrediente.Text = "Buscar";
-            this.btnBuscarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarIngrediente.Textcolor = System.Drawing.Color.Black;
-            this.btnBuscarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.panel6);
@@ -419,51 +283,51 @@
             // 
             // dgvTablaDB
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvTablaDB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvTablaDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvTablaDB.BackgroundColor = System.Drawing.Color.White;
             this.dgvTablaDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvTablaDB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvTablaDB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvTablaDB.ColumnHeadersHeight = 30;
             this.dgvTablaDB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvTablaDB.EnableHeadersVisualStyles = false;
             this.dgvTablaDB.Location = new System.Drawing.Point(18, 240);
             this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvTablaDB.Name = "dgvTablaDB";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTablaDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTablaDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvTablaDB.RowHeadersVisible = false;
             this.dgvTablaDB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvTablaDB.RowTemplate.Height = 30;
@@ -484,7 +348,8 @@
             // 
             // Panel
             // 
-            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.Panel.Controls.Add(this.bunifuThinButton21);
             this.Panel.Controls.Add(this.dgvTablaDB);
             this.Panel.Controls.Add(this.panel8);
             this.Panel.Controls.Add(this.btnBuscarIngrediente);
@@ -519,23 +384,205 @@
             this.panel9.Size = new System.Drawing.Size(563, 16);
             this.panel9.TabIndex = 44;
             // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Image = global::Restaurante___reporte.Properties.Resources.Equis;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(526, 5);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(40, 28);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 45;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            // 
+            // btnBuscarIngrediente
+            // 
+            this.btnBuscarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.btnBuscarIngrediente.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarIngrediente.BorderRadius = 0;
+            this.btnBuscarIngrediente.ButtonText = "Buscar";
+            this.btnBuscarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarIngrediente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnBuscarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnBuscarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.buscar_ingrediente;
+            this.btnBuscarIngrediente.Iconimage_right = null;
+            this.btnBuscarIngrediente.Iconimage_right_Selected = null;
+            this.btnBuscarIngrediente.Iconimage_Selected = null;
+            this.btnBuscarIngrediente.IconMarginLeft = 0;
+            this.btnBuscarIngrediente.IconMarginRight = 0;
+            this.btnBuscarIngrediente.IconRightVisible = true;
+            this.btnBuscarIngrediente.IconRightZoom = 0D;
+            this.btnBuscarIngrediente.IconVisible = true;
+            this.btnBuscarIngrediente.IconZoom = 90D;
+            this.btnBuscarIngrediente.IsTab = false;
+            this.btnBuscarIngrediente.Location = new System.Drawing.Point(20, 189);
+            this.btnBuscarIngrediente.Margin = new System.Windows.Forms.Padding(6);
+            this.btnBuscarIngrediente.Name = "btnBuscarIngrediente";
+            this.btnBuscarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnBuscarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnBuscarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnBuscarIngrediente.selected = false;
+            this.btnBuscarIngrediente.Size = new System.Drawing.Size(116, 50);
+            this.btnBuscarIngrediente.TabIndex = 41;
+            this.btnBuscarIngrediente.Text = "Buscar";
+            this.btnBuscarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscarIngrediente.Textcolor = System.Drawing.Color.Black;
+            this.btnBuscarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnEliminarIngrediente
+            // 
+            this.btnEliminarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.btnEliminarIngrediente.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminarIngrediente.BorderRadius = 0;
+            this.btnEliminarIngrediente.ButtonText = "Eliminar";
+            this.btnEliminarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarIngrediente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEliminarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEliminarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.eliminar_comida;
+            this.btnEliminarIngrediente.Iconimage_right = null;
+            this.btnEliminarIngrediente.Iconimage_right_Selected = null;
+            this.btnEliminarIngrediente.Iconimage_Selected = null;
+            this.btnEliminarIngrediente.IconMarginLeft = 0;
+            this.btnEliminarIngrediente.IconMarginRight = 0;
+            this.btnEliminarIngrediente.IconRightVisible = true;
+            this.btnEliminarIngrediente.IconRightZoom = 0D;
+            this.btnEliminarIngrediente.IconVisible = true;
+            this.btnEliminarIngrediente.IconZoom = 90D;
+            this.btnEliminarIngrediente.IsTab = false;
+            this.btnEliminarIngrediente.Location = new System.Drawing.Point(391, 166);
+            this.btnEliminarIngrediente.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEliminarIngrediente.Name = "btnEliminarIngrediente";
+            this.btnEliminarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnEliminarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnEliminarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEliminarIngrediente.selected = false;
+            this.btnEliminarIngrediente.Size = new System.Drawing.Size(140, 50);
+            this.btnEliminarIngrediente.TabIndex = 40;
+            this.btnEliminarIngrediente.Text = "Eliminar";
+            this.btnEliminarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarIngrediente.Textcolor = System.Drawing.Color.Black;
+            this.btnEliminarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnEditarIngrediente
+            // 
+            this.btnEditarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.btnEditarIngrediente.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditarIngrediente.BorderRadius = 0;
+            this.btnEditarIngrediente.ButtonText = "Editar";
+            this.btnEditarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditarIngrediente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEditarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnEditarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.editar;
+            this.btnEditarIngrediente.Iconimage_right = null;
+            this.btnEditarIngrediente.Iconimage_right_Selected = null;
+            this.btnEditarIngrediente.Iconimage_Selected = null;
+            this.btnEditarIngrediente.IconMarginLeft = 0;
+            this.btnEditarIngrediente.IconMarginRight = 0;
+            this.btnEditarIngrediente.IconRightVisible = true;
+            this.btnEditarIngrediente.IconRightZoom = 0D;
+            this.btnEditarIngrediente.IconVisible = true;
+            this.btnEditarIngrediente.IconZoom = 90D;
+            this.btnEditarIngrediente.IsTab = false;
+            this.btnEditarIngrediente.Location = new System.Drawing.Point(391, 109);
+            this.btnEditarIngrediente.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEditarIngrediente.Name = "btnEditarIngrediente";
+            this.btnEditarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnEditarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnEditarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnEditarIngrediente.selected = false;
+            this.btnEditarIngrediente.Size = new System.Drawing.Size(140, 50);
+            this.btnEditarIngrediente.TabIndex = 39;
+            this.btnEditarIngrediente.Text = "Editar";
+            this.btnEditarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarIngrediente.Textcolor = System.Drawing.Color.Black;
+            this.btnEditarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // btnAgregarIngrediente
+            // 
+            this.btnAgregarIngrediente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.btnAgregarIngrediente.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregarIngrediente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregarIngrediente.BorderRadius = 0;
+            this.btnAgregarIngrediente.ButtonText = "Agregar";
+            this.btnAgregarIngrediente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarIngrediente.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAgregarIngrediente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnAgregarIngrediente.Iconimage = global::Restaurante___reporte.Properties.Resources.cocinando;
+            this.btnAgregarIngrediente.Iconimage_right = null;
+            this.btnAgregarIngrediente.Iconimage_right_Selected = null;
+            this.btnAgregarIngrediente.Iconimage_Selected = null;
+            this.btnAgregarIngrediente.IconMarginLeft = 0;
+            this.btnAgregarIngrediente.IconMarginRight = 0;
+            this.btnAgregarIngrediente.IconRightVisible = true;
+            this.btnAgregarIngrediente.IconRightZoom = 0D;
+            this.btnAgregarIngrediente.IconVisible = true;
+            this.btnAgregarIngrediente.IconZoom = 90D;
+            this.btnAgregarIngrediente.IsTab = false;
+            this.btnAgregarIngrediente.Location = new System.Drawing.Point(391, 52);
+            this.btnAgregarIngrediente.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAgregarIngrediente.Name = "btnAgregarIngrediente";
+            this.btnAgregarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnAgregarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.btnAgregarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnAgregarIngrediente.selected = false;
+            this.btnAgregarIngrediente.Size = new System.Drawing.Size(140, 50);
+            this.btnAgregarIngrediente.TabIndex = 22;
+            this.btnAgregarIngrediente.Text = "Agregar";
+            this.btnAgregarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarIngrediente.Textcolor = System.Drawing.Color.Black;
+            this.btnAgregarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(181)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Limpiar todo";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(123)))), ((int)(((byte)(130)))));
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(181)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(181)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(392, 10);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(151, 34);
+            this.bunifuThinButton21.TabIndex = 72;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmIngredientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
             this.ClientSize = new System.Drawing.Size(577, 449);
+            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmIngredientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingredientes";
             this.Load += new System.EventHandler(this.frmIngredientes_Load);
             this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,5 +622,7 @@
         private System.Windows.Forms.Panel Panel;
         private ns1.BunifuElipse RadioPanel;
         private System.Windows.Forms.Panel panel9;
+        private ns1.BunifuImageButton bunifuImageButton1;
+        private ns1.BunifuThinButton2 bunifuThinButton21;
     }
 }

@@ -196,6 +196,7 @@
             this.lblIngrediente.Size = new System.Drawing.Size(75, 16);
             this.lblIngrediente.TabIndex = 8;
             this.lblIngrediente.Text = "Ingredientes";
+            this.lblIngrediente.Click += new System.EventHandler(this.cmdIngrediente_Click);
             // 
             // pbIngredientes
             // 
@@ -258,6 +259,7 @@
             this.lblCategoria.Size = new System.Drawing.Size(61, 16);
             this.lblCategoria.TabIndex = 6;
             this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
             // 
             // pbcategoria
             // 
