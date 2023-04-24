@@ -18,7 +18,8 @@ namespace Restaurante___reporte
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
-            Application.Run(new frmIngredientes());
+            //Application.Run(new frmIngredientes());
+            Application.Run(new frmEditarPlatillo());
         }
     }
 }

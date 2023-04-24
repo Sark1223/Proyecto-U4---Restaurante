@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.lblIgredienteId = new System.Windows.Forms.Label();
             this.lblIngredienteNombre = new System.Windows.Forms.Label();
@@ -46,28 +50,42 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
+            this.RadioAgregar = new ns1.BunifuElipse(this.components);
             this.btnEditarIngrediente = new ns1.BunifuFlatButton();
             this.btnEliminarIngrediente = new ns1.BunifuFlatButton();
             this.btnBuscarIngrediente = new ns1.BunifuFlatButton();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.RadioEditar = new ns1.BunifuElipse(this.components);
+            this.RadioBuscar = new ns1.BunifuElipse(this.components);
+            this.RadioEliminar = new ns1.BunifuElipse(this.components);
+            this.RadioIngredientes = new ns1.BunifuElipse(this.components);
+            this.dgvTablaDB = new System.Windows.Forms.DataGridView();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Panel = new System.Windows.Forms.Panel();
+            this.RadioPanel = new ns1.BunifuElipse(this.components);
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
+            this.Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(285, 9);
+            this.label8.Location = new System.Drawing.Point(101, 5);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(265, 28);
+            this.label8.Size = new System.Drawing.Size(346, 28);
             this.label8.TabIndex = 7;
-            this.label8.Text = "AGREGAR INGREDIENTE";
+            this.label8.Text = "INVENTARIO DE INGREDIENTES";
             // 
             // lblIgredienteId
             // 
             this.lblIgredienteId.AutoSize = true;
             this.lblIgredienteId.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIgredienteId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.lblIgredienteId.Location = new System.Drawing.Point(12, 97);
+            this.lblIgredienteId.Location = new System.Drawing.Point(14, 23);
             this.lblIgredienteId.Name = "lblIgredienteId";
             this.lblIgredienteId.Size = new System.Drawing.Size(102, 21);
             this.lblIgredienteId.TabIndex = 8;
@@ -78,7 +96,7 @@
             this.lblIngredienteNombre.AutoSize = true;
             this.lblIngredienteNombre.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIngredienteNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.lblIngredienteNombre.Location = new System.Drawing.Point(275, 97);
+            this.lblIngredienteNombre.Location = new System.Drawing.Point(146, 23);
             this.lblIngredienteNombre.Name = "lblIngredienteNombre";
             this.lblIngredienteNombre.Size = new System.Drawing.Size(72, 21);
             this.lblIngredienteNombre.TabIndex = 9;
@@ -89,7 +107,7 @@
             this.lblUnidadMedida.AutoSize = true;
             this.lblUnidadMedida.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnidadMedida.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.lblUnidadMedida.Location = new System.Drawing.Point(12, 206);
+            this.lblUnidadMedida.Location = new System.Drawing.Point(16, 104);
             this.lblUnidadMedida.Name = "lblUnidadMedida";
             this.lblUnidadMedida.Size = new System.Drawing.Size(156, 21);
             this.lblUnidadMedida.TabIndex = 10;
@@ -100,7 +118,7 @@
             this.lblCantidadAlmacen.AutoSize = true;
             this.lblCantidadAlmacen.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadAlmacen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.lblCantidadAlmacen.Location = new System.Drawing.Point(275, 206);
+            this.lblCantidadAlmacen.Location = new System.Drawing.Point(185, 104);
             this.lblCantidadAlmacen.Name = "lblCantidadAlmacen";
             this.lblCantidadAlmacen.Size = new System.Drawing.Size(179, 21);
             this.lblCantidadAlmacen.TabIndex = 11;
@@ -109,9 +127,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel2.Location = new System.Drawing.Point(17, 162);
+            this.panel2.Location = new System.Drawing.Point(19, 79);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 2);
+            this.panel2.Size = new System.Drawing.Size(97, 2);
             this.panel2.TabIndex = 14;
             // 
             // txtIngredienteId
@@ -120,9 +138,9 @@
             this.txtIngredienteId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteId.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteId.ForeColor = System.Drawing.Color.Black;
-            this.txtIngredienteId.Location = new System.Drawing.Point(17, 135);
+            this.txtIngredienteId.Location = new System.Drawing.Point(19, 52);
             this.txtIngredienteId.Name = "txtIngredienteId";
-            this.txtIngredienteId.Size = new System.Drawing.Size(200, 25);
+            this.txtIngredienteId.Size = new System.Drawing.Size(97, 25);
             this.txtIngredienteId.TabIndex = 16;
             this.txtIngredienteId.Click += new System.EventHandler(this.txtIngredienteId_Click);
             this.txtIngredienteId.CursorChanged += new System.EventHandler(this.txtIngredienteId_CursorChanged);
@@ -134,7 +152,7 @@
             this.txtIngredienteNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteNombre.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteNombre.ForeColor = System.Drawing.Color.Black;
-            this.txtIngredienteNombre.Location = new System.Drawing.Point(280, 135);
+            this.txtIngredienteNombre.Location = new System.Drawing.Point(150, 52);
             this.txtIngredienteNombre.Name = "txtIngredienteNombre";
             this.txtIngredienteNombre.Size = new System.Drawing.Size(200, 25);
             this.txtIngredienteNombre.TabIndex = 18;
@@ -144,7 +162,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel1.Location = new System.Drawing.Point(280, 162);
+            this.panel1.Location = new System.Drawing.Point(150, 79);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 2);
             this.panel1.TabIndex = 17;
@@ -155,18 +173,18 @@
             this.txtIngredienteCant.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIngredienteCant.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredienteCant.ForeColor = System.Drawing.Color.Black;
-            this.txtIngredienteCant.Location = new System.Drawing.Point(280, 246);
+            this.txtIngredienteCant.Location = new System.Drawing.Point(204, 131);
             this.txtIngredienteCant.Name = "txtIngredienteCant";
-            this.txtIngredienteCant.Size = new System.Drawing.Size(200, 25);
+            this.txtIngredienteCant.Size = new System.Drawing.Size(160, 25);
             this.txtIngredienteCant.TabIndex = 20;
             this.txtIngredienteCant.Click += new System.EventHandler(this.txtIngredienteCant_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel3.Location = new System.Drawing.Point(280, 273);
+            this.panel3.Location = new System.Drawing.Point(204, 158);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 2);
+            this.panel3.Size = new System.Drawing.Size(160, 2);
             this.panel3.TabIndex = 19;
             // 
             // btnAgregarIngrediente
@@ -190,14 +208,14 @@
             this.btnAgregarIngrediente.IconVisible = true;
             this.btnAgregarIngrediente.IconZoom = 90D;
             this.btnAgregarIngrediente.IsTab = false;
-            this.btnAgregarIngrediente.Location = new System.Drawing.Point(582, 97);
+            this.btnAgregarIngrediente.Location = new System.Drawing.Point(420, 13);
             this.btnAgregarIngrediente.Margin = new System.Windows.Forms.Padding(6);
             this.btnAgregarIngrediente.Name = "btnAgregarIngrediente";
             this.btnAgregarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAgregarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.btnAgregarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAgregarIngrediente.selected = false;
-            this.btnAgregarIngrediente.Size = new System.Drawing.Size(146, 61);
+            this.btnAgregarIngrediente.Size = new System.Drawing.Size(140, 50);
             this.btnAgregarIngrediente.TabIndex = 22;
             this.btnAgregarIngrediente.Text = "Agregar";
             this.btnAgregarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,40 +226,43 @@
             // 
             this.comboMed.BackColor = System.Drawing.Color.Transparent;
             this.comboMed.BorderRadius = 1;
+            this.comboMed.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMed.ForeColor = System.Drawing.Color.Black;
             this.comboMed.Items = new string[] {
-        "Kilogramos",
-        "Gramos",
-        "Litros",
-        "Mililitros"};
-            this.comboMed.Location = new System.Drawing.Point(17, 241);
+        "Kg",
+        "gr",
+        "L",
+        "ml",
+        "pz"};
+            this.comboMed.Location = new System.Drawing.Point(2, 3);
+            this.comboMed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.comboMed.Name = "comboMed";
             this.comboMed.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.comboMed.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
             this.comboMed.selectedIndex = -1;
-            this.comboMed.Size = new System.Drawing.Size(220, 29);
+            this.comboMed.Size = new System.Drawing.Size(156, 32);
             this.comboMed.TabIndex = 23;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel4.Location = new System.Drawing.Point(17, 269);
+            this.panel4.Location = new System.Drawing.Point(1, 33);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(220, 2);
+            this.panel4.Size = new System.Drawing.Size(155, 2);
             this.panel4.TabIndex = 24;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel5.Location = new System.Drawing.Point(17, 239);
+            this.panel5.Location = new System.Drawing.Point(1, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 2);
+            this.panel5.Size = new System.Drawing.Size(155, 2);
             this.panel5.TabIndex = 25;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel7.Location = new System.Drawing.Point(17, 240);
+            this.panel7.Location = new System.Drawing.Point(1, 4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(2, 30);
             this.panel7.TabIndex = 37;
@@ -249,15 +270,15 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel6.Location = new System.Drawing.Point(235, 240);
+            this.panel6.Location = new System.Drawing.Point(155, 4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(2, 30);
             this.panel6.TabIndex = 38;
             // 
-            // bunifuElipse1
+            // RadioAgregar
             // 
-            this.bunifuElipse1.ElipseRadius = 20;
-            this.bunifuElipse1.TargetControl = this.btnAgregarIngrediente;
+            this.RadioAgregar.ElipseRadius = 20;
+            this.RadioAgregar.TargetControl = this.btnAgregarIngrediente;
             // 
             // btnEditarIngrediente
             // 
@@ -280,14 +301,14 @@
             this.btnEditarIngrediente.IconVisible = true;
             this.btnEditarIngrediente.IconZoom = 90D;
             this.btnEditarIngrediente.IsTab = false;
-            this.btnEditarIngrediente.Location = new System.Drawing.Point(582, 161);
+            this.btnEditarIngrediente.Location = new System.Drawing.Point(420, 70);
             this.btnEditarIngrediente.Margin = new System.Windows.Forms.Padding(6);
             this.btnEditarIngrediente.Name = "btnEditarIngrediente";
             this.btnEditarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEditarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.btnEditarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditarIngrediente.selected = false;
-            this.btnEditarIngrediente.Size = new System.Drawing.Size(146, 61);
+            this.btnEditarIngrediente.Size = new System.Drawing.Size(140, 50);
             this.btnEditarIngrediente.TabIndex = 39;
             this.btnEditarIngrediente.Text = "Editar";
             this.btnEditarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -315,14 +336,14 @@
             this.btnEliminarIngrediente.IconVisible = true;
             this.btnEliminarIngrediente.IconZoom = 90D;
             this.btnEliminarIngrediente.IsTab = false;
-            this.btnEliminarIngrediente.Location = new System.Drawing.Point(582, 232);
+            this.btnEliminarIngrediente.Location = new System.Drawing.Point(420, 127);
             this.btnEliminarIngrediente.Margin = new System.Windows.Forms.Padding(6);
             this.btnEliminarIngrediente.Name = "btnEliminarIngrediente";
             this.btnEliminarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEliminarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.btnEliminarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminarIngrediente.selected = false;
-            this.btnEliminarIngrediente.Size = new System.Drawing.Size(146, 61);
+            this.btnEliminarIngrediente.Size = new System.Drawing.Size(140, 50);
             this.btnEliminarIngrediente.TabIndex = 40;
             this.btnEliminarIngrediente.Text = "Eliminar";
             this.btnEliminarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -350,50 +371,171 @@
             this.btnBuscarIngrediente.IconVisible = true;
             this.btnBuscarIngrediente.IconZoom = 90D;
             this.btnBuscarIngrediente.IsTab = false;
-            this.btnBuscarIngrediente.Location = new System.Drawing.Point(22, 345);
+            this.btnBuscarIngrediente.Location = new System.Drawing.Point(20, 189);
             this.btnBuscarIngrediente.Margin = new System.Windows.Forms.Padding(6);
             this.btnBuscarIngrediente.Name = "btnBuscarIngrediente";
             this.btnBuscarIngrediente.Normalcolor = System.Drawing.Color.Transparent;
             this.btnBuscarIngrediente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.btnBuscarIngrediente.OnHoverTextColor = System.Drawing.Color.White;
             this.btnBuscarIngrediente.selected = false;
-            this.btnBuscarIngrediente.Size = new System.Drawing.Size(146, 61);
+            this.btnBuscarIngrediente.Size = new System.Drawing.Size(116, 50);
             this.btnBuscarIngrediente.TabIndex = 41;
             this.btnBuscarIngrediente.Text = "Buscar";
             this.btnBuscarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscarIngrediente.Textcolor = System.Drawing.Color.Black;
             this.btnBuscarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.panel6);
+            this.panel8.Controls.Add(this.panel7);
+            this.panel8.Controls.Add(this.panel5);
+            this.panel8.Controls.Add(this.panel4);
+            this.panel8.Controls.Add(this.comboMed);
+            this.panel8.Location = new System.Drawing.Point(19, 126);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(163, 38);
+            this.panel8.TabIndex = 42;
+            // 
+            // RadioEditar
+            // 
+            this.RadioEditar.ElipseRadius = 20;
+            this.RadioEditar.TargetControl = this.btnEditarIngrediente;
+            // 
+            // RadioBuscar
+            // 
+            this.RadioBuscar.ElipseRadius = 20;
+            this.RadioBuscar.TargetControl = this.btnBuscarIngrediente;
+            // 
+            // RadioEliminar
+            // 
+            this.RadioEliminar.ElipseRadius = 20;
+            this.RadioEliminar.TargetControl = this.btnEliminarIngrediente;
+            // 
+            // RadioIngredientes
+            // 
+            this.RadioIngredientes.ElipseRadius = 10;
+            this.RadioIngredientes.TargetControl = this;
+            // 
+            // dgvTablaDB
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvTablaDB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvTablaDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvTablaDB.BackgroundColor = System.Drawing.Color.White;
+            this.dgvTablaDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvTablaDB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvTablaDB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvTablaDB.ColumnHeadersHeight = 30;
+            this.dgvTablaDB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column3,
+            this.Column4});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvTablaDB.EnableHeadersVisualStyles = false;
+            this.dgvTablaDB.Location = new System.Drawing.Point(18, 240);
+            this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvTablaDB.Name = "dgvTablaDB";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTablaDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvTablaDB.RowHeadersVisible = false;
+            this.dgvTablaDB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvTablaDB.RowTemplate.Height = 30;
+            this.dgvTablaDB.Size = new System.Drawing.Size(525, 160);
+            this.dgvTablaDB.TabIndex = 43;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Column3";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 82;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Column4";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 83;
+            // 
+            // Panel
+            // 
+            this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.Panel.Controls.Add(this.dgvTablaDB);
+            this.Panel.Controls.Add(this.panel8);
+            this.Panel.Controls.Add(this.btnBuscarIngrediente);
+            this.Panel.Controls.Add(this.btnEliminarIngrediente);
+            this.Panel.Controls.Add(this.btnEditarIngrediente);
+            this.Panel.Controls.Add(this.btnAgregarIngrediente);
+            this.Panel.Controls.Add(this.txtIngredienteCant);
+            this.Panel.Controls.Add(this.panel3);
+            this.Panel.Controls.Add(this.txtIngredienteNombre);
+            this.Panel.Controls.Add(this.panel1);
+            this.Panel.Controls.Add(this.txtIngredienteId);
+            this.Panel.Controls.Add(this.panel2);
+            this.Panel.Controls.Add(this.lblCantidadAlmacen);
+            this.Panel.Controls.Add(this.lblUnidadMedida);
+            this.Panel.Controls.Add(this.lblIngredienteNombre);
+            this.Panel.Controls.Add(this.lblIgredienteId);
+            this.Panel.Location = new System.Drawing.Point(6, 36);
+            this.Panel.Name = "Panel";
+            this.Panel.Size = new System.Drawing.Size(563, 406);
+            this.Panel.TabIndex = 44;
+            // 
+            // RadioPanel
+            // 
+            this.RadioPanel.ElipseRadius = 20;
+            this.RadioPanel.TargetControl = this.Panel;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.panel9.Location = new System.Drawing.Point(6, 426);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(563, 16);
+            this.panel9.TabIndex = 44;
+            // 
             // frmIngredientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.ClientSize = new System.Drawing.Size(800, 449);
-            this.Controls.Add(this.btnBuscarIngrediente);
-            this.Controls.Add(this.btnEliminarIngrediente);
-            this.Controls.Add(this.btnEditarIngrediente);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.comboMed);
-            this.Controls.Add(this.btnAgregarIngrediente);
-            this.Controls.Add(this.txtIngredienteCant);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.txtIngredienteNombre);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtIngredienteId);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.lblCantidadAlmacen);
-            this.Controls.Add(this.lblUnidadMedida);
-            this.Controls.Add(this.lblIngredienteNombre);
-            this.Controls.Add(this.lblIgredienteId);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            this.ClientSize = new System.Drawing.Size(577, 449);
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.panel9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmIngredientes";
             this.Text = "Ingredientes";
             this.Load += new System.EventHandler(this.frmIngredientes_Load);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
+            this.Panel.ResumeLayout(false);
+            this.Panel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,9 +560,20 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
-        private ns1.BunifuElipse bunifuElipse1;
+        private ns1.BunifuElipse RadioAgregar;
         private ns1.BunifuFlatButton btnEditarIngrediente;
         private ns1.BunifuFlatButton btnEliminarIngrediente;
         private ns1.BunifuFlatButton btnBuscarIngrediente;
+        private System.Windows.Forms.Panel panel8;
+        private ns1.BunifuElipse RadioEditar;
+        private ns1.BunifuElipse RadioBuscar;
+        private ns1.BunifuElipse RadioEliminar;
+        private ns1.BunifuElipse RadioIngredientes;
+        public System.Windows.Forms.DataGridView dgvTablaDB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.Panel Panel;
+        private ns1.BunifuElipse RadioPanel;
+        private System.Windows.Forms.Panel panel9;
     }
 }
