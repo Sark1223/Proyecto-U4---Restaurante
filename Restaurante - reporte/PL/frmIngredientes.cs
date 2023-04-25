@@ -131,7 +131,7 @@ namespace Restaurante___reporte.PL
             RecuperarInforcion();
             editar_Ingrediente.AgregarIngrediente(ingredienteBLL);
             //Refrescar tabla
-            dgvTablaDB.DataSource = editar_Ingrediente.TablaCategoria().Tables[0];
+            dgvTablaDB.DataSource = editar_Ingrediente.TablaIngredientes().Tables[0];
         }
 
         private void frmIngredientes_Load(object sender, EventArgs e)

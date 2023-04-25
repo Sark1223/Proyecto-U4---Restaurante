@@ -122,9 +122,14 @@ namespace Restaurante___reporte
         frmIngredientes ingredientes = new frmIngredientes();
         frmCategoria categoria = new frmCategoria();
         Editar_Categoria editar_categoria = new Editar_Categoria();
+        Editar_Ingrediente editar_ingrediente = new Editar_Ingrediente();
+        frmReporte reporte = new frmReporte();
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
-        {   
+        {
+            //Refrescar tabla
+            ingredientes.dgvTablaDB.DataSource = editar_ingrediente.TablaIngredientes().Tables[0];
+
             ingredientes.ShowDialog();
         }
 
@@ -138,6 +143,11 @@ namespace Restaurante___reporte
             //AbrirForm(categoria);
             //PanelActual = cmdCategorias;
             //Ponerfoco();
+        }
+
+        private void cmdReporte_Click(object sender, EventArgs e)
+        {
+            reporte.ShowDialog();
         }
 
         private void cmdPlatillo_Click(object sender, EventArgs e)

@@ -50,13 +50,13 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.dgvTablaDB = new System.Windows.Forms.DataGridView();
+            this.dgvPlatillos_muestra = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,7 +228,7 @@
             this.label4.TabIndex = 14;
             this.label4.Text = "Platillos";
             // 
-            // dgvTablaDB
+            // dgvPlatillos_muestra
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
@@ -236,13 +236,13 @@
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTablaDB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvTablaDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvTablaDB.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.dgvTablaDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvTablaDB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvTablaDB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvPlatillos_muestra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPlatillos_muestra.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvPlatillos_muestra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvPlatillos_muestra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.dgvPlatillos_muestra.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvPlatillos_muestra.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvPlatillos_muestra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
@@ -250,9 +250,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(194)))), ((int)(((byte)(170)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTablaDB.ColumnHeadersHeight = 30;
-            this.dgvTablaDB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPlatillos_muestra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPlatillos_muestra.ColumnHeadersHeight = 30;
+            this.dgvPlatillos_muestra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -262,11 +262,11 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTablaDB.EnableHeadersVisualStyles = false;
-            this.dgvTablaDB.Location = new System.Drawing.Point(13, 42);
-            this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvTablaDB.Name = "dgvTablaDB";
+            this.dgvPlatillos_muestra.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPlatillos_muestra.EnableHeadersVisualStyles = false;
+            this.dgvPlatillos_muestra.Location = new System.Drawing.Point(13, 42);
+            this.dgvPlatillos_muestra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvPlatillos_muestra.Name = "dgvPlatillos_muestra";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -274,12 +274,12 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTablaDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvTablaDB.RowHeadersVisible = false;
-            this.dgvTablaDB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvTablaDB.RowTemplate.Height = 30;
-            this.dgvTablaDB.Size = new System.Drawing.Size(202, 509);
-            this.dgvTablaDB.TabIndex = 29;
+            this.dgvPlatillos_muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPlatillos_muestra.RowHeadersVisible = false;
+            this.dgvPlatillos_muestra.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvPlatillos_muestra.RowTemplate.Height = 30;
+            this.dgvPlatillos_muestra.Size = new System.Drawing.Size(202, 509);
+            this.dgvPlatillos_muestra.TabIndex = 29;
             // 
             // Column3
             // 
@@ -310,7 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.ClientSize = new System.Drawing.Size(880, 565);
-            this.Controls.Add(this.dgvTablaDB);
+            this.Controls.Add(this.dgvPlatillos_muestra);
             this.Controls.Add(this.cmdAgregarPatillo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
@@ -322,7 +322,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -345,7 +345,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox cmdAgregarPatillo;
-        public System.Windows.Forms.DataGridView dgvTablaDB;
+        public System.Windows.Forms.DataGridView dgvPlatillos_muestra;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Panel panel3;

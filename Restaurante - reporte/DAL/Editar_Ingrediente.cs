@@ -82,7 +82,7 @@ namespace Restaurante___reporte.DAL
         //}
 
         //Cargar tabla
-        public DataSet TablaCategoria()
+        public DataSet TablaIngredientes()
         {
             SqlCommand sentencia = new SqlCommand("SELECT * FROM INGREDIENTE");
             return conexion.EjecutarSentenciaConRetorno(sentencia);

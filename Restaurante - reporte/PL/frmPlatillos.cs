@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Restaurante___reporte.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,8 @@ namespace Restaurante___reporte.PL
 
         //Objetos de clase
         frmEditarPlatillo frmEditarPlatillo = new frmEditarPlatillo();
+        Editar_Platillo platillo = new Editar_Platillo();
+
 
         private void frmPlatillos_Load(object sender, EventArgs e)
         {
