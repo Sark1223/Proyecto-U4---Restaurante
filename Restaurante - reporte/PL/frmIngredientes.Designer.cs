@@ -37,7 +37,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblIgredienteId = new System.Windows.Forms.Label();
             this.lblIngredienteNombre = new System.Windows.Forms.Label();
-            this.lblUnidadMedida = new System.Windows.Forms.Label();
             this.lblCantidadAlmacen = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtIngredienteId = new System.Windows.Forms.TextBox();
@@ -45,14 +44,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtIngredienteCant = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboMed = new ns1.BunifuDropdown();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.RadioAgregar = new ns1.BunifuElipse(this.components);
             this.btnAgregarIngrediente = new ns1.BunifuFlatButton();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.RadioEditar = new ns1.BunifuElipse(this.components);
             this.btnEditarIngrediente = new ns1.BunifuFlatButton();
             this.RadioBuscar = new ns1.BunifuElipse(this.components);
@@ -61,14 +54,13 @@
             this.btnEliminarIngrediente = new ns1.BunifuFlatButton();
             this.RadioIngredientes = new ns1.BunifuElipse(this.components);
             this.dgvTablaDB = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Panel = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.RadioPanel = new ns1.BunifuElipse(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new ns1.BunifuImageButton();
-            this.panel8.SuspendLayout();
+            this.comboMed = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -105,17 +97,6 @@
             this.lblIngredienteNombre.Size = new System.Drawing.Size(72, 21);
             this.lblIngredienteNombre.TabIndex = 9;
             this.lblIngredienteNombre.Text = "Nombre:";
-            // 
-            // lblUnidadMedida
-            // 
-            this.lblUnidadMedida.AutoSize = true;
-            this.lblUnidadMedida.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnidadMedida.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblUnidadMedida.Location = new System.Drawing.Point(16, 104);
-            this.lblUnidadMedida.Name = "lblUnidadMedida";
-            this.lblUnidadMedida.Size = new System.Drawing.Size(156, 21);
-            this.lblUnidadMedida.TabIndex = 10;
-            this.lblUnidadMedida.Text = "Unidad de Medida:";
             // 
             // lblCantidadAlmacen
             // 
@@ -198,59 +179,6 @@
             this.panel3.Size = new System.Drawing.Size(160, 2);
             this.panel3.TabIndex = 19;
             // 
-            // comboMed
-            // 
-            this.comboMed.BackColor = System.Drawing.Color.Transparent;
-            this.comboMed.BorderRadius = 1;
-            this.comboMed.Font = new System.Drawing.Font("Microsoft Yi Baiti", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboMed.ForeColor = System.Drawing.Color.Black;
-            this.comboMed.Items = new string[] {
-        "Kg",
-        "gr",
-        "L",
-        "ml",
-        "pz"};
-            this.comboMed.Location = new System.Drawing.Point(2, 3);
-            this.comboMed.Margin = new System.Windows.Forms.Padding(5);
-            this.comboMed.Name = "comboMed";
-            this.comboMed.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.comboMed.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
-            this.comboMed.selectedIndex = -1;
-            this.comboMed.Size = new System.Drawing.Size(156, 32);
-            this.comboMed.TabIndex = 23;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel4.Location = new System.Drawing.Point(1, 33);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(155, 2);
-            this.panel4.TabIndex = 24;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel5.Location = new System.Drawing.Point(1, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(155, 2);
-            this.panel5.TabIndex = 25;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel7.Location = new System.Drawing.Point(1, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(2, 30);
-            this.panel7.TabIndex = 37;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            this.panel6.Location = new System.Drawing.Point(155, 4);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(2, 30);
-            this.panel6.TabIndex = 38;
-            // 
             // RadioAgregar
             // 
             this.RadioAgregar.ElipseRadius = 20;
@@ -291,18 +219,6 @@
             this.btnAgregarIngrediente.Textcolor = System.Drawing.Color.Black;
             this.btnAgregarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarIngrediente.Click += new System.EventHandler(this.btnAgregarIngrediente_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.panel6);
-            this.panel8.Controls.Add(this.panel7);
-            this.panel8.Controls.Add(this.panel5);
-            this.panel8.Controls.Add(this.panel4);
-            this.panel8.Controls.Add(this.comboMed);
-            this.panel8.Location = new System.Drawing.Point(19, 126);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(163, 38);
-            this.panel8.TabIndex = 42;
             // 
             // RadioEditar
             // 
@@ -453,9 +369,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTablaDB.ColumnHeadersHeight = 30;
-            this.dgvTablaDB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,24 +395,13 @@
             this.dgvTablaDB.Size = new System.Drawing.Size(525, 160);
             this.dgvTablaDB.TabIndex = 43;
             // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 82;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 83;
-            // 
             // Panel
             // 
             this.Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.Panel.Controls.Add(this.comboMed);
+            this.Panel.Controls.Add(this.panel4);
             this.Panel.Controls.Add(this.bunifuThinButton21);
             this.Panel.Controls.Add(this.dgvTablaDB);
-            this.Panel.Controls.Add(this.panel8);
             this.Panel.Controls.Add(this.btnBuscarIngrediente);
             this.Panel.Controls.Add(this.btnEliminarIngrediente);
             this.Panel.Controls.Add(this.btnEditarIngrediente);
@@ -511,7 +413,6 @@
             this.Panel.Controls.Add(this.txtIngredienteId);
             this.Panel.Controls.Add(this.panel2);
             this.Panel.Controls.Add(this.lblCantidadAlmacen);
-            this.Panel.Controls.Add(this.lblUnidadMedida);
             this.Panel.Controls.Add(this.lblIngredienteNombre);
             this.Panel.Controls.Add(this.lblIgredienteId);
             this.Panel.Location = new System.Drawing.Point(6, 36);
@@ -543,6 +444,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(151, 34);
             this.bunifuThinButton21.TabIndex = 72;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.cmdLimpiar);
             // 
             // RadioPanel
             // 
@@ -571,6 +473,31 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
+            // comboMed
+            // 
+            this.comboMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.comboMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.comboMed.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.comboMed.FormattingEnabled = true;
+            this.comboMed.Items.AddRange(new object[] {
+            "Facil",
+            "Media",
+            "Dificil"});
+            this.comboMed.Location = new System.Drawing.Point(20, 132);
+            this.comboMed.Name = "comboMed";
+            this.comboMed.Size = new System.Drawing.Size(148, 26);
+            this.comboMed.TabIndex = 74;
+            this.comboMed.Text = "-- Medida --";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            this.panel4.Location = new System.Drawing.Point(20, 162);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(148, 2);
+            this.panel4.TabIndex = 73;
+            // 
             // frmIngredientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -586,7 +513,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingredientes";
             this.Load += new System.EventHandler(this.frmIngredientes_Load);
-            this.panel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
@@ -601,7 +527,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblIgredienteId;
         private System.Windows.Forms.Label lblIngredienteNombre;
-        private System.Windows.Forms.Label lblUnidadMedida;
         private System.Windows.Forms.Label lblCantidadAlmacen;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtIngredienteId;
@@ -610,27 +535,21 @@
         private System.Windows.Forms.TextBox txtIngredienteCant;
         private System.Windows.Forms.Panel panel3;
         private ns1.BunifuFlatButton btnAgregarIngrediente;
-        private ns1.BunifuDropdown comboMed;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
         private ns1.BunifuElipse RadioAgregar;
         private ns1.BunifuFlatButton btnEditarIngrediente;
         private ns1.BunifuFlatButton btnEliminarIngrediente;
         private ns1.BunifuFlatButton btnBuscarIngrediente;
-        private System.Windows.Forms.Panel panel8;
         private ns1.BunifuElipse RadioEditar;
         private ns1.BunifuElipse RadioBuscar;
         private ns1.BunifuElipse RadioEliminar;
         private ns1.BunifuElipse RadioIngredientes;
         public System.Windows.Forms.DataGridView dgvTablaDB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Panel Panel;
         private ns1.BunifuElipse RadioPanel;
         private System.Windows.Forms.Panel panel9;
         private ns1.BunifuImageButton bunifuImageButton1;
         private ns1.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.ComboBox comboMed;
+        private System.Windows.Forms.Panel panel4;
     }
 }

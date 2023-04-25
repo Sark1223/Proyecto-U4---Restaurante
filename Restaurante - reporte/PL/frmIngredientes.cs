@@ -20,15 +20,11 @@ namespace Restaurante___reporte.PL
             InitializeComponent();
         }
 
-        private void frmIngredientes_Load(object sender, EventArgs e)
-        {
-
-        }
-
         //Creacion de objetos
         IngredienteBLL ingredienteBLL = new IngredienteBLL();
         Editar_Ingrediente editar_Ingrediente = new Editar_Ingrediente();
         Conexion conexion = new Conexion();
+
         //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
         public bool ValoresVaciosIngredientes()
         {
@@ -86,12 +82,68 @@ namespace Restaurante___reporte.PL
             //}
         }
 
+
+
+        //Validacion de solo numeros en ID Ingredientes
+        private void txtIngredienteId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se admiten valores numericos", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        //Validacion de solo numeros en Cantidad de Ingredientes
+        private void txtIngredienteCant_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se admiten valores numericos", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        //validacion de solo letras en Nombre de Ingrediente
+        private void txtIngredienteNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo se admiten letras", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        //Recupera informacion de ingrediente
+        public void RecuperarInforcion()
+        {
+            ingredienteBLL.ingrediente_id = int.Parse(txtIngredienteId.Text);
+            ingredienteBLL.ingrediente_nombre = txtIngredienteNombre.Text;
+            ingredienteBLL.ingrediente_unidad_medida = comboMed.Text;
+            ingredienteBLL.ingrediente_cantidad_almacen = int.Parse(txtIngredienteCant.Text);
+        }
+
+        private void btnAgregarIngrediente_Click(object sender, EventArgs e)
+        {
+            RecuperarInforcion();
+            editar_Ingrediente.AgregarIngrediente(ingredienteBLL);
+            //Refrescar tabla
+            dgvTablaDB.DataSource = editar_Ingrediente.TablaCategoria().Tables[0];
+        }
+
+        private void frmIngredientes_Load(object sender, EventArgs e)
+        {
+
+        }
         private void txtIngredienteId_TextChanged(object sender, EventArgs e)
         {
         }
         private void txtIngredienteId_CursorChanged(object sender, EventArgs e)
         {
-           
+
         }
         private void txtIngredienteId_Click(object sender, EventArgs e)
         {
@@ -107,55 +159,26 @@ namespace Restaurante___reporte.PL
         {
         }
 
+        //Cerrar pestaña
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
-        private void txtIngredienteId_KeyPress(object sender, KeyPressEventArgs e)
+        private void cmdLimpiar_Click(object sender, EventArgs e)
         {
-            if((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Solo se admiten valores numericos", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+            txtIngredienteId.Clear(); txtIngredienteCant.Clear(); txtIngredienteNombre.Clear();
+            txtIngredienteId.Focus();
         }
 
-        private void txtIngredienteCant_KeyPress(object sender, KeyPressEventArgs e)
+        private void Panel_Paint(object sender, PaintEventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Solo se admiten valores numericos", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
+            
         }
 
-        private void txtIngredienteNombre_KeyPress(object sender, KeyPressEventArgs e)
+        private void cmdLimpiar(object sender, EventArgs e)
         {
-            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
-            {
-                MessageBox.Show("Solo se admiten letras", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = true;
-                return;
-            }
-        }
 
-        public void RecuperarInforcion()
-        {
-            ingredienteBLL.ingrediente_id = int.Parse(txtIngredienteId.Text);
-            ingredienteBLL.ingrediente_nombre = txtIngredienteNombre.Text;
-            ingredienteBLL.ingrediente_unidad_medida = comboMed.selectedValue;
-            ingredienteBLL.ingrediente_cantidad_almacen = int.Parse(txtIngredienteCant.Text);
-        }
-
-        private void btnAgregarIngrediente_Click(object sender, EventArgs e)
-        {
-            RecuperarInforcion();
-            editar_Ingrediente.AgregarIngrediente(ingredienteBLL);
-            //Refrescar tabla
-            dgvTablaDB.DataSource = editar_Ingrediente.TablaCategoria().Tables[0];
         }
     }
 }

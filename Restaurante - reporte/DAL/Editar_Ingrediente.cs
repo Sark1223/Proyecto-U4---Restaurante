@@ -65,6 +65,22 @@ namespace Restaurante___reporte.DAL
             }
         }
 
+        //Metodo para eliminar ingrediente
+        //private void cmdEliminar_Click(object sender, EventArgs e)
+        //{
+        //    if (conexion.Eliminar("DELETE FROM FARMACIA WHERE id_farmacia =" + txtIdFarmacia.Text))
+        //    {
+        //        MessageBox.Show("La farmacia: " + txtIdFarmacia.Text + " de nombre: " + txtNombre.Text + " ha sido eliminada", "REGISTRO ELIMINADO");
+
+        //        primeraApertura = true;
+        //        Close();
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Ha ocurrido un error.", "ERROR", MessageBoxButtons.OK);
+        //    }
+        //}
+
         //Cargar tabla
         public DataSet TablaCategoria()
         {

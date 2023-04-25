@@ -130,5 +130,12 @@ namespace Restaurante___reporte.PL
                 return;
             }
         }
+
+        private void cmdLimpiar_Click(object sender, EventArgs e)
+        {
+            txtidCategoria.Clear(); txtNomEncargado.Clear(); txtDescCategoria.Clear();
+            txtNom_categoria.Clear();
+            txtidCategoria.Clear();
+        }
     }
 }
