@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Restaurante___reporte.BLL;
+using Restaurante___reporte.DAL;
+using Restaurante___reporte.DLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +24,11 @@ namespace Restaurante___reporte.PL
         {
 
         }
+
+        //Creacion de objetos
+        IngredienteBLL ingredienteBLL = new IngredienteBLL();
+        Editar_Ingrediente editar_Ingrediente = new Editar_Ingrediente();
+        Conexion conexion = new Conexion();
         //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
         public bool ValoresVaciosIngredientes()
         {
@@ -132,6 +140,22 @@ namespace Restaurante___reporte.PL
                 e.Handled = true;
                 return;
             }
+        }
+
+        public void RecuperarInforcion()
+        {
+            ingredienteBLL.ingrediente_id = int.Parse(txtIngredienteId.Text);
+            ingredienteBLL.ingrediente_nombre = txtIngredienteNombre.Text;
+            ingredienteBLL.ingrediente_unidad_medida = comboMed.selectedValue;
+            ingredienteBLL.ingrediente_cantidad_almacen = int.Parse(txtIngredienteCant.Text);
+        }
+
+        private void btnAgregarIngrediente_Click(object sender, EventArgs e)
+        {
+            RecuperarInforcion();
+            editar_Ingrediente.AgregarIngrediente(ingredienteBLL);
+            //Refrescar tabla
+            dgvTablaDB.DataSource = editar_Ingrediente.TablaCategoria().Tables[0];
         }
     }
 }
