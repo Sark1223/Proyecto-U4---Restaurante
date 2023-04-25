@@ -1,5 +1,6 @@
 ﻿using Restaurante___reporte.BLL;
 using Restaurante___reporte.DAL;
+using Restaurante___reporte.DLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,7 @@ namespace Restaurante___reporte.PL
         //Creacion de objetos
         CategoriaBLL categoriaBLL = new CategoriaBLL();
         Editar_Categoria editar_Categoria = new Editar_Categoria();
+        Conexion conexion = new Conexion();
 
         private void frmCategoria_Load(object sender, EventArgs e)
         {
@@ -82,11 +84,6 @@ namespace Restaurante___reporte.PL
             categoriaBLL.categoria_descripcion = txtDescCategoria.Text;
         }
 
-        private void txtidCategoria_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btnAgregarCategoria_Click(object sender, EventArgs e)
         {
             RecuperarInforcion();
@@ -104,6 +101,24 @@ namespace Restaurante___reporte.PL
         private void btnEliminarCategoria_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtidCategoria_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtidCategoria, "");
+        }
+
+        private void txtidCategoria_Validating(object sender, CancelEventArgs e)
+        {
+            if (!conexion.BuscarEnTabla_AGREGAR("SELECT * FROM CATEGORIA", txtidCategoria.Text, 0, txtidCategoria, error) && txtidCategoria.Text != "")
+            {
+                // Cancel the event and select the text to be corrected by the user.
+                e.Cancel = true;
+                txtidCategoria.Select(0, txtidCategoria.Text.Length);
+
+                // Set the ErrorProvider error with the text to display. 
+                //this.error.SetError(txtId_platillo, errorMsg);
+            }
         }
     }
 }

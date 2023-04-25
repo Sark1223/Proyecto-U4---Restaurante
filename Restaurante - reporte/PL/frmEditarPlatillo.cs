@@ -12,6 +12,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Restaurante___reporte.PL
 {
@@ -39,6 +40,7 @@ namespace Restaurante___reporte.PL
         Platillo_IngredienteBLL ingre_platoBLL = new Platillo_IngredienteBLL();
         Platillo_ProcedimientoBLL pro_platoBLL = new Platillo_ProcedimientoBLL();
         Editar_Platillo editar_plato = new Editar_Platillo();
+        Conexion conexion = new Conexion();
 
         //Variables auxiliares
         string ID_Actual, id_categoria;
@@ -220,9 +222,108 @@ namespace Restaurante___reporte.PL
         {
             if (cbCategoria.SelectedIndex > 0)
             {
-                platilloBLL.categoria_id = conexion.captar_info_1("SELECT * FROM CIUDAD WHERE nombre_ciudad='" + cbCiudad.Text + "'");
+                platilloBLL.categoria_id = conexion.GuardarInfoCB_Tabla("SELECT * FROM CATEGORIA WHERE categoria_id='" + cbCategoria.Text + "'");
 
             }
+        }
+
+        private void txtId_platillo_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtId_platillo, "");
+        }
+
+        private void txtId_platillo_Validating(object sender, CancelEventArgs e)
+        {
+            if(primeraApertura == false)
+            {
+
+                if (lblTitle.Text == "MODIFICAR PLATILLO")
+                {
+                    string errorMsg;
+                    if (!conexion.BuscarEnTabla_AGREGAR("SELECT * FROM PLATILLO", txtId_platillo.Text, 0, txtId_platillo, error)  && txtId_platillo.Text != "") 
+                    {
+                        // Cancel the event and select the text to be corrected by the user.
+                        e.Cancel = true;
+                        txtId_platillo.Select(0, txtId_platillo.Text.Length);
+
+                        // Set the ErrorProvider error with the text to display. 
+                        //this.error.SetError(txtId_platillo, errorMsg);
+                    }
+                    else
+                    {
+
+                    }
+                    //            //VERIFICAR QUE LOS DATOS UNICOS NO SE REPITAN 
+                    //            if (conexion.BuscarEnTabla_MODIFICAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, ID_Actual, lblFarmacia.Text) < 1 && txtIdFarmacia.Text != "")
+                    //            {
+                    //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
+                    //            }
+                    //            else
+                    //            {
+                    //                txtIdFarmacia.SelectAll();
+                    //            }
+
+                    //        }
+                    //        else
+                    //        {
+                    //            if (conexion.BuscarEnTabla_AGREGAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, lblFarmacia.Text) && txtIdFarmacia.Text != "")
+                    //            {
+                    //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
+                    //            }
+                    //            else
+                    //            {
+                    //                txtIdFarmacia.SelectAll();
+                    //            }
+                    //        }
+
+
+                }
+           
+        }
+
+        //private void textBox1_Validating(object sender, CancelEventArgs e)
+        //{
+        //    string errorMsg;
+        //    if (!ValidEmailAddress(textBox1.Text, out errorMsg))
+        //    {
+        //        // Cancel the event and select the text to be corrected by the user.
+        //        e.Cancel = true;
+        //        textBox1.Select(0, textBox1.Text.Length);
+
+        //        // Set the ErrorProvider error with the text to display. 
+        //        this.errorProvider1.SetError(textBox1, errorMsg);
+        //    }
+
+        //}
+
+        //private void textBox1_Validated(object sender, EventArgs e)
+        //{
+        //    // If all conditions have been met, clear the ErrorProvider of errors.
+        //    errorProvider1.SetError(textBox1, "");
+        //}
+
+        //public bool ValidEmailAddress(string emailAddress, out string errorMessage)
+        //{
+        //    // Confirm that the email address string is not empty.
+        //    if (emailAddress.Length == 0)
+        //    {
+        //        errorMessage = "email address is required.";
+        //        return false;
+        //    }
+
+        //    // Confirm that there is an "@" and a "." in the email address, and in the correct order.
+        //    if (emailAddress.IndexOf("@") > -1)
+        //    {
+        //        if (emailAddress.IndexOf(".", emailAddress.IndexOf("@")) > emailAddress.IndexOf("@"))
+        //        {
+        //            errorMessage = "";
+        //            return true;
+        //        }
+        //    }
+
+        //    errorMessage = "email address must be valid email address format.\n" +
+        //       "For example 'someone@example.com' ";
+        //    return false;
         }
 
         private void agregarIngrediente_MouseLeave(object sender, EventArgs e)

@@ -88,11 +88,13 @@
             this.pbListo = new System.Windows.Forms.PictureBox();
             this.pbFotoPlatillo = new System.Windows.Forms.PictureBox();
             this.cmdExaminar = new ns1.BunifuThinButton2();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcedimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.agregarIngrediente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbListo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDescripcion
@@ -271,6 +273,8 @@
             this.txtId_platillo.TabIndex = 45;
             this.txtId_platillo.Text = "Desayunos";
             this.txtId_platillo.TextChanged += new System.EventHandler(this.txtId_platillo_TextChanged);
+            this.txtId_platillo.Validating += new System.ComponentModel.CancelEventHandler(this.txtId_platillo_Validating);
+            this.txtId_platillo.Validated += new System.EventHandler(this.txtId_platillo_Validated);
             // 
             // lblId_platillo
             // 
@@ -710,6 +714,11 @@
             this.cmdExaminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cmdExaminar.Click += new System.EventHandler(this.cmdExaminar_Click);
             // 
+            // error
+            // 
+            this.error.ContainerControl = this;
+            this.error.Icon = ((System.Drawing.Icon)(resources.GetObject("error.Icon")));
+            // 
             // frmEditarPlatillo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -770,6 +779,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.agregarIngrediente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbListo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -826,5 +836,6 @@
         private ns1.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Label lblTitle;
         private ns1.BunifuElipse rdPanel;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }

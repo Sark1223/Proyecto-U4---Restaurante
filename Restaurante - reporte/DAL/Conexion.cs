@@ -76,7 +76,7 @@ namespace Restaurante___reporte.DLL
             cb.SelectedIndex = 0;
         }
 
-        public int InformacionCB_Tabla(string sentencia)
+        public int GuardarInfoCB_Tabla(string sentencia)
         {
             SqlCommand cmd = new SqlCommand(sentencia);
             cmd.Connection = EstablecerConexion();
@@ -118,8 +118,31 @@ namespace Restaurante___reporte.DLL
 
 
         //Buscar valores en tabla
-        public bool BuscarEnTabla_AGREGAR(string sentencia, string valor, int posicion, string tipoValor)
+        public bool BuscarEnTabla_AGREGAR(string sentencia, string valor, int posicion, Control control, ErrorProvider error)
         {
+            //public bool ValidEmailAddress(string emailAddress, out string errorMessage)
+            //{
+            //    // Confirm that the email address string is not empty.
+            //    if (emailAddress.Length == 0)
+            //    {
+            //        errorMessage = "email address is required.";
+            //        return false;
+            //    }
+
+            //    // Confirm that there is an "@" and a "." in the email address, and in the correct order.
+            //    if (emailAddress.IndexOf("@") > -1)
+            //    {
+            //        if (emailAddress.IndexOf(".", emailAddress.IndexOf("@")) > emailAddress.IndexOf("@"))
+            //        {
+            //            errorMessage = "";
+            //            return true;
+            //        }
+            //    }
+
+            //    errorMessage = "email address must be valid email address format.\n" +
+            //       "For example 'someone@example.com' ";
+            //    return false;
+            //}
             try
             {
                 SqlCommand cmd = new SqlCommand(sentencia);
@@ -131,7 +154,7 @@ namespace Restaurante___reporte.DLL
                 {
                     if (dr[posicion].ToString() == valor)
                     {
-                        MessageBox.Show("EL valor " + valor + " de " + tipoValor + " ya existe");
+                        error.SetError(control, "EL valor " + valor + " de  ya existe");
                         return false;
                     }
 
