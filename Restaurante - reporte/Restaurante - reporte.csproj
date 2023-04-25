@@ -65,6 +65,7 @@
     <Compile Include="DAL\Editar_Categoria.cs" />
     <Compile Include="DAL\Editar_Ingrediente.cs" />
     <Compile Include="DAL\Editar_Platillo.cs" />
+    <Compile Include="DAL\Mostrar_Platillo.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -124,6 +124,7 @@ namespace Restaurante___reporte
         Editar_Categoria editar_categoria = new Editar_Categoria();
         Editar_Ingrediente editar_ingrediente = new Editar_Ingrediente();
         frmReporte reporte = new frmReporte();
+        Mostrar_Platillo mostrar = new Mostrar_Platillo();
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
         {
@@ -152,6 +153,8 @@ namespace Restaurante___reporte
 
         private void cmdPlatillo_Click(object sender, EventArgs e)
         {
+            platillos.dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];
+            platillos.txtProcedimiento.Text = mostrar.MuestraPlatillos_Tabla().ToString();
             AbrirForm(platillos);
             PanelActual = cmdPlatillo;
             Ponerfoco();

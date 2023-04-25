@@ -45,14 +45,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtProcedimiento = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvPlatillos_muestra = new System.Windows.Forms.DataGridView();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,7 +107,7 @@
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtProcedimiento);
             this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.lblDificultad);
             this.panel1.Controls.Add(this.label2);
@@ -184,17 +182,17 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Precio: $105";
             // 
-            // textBox1
+            // txtProcedimiento
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
-            this.textBox1.Location = new System.Drawing.Point(6, 340);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(622, 171);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.Text = "Totillas fritas bañadas en salsa de tomate.";
+            this.txtProcedimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.txtProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtProcedimiento.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
+            this.txtProcedimiento.Location = new System.Drawing.Point(6, 340);
+            this.txtProcedimiento.Multiline = true;
+            this.txtProcedimiento.Name = "txtProcedimiento";
+            this.txtProcedimiento.Size = new System.Drawing.Size(622, 171);
+            this.txtProcedimiento.TabIndex = 15;
+            this.txtProcedimiento.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
             // txtDescripcion
             // 
@@ -252,9 +250,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvPlatillos_muestra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPlatillos_muestra.ColumnHeadersHeight = 30;
-            this.dgvPlatillos_muestra.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column3,
-            this.Column4});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -280,18 +275,7 @@
             this.dgvPlatillos_muestra.RowTemplate.Height = 30;
             this.dgvPlatillos_muestra.Size = new System.Drawing.Size(202, 509);
             this.dgvPlatillos_muestra.TabIndex = 29;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 82;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 83;
+            this.toolTip1.SetToolTip(this.dgvPlatillos_muestra, "Click sobre cualquier registro para mostar receta\r\nDoble click para modificar");
             // 
             // cmdAgregarPatillo
             // 
@@ -331,23 +315,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblDificultad;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox cmdAgregarPatillo;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lblDificultad;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox txtDescripcion;
+        public System.Windows.Forms.ToolTip toolTip1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtProcedimiento;
+        public System.Windows.Forms.PictureBox cmdAgregarPatillo;
         public System.Windows.Forms.DataGridView dgvPlatillos_muestra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel12;
