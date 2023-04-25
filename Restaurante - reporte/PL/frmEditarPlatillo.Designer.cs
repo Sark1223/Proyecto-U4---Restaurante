@@ -104,6 +104,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txtDescripcion.Location = new System.Drawing.Point(220, 236);
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ShortcutsEnabled = false;
             this.txtDescripcion.Size = new System.Drawing.Size(148, 17);
             this.txtDescripcion.TabIndex = 18;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
@@ -177,6 +178,7 @@
             this.txtPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrecio.Location = new System.Drawing.Point(236, 193);
             this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.ShortcutsEnabled = false;
             this.txtPrecio.Size = new System.Drawing.Size(83, 17);
             this.txtPrecio.TabIndex = 35;
             this.txtPrecio.Text = "1000.00";
@@ -207,6 +209,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(217, 72);
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ShortcutsEnabled = false;
             this.txtNombre.Size = new System.Drawing.Size(153, 17);
             this.txtNombre.TabIndex = 40;
             this.txtNombre.Text = "Desayunos";
@@ -269,6 +272,7 @@
             this.txtId_platillo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId_platillo.Location = new System.Drawing.Point(108, 45);
             this.txtId_platillo.Name = "txtId_platillo";
+            this.txtId_platillo.ShortcutsEnabled = false;
             this.txtId_platillo.Size = new System.Drawing.Size(97, 17);
             this.txtId_platillo.TabIndex = 45;
             this.txtId_platillo.Text = "Desayunos";
@@ -310,6 +314,7 @@
             this.txtCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidad.Location = new System.Drawing.Point(611, 93);
             this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.ShortcutsEnabled = false;
             this.txtCantidad.Size = new System.Drawing.Size(48, 17);
             this.txtCantidad.TabIndex = 49;
             this.txtCantidad.Text = "1.900";
@@ -586,6 +591,7 @@
             this.txtInstruccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInstruccion.Location = new System.Drawing.Point(412, 288);
             this.txtInstruccion.Name = "txtInstruccion";
+            this.txtInstruccion.ShortcutsEnabled = false;
             this.txtInstruccion.Size = new System.Drawing.Size(316, 17);
             this.txtInstruccion.TabIndex = 69;
             this.txtInstruccion.Text = "Agregar todos los ingredientes en una olla y ponerlos a hervir por 10 min";

@@ -38,7 +38,6 @@ namespace Restaurante___reporte.DAL
                 conexion.ejecutarComandoSinRetorno(agregar);
             }
             return true;
-
         }
 
         public void ModificarCategoria(CategoriaBLL categoria, int idAnterior)
