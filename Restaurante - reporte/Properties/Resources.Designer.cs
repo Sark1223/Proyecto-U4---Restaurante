@@ -103,6 +103,16 @@ namespace Restaurante___reporte.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap borrar {
+            get {
+                object obj = ResourceManager.GetObject("borrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buscar_categoria {
             get {
                 object obj = ResourceManager.GetObject("buscar categoria", resourceCulture);
@@ -156,6 +166,16 @@ namespace Restaurante___reporte.Properties {
         internal static System.Drawing.Bitmap editar_categoria {
             get {
                 object obj = ResourceManager.GetObject("editar categoria", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar1 {
+            get {
+                object obj = ResourceManager.GetObject("editar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -336,6 +356,16 @@ namespace Restaurante___reporte.Properties {
         internal static System.Drawing.Bitmap mas1 {
             get {
                 object obj = ResourceManager.GetObject("mas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap modificar {
+            get {
+                object obj = ResourceManager.GetObject("modificar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

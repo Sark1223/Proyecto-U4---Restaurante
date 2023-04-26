@@ -83,18 +83,32 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.rdPanel = new ns1.BunifuElipse(this.components);
-            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
-            this.agregarIngrediente = new System.Windows.Forms.PictureBox();
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblModificar = new System.Windows.Forms.Label();
+            this.pnAgregar = new System.Windows.Forms.Panel();
             this.pbListo = new System.Windows.Forms.PictureBox();
+            this.pnModificar = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pbModificar = new System.Windows.Forms.PictureBox();
+            this.cmdAgregarPaso = new System.Windows.Forms.PictureBox();
+            this.cmdCerrar = new ns1.BunifuImageButton();
+            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
+            this.cmdAgregarIngrediente = new System.Windows.Forms.PictureBox();
             this.pbFotoPlatillo = new System.Windows.Forms.PictureBox();
             this.cmdExaminar = new ns1.BunifuThinButton2();
-            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcedimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agregarIngrediente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbListo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
+            this.pnAgregar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbListo)).BeginInit();
+            this.pnModificar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPaso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarIngrediente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDescripcion
@@ -106,7 +120,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ShortcutsEnabled = false;
             this.txtDescripcion.Size = new System.Drawing.Size(148, 17);
-            this.txtDescripcion.TabIndex = 18;
+            this.txtDescripcion.TabIndex = 5;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
             // label2
@@ -117,7 +131,7 @@
             this.label2.Location = new System.Drawing.Point(27, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 25);
-            this.label2.TabIndex = 17;
+            this.label2.TabIndex = 16;
             this.label2.Text = "Procedimiento";
             // 
             // label1
@@ -128,7 +142,7 @@
             this.label1.Location = new System.Drawing.Point(510, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 25);
-            this.label1.TabIndex = 16;
+            this.label1.TabIndex = 27;
             this.label1.Text = "Ingredientes";
             // 
             // cbIngredientes
@@ -141,8 +155,8 @@
             this.cbIngredientes.Location = new System.Drawing.Point(469, 83);
             this.cbIngredientes.Name = "cbIngredientes";
             this.cbIngredientes.Size = new System.Drawing.Size(130, 26);
-            this.cbIngredientes.TabIndex = 24;
-            this.cbIngredientes.Text = "- Ingrediente -";
+            this.cbIngredientes.TabIndex = 8;
+            this.cbIngredientes.Text = "-- Ingrediente --";
             // 
             // lblPrecio
             // 
@@ -152,7 +166,7 @@
             this.lblPrecio.Location = new System.Drawing.Point(216, 176);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(46, 16);
-            this.lblPrecio.TabIndex = 29;
+            this.lblPrecio.TabIndex = 12;
             this.lblPrecio.Text = "Precio:";
             // 
             // panel2
@@ -161,7 +175,7 @@
             this.panel2.Location = new System.Drawing.Point(217, 133);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(148, 2);
-            this.panel2.TabIndex = 32;
+            this.panel2.TabIndex = 10;
             // 
             // panel3
             // 
@@ -169,7 +183,7 @@
             this.panel3.Location = new System.Drawing.Point(220, 214);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(99, 2);
-            this.panel3.TabIndex = 36;
+            this.panel3.TabIndex = 18;
             // 
             // txtPrecio
             // 
@@ -180,8 +194,9 @@
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.ShortcutsEnabled = false;
             this.txtPrecio.Size = new System.Drawing.Size(83, 17);
-            this.txtPrecio.TabIndex = 35;
+            this.txtPrecio.TabIndex = 4;
             this.txtPrecio.Text = "1000.00";
+            this.txtPrecio.TextChanged += new System.EventHandler(this.txtPrecio_TextChanged);
             // 
             // lblNombre
             // 
@@ -191,7 +206,7 @@
             this.lblNombre.Location = new System.Drawing.Point(214, 56);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(55, 16);
-            this.lblNombre.TabIndex = 37;
+            this.lblNombre.TabIndex = 22;
             this.lblNombre.Text = "Nombre:";
             // 
             // panel5
@@ -200,7 +215,7 @@
             this.panel5.Location = new System.Drawing.Point(217, 93);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(148, 2);
-            this.panel5.TabIndex = 41;
+            this.panel5.TabIndex = 8;
             // 
             // txtNombre
             // 
@@ -211,8 +226,10 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.ShortcutsEnabled = false;
             this.txtNombre.Size = new System.Drawing.Size(153, 17);
-            this.txtNombre.TabIndex = 40;
+            this.txtNombre.TabIndex = 1;
             this.txtNombre.Text = "Desayunos";
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
+            this.txtNombre.Validated += new System.EventHandler(this.txtNombre_Validated);
             // 
             // cbDificultad
             // 
@@ -228,7 +245,7 @@
             this.cbDificultad.Location = new System.Drawing.Point(218, 143);
             this.cbDificultad.Name = "cbDificultad";
             this.cbDificultad.Size = new System.Drawing.Size(148, 26);
-            this.cbDificultad.TabIndex = 42;
+            this.cbDificultad.TabIndex = 3;
             this.cbDificultad.Text = "-- Dificultad --";
             // 
             // cbCategoria
@@ -245,7 +262,7 @@
             this.cbCategoria.Location = new System.Drawing.Point(217, 103);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(148, 26);
-            this.cbCategoria.TabIndex = 43;
+            this.cbCategoria.TabIndex = 2;
             this.cbCategoria.Text = "-- Categoria --";
             this.cbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbCategoria_SelectedIndexChanged);
             // 
@@ -255,7 +272,7 @@
             this.panel1.Location = new System.Drawing.Point(219, 171);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(148, 2);
-            this.panel1.TabIndex = 34;
+            this.panel1.TabIndex = 13;
             // 
             // panel6
             // 
@@ -263,7 +280,7 @@
             this.panel6.Location = new System.Drawing.Point(109, 66);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(97, 2);
-            this.panel6.TabIndex = 46;
+            this.panel6.TabIndex = 21;
             // 
             // txtId_platillo
             // 
@@ -274,8 +291,8 @@
             this.txtId_platillo.Name = "txtId_platillo";
             this.txtId_platillo.ShortcutsEnabled = false;
             this.txtId_platillo.Size = new System.Drawing.Size(97, 17);
-            this.txtId_platillo.TabIndex = 45;
-            this.txtId_platillo.Text = "Desayunos";
+            this.txtId_platillo.TabIndex = 0;
+            this.txtId_platillo.Text = "1";
             this.txtId_platillo.TextChanged += new System.EventHandler(this.txtId_platillo_TextChanged);
             this.txtId_platillo.Validating += new System.ComponentModel.CancelEventHandler(this.txtId_platillo_Validating);
             this.txtId_platillo.Validated += new System.EventHandler(this.txtId_platillo_Validated);
@@ -288,7 +305,7 @@
             this.lblId_platillo.Location = new System.Drawing.Point(28, 46);
             this.lblId_platillo.Name = "lblId_platillo";
             this.lblId_platillo.Size = new System.Drawing.Size(74, 18);
-            this.lblId_platillo.TabIndex = 44;
+            this.lblId_platillo.TabIndex = 19;
             this.lblId_platillo.Text = "id_Platillo:";
             // 
             // panel7
@@ -297,7 +314,7 @@
             this.panel7.Location = new System.Drawing.Point(469, 114);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(130, 2);
-            this.panel7.TabIndex = 47;
+            this.panel7.TabIndex = 31;
             // 
             // panel8
             // 
@@ -305,7 +322,7 @@
             this.panel8.Location = new System.Drawing.Point(612, 114);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(47, 2);
-            this.panel8.TabIndex = 50;
+            this.panel8.TabIndex = 33;
             // 
             // txtCantidad
             // 
@@ -316,7 +333,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.ShortcutsEnabled = false;
             this.txtCantidad.Size = new System.Drawing.Size(48, 17);
-            this.txtCantidad.TabIndex = 49;
+            this.txtCantidad.TabIndex = 9;
             this.txtCantidad.Text = "1.900";
             // 
             // lblCantidad
@@ -327,7 +344,7 @@
             this.lblCantidad.Location = new System.Drawing.Point(608, 76);
             this.lblCantidad.Name = "lblCantidad";
             this.lblCantidad.Size = new System.Drawing.Size(61, 16);
-            this.lblCantidad.TabIndex = 48;
+            this.lblCantidad.TabIndex = 28;
             this.lblCantidad.Text = "Cantidad:";
             // 
             // lblsigno_pesos
@@ -338,7 +355,7 @@
             this.lblsigno_pesos.Location = new System.Drawing.Point(217, 193);
             this.lblsigno_pesos.Name = "lblsigno_pesos";
             this.lblsigno_pesos.Size = new System.Drawing.Size(16, 18);
-            this.lblsigno_pesos.TabIndex = 51;
+            this.lblsigno_pesos.TabIndex = 14;
             this.lblsigno_pesos.Text = "$";
             // 
             // lblMN
@@ -349,7 +366,7 @@
             this.lblMN.Location = new System.Drawing.Point(314, 196);
             this.lblMN.Name = "lblMN";
             this.lblMN.Size = new System.Drawing.Size(49, 18);
-            this.lblMN.TabIndex = 52;
+            this.lblMN.TabIndex = 16;
             this.lblMN.Text = "pesos";
             // 
             // lblUnidad_Medida
@@ -360,7 +377,7 @@
             this.lblUnidad_Medida.Location = new System.Drawing.Point(661, 93);
             this.lblUnidad_Medida.Name = "lblUnidad_Medida";
             this.lblUnidad_Medida.Size = new System.Drawing.Size(26, 18);
-            this.lblUnidad_Medida.TabIndex = 53;
+            this.lblUnidad_Medida.TabIndex = 10;
             this.lblUnidad_Medida.Text = "Kg";
             // 
             // radiocomandoListo
@@ -374,10 +391,10 @@
             this.lblListo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.lblListo.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListo.ForeColor = System.Drawing.Color.Black;
-            this.lblListo.Location = new System.Drawing.Point(394, 170);
+            this.lblListo.Location = new System.Drawing.Point(8, 40);
             this.lblListo.Name = "lblListo";
             this.lblListo.Size = new System.Drawing.Size(29, 16);
-            this.lblListo.TabIndex = 55;
+            this.lblListo.TabIndex = 7;
             this.lblListo.Text = "listo";
             // 
             // panel9
@@ -386,7 +403,7 @@
             this.panel9.Location = new System.Drawing.Point(220, 257);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(148, 2);
-            this.panel9.TabIndex = 57;
+            this.panel9.TabIndex = 20;
             // 
             // lblDescripcion
             // 
@@ -396,7 +413,7 @@
             this.lblDescripcion.Location = new System.Drawing.Point(216, 219);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(76, 16);
-            this.lblDescripcion.TabIndex = 56;
+            this.lblDescripcion.TabIndex = 17;
             this.lblDescripcion.Text = "Descripcion:";
             // 
             // dgvProcedimiento
@@ -450,17 +467,19 @@
             this.dgvProcedimiento.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvProcedimiento.RowTemplate.Height = 30;
             this.dgvProcedimiento.Size = new System.Drawing.Size(750, 114);
-            this.dgvProcedimiento.TabIndex = 58;
+            this.dgvProcedimiento.TabIndex = 15;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Column3";
+            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.Width = 82;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Column4";
+            this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
             this.Column4.Width = 83;
             // 
@@ -470,7 +489,7 @@
             this.panel4.Location = new System.Drawing.Point(32, 241);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(179, 2);
-            this.panel4.TabIndex = 59;
+            this.panel4.TabIndex = 17;
             // 
             // panel10
             // 
@@ -486,7 +505,7 @@
             this.panel11.Location = new System.Drawing.Point(209, 71);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(2, 171);
-            this.panel11.TabIndex = 61;
+            this.panel11.TabIndex = 4;
             // 
             // panel12
             // 
@@ -494,7 +513,7 @@
             this.panel12.Location = new System.Drawing.Point(32, 72);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(2, 171);
-            this.panel12.TabIndex = 62;
+            this.panel12.TabIndex = 20;
             // 
             // dgvIngredientes
             // 
@@ -547,17 +566,19 @@
             this.dgvIngredientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvIngredientes.RowTemplate.Height = 30;
             this.dgvIngredientes.Size = new System.Drawing.Size(259, 143);
-            this.dgvIngredientes.TabIndex = 63;
+            this.dgvIngredientes.TabIndex = 32;
             // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Column3";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 82;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.HeaderText = "Column4";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 83;
             // 
@@ -570,7 +591,7 @@
             this.txtPaso_no.Name = "txtPaso_no";
             this.txtPaso_no.ReadOnly = true;
             this.txtPaso_no.Size = new System.Drawing.Size(36, 17);
-            this.txtPaso_no.TabIndex = 67;
+            this.txtPaso_no.TabIndex = 11;
             this.txtPaso_no.Text = "1";
             // 
             // lblPaso_no
@@ -581,7 +602,7 @@
             this.lblPaso_no.Location = new System.Drawing.Point(192, 287);
             this.lblPaso_no.Name = "lblPaso_no";
             this.lblPaso_no.Size = new System.Drawing.Size(85, 21);
-            this.lblPaso_no.TabIndex = 66;
+            this.lblPaso_no.TabIndex = 14;
             this.lblPaso_no.Text = "No. paso:";
             // 
             // txtInstruccion
@@ -593,7 +614,7 @@
             this.txtInstruccion.Name = "txtInstruccion";
             this.txtInstruccion.ShortcutsEnabled = false;
             this.txtInstruccion.Size = new System.Drawing.Size(316, 17);
-            this.txtInstruccion.TabIndex = 69;
+            this.txtInstruccion.TabIndex = 12;
             this.txtInstruccion.Text = "Agregar todos los ingredientes en una olla y ponerlos a hervir por 10 min";
             // 
             // lblInstruccion
@@ -604,7 +625,7 @@
             this.lblInstruccion.Location = new System.Drawing.Point(314, 287);
             this.lblInstruccion.Name = "lblInstruccion";
             this.lblInstruccion.Size = new System.Drawing.Size(92, 21);
-            this.lblInstruccion.TabIndex = 68;
+            this.lblInstruccion.TabIndex = 38;
             this.lblInstruccion.Text = "Instruccion:";
             // 
             // panel13
@@ -613,7 +634,7 @@
             this.panel13.Location = new System.Drawing.Point(411, 308);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(317, 2);
-            this.panel13.TabIndex = 70;
+            this.panel13.TabIndex = 13;
             // 
             // lblTitle
             // 
@@ -622,13 +643,123 @@
             this.lblTitle.Location = new System.Drawing.Point(302, 4);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(225, 28);
-            this.lblTitle.TabIndex = 6;
+            this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "AGREGAR PLATILLO";
             // 
             // rdPanel
             // 
             this.rdPanel.ElipseRadius = 20;
             this.rdPanel.TargetControl = this;
+            // 
+            // error
+            // 
+            this.error.ContainerControl = this;
+            this.error.Icon = ((System.Drawing.Icon)(resources.GetObject("error.Icon")));
+            // 
+            // lblModificar
+            // 
+            this.lblModificar.AutoSize = true;
+            this.lblModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.lblModificar.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModificar.ForeColor = System.Drawing.Color.Black;
+            this.lblModificar.Location = new System.Drawing.Point(3, 53);
+            this.lblModificar.Name = "lblModificar";
+            this.lblModificar.Size = new System.Drawing.Size(57, 16);
+            this.lblModificar.TabIndex = 74;
+            this.lblModificar.Text = "modificar";
+            // 
+            // pnAgregar
+            // 
+            this.pnAgregar.Controls.Add(this.pbListo);
+            this.pnAgregar.Controls.Add(this.lblListo);
+            this.pnAgregar.Location = new System.Drawing.Point(383, 120);
+            this.pnAgregar.Name = "pnAgregar";
+            this.pnAgregar.Size = new System.Drawing.Size(44, 72);
+            this.pnAgregar.TabIndex = 76;
+            // 
+            // pbListo
+            // 
+            this.pbListo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbListo.Image = global::Restaurante___reporte.Properties.Resources.marca_de_verificacion__1_;
+            this.pbListo.Location = new System.Drawing.Point(5, 13);
+            this.pbListo.Name = "pbListo";
+            this.pbListo.Size = new System.Drawing.Size(36, 30);
+            this.pbListo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbListo.TabIndex = 54;
+            this.pbListo.TabStop = false;
+            this.pbListo.Click += new System.EventHandler(this.pbListo_Click);
+            this.pbListo.MouseLeave += new System.EventHandler(this.cmdListo_MouseLeave);
+            this.pbListo.MouseHover += new System.EventHandler(this.cmdListo_MouseHover);
+            // 
+            // pnModificar
+            // 
+            this.pnModificar.Controls.Add(this.pictureBox1);
+            this.pnModificar.Controls.Add(this.label3);
+            this.pnModificar.Controls.Add(this.pbModificar);
+            this.pnModificar.Controls.Add(this.lblModificar);
+            this.pnModificar.Location = new System.Drawing.Point(383, 90);
+            this.pnModificar.Name = "pnModificar";
+            this.pnModificar.Size = new System.Drawing.Size(64, 169);
+            this.pnModificar.TabIndex = 77;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.borrar;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 96);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 77;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(3, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 16);
+            this.label3.TabIndex = 76;
+            this.label3.Text = "modificar";
+            // 
+            // pbModificar
+            // 
+            this.pbModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbModificar.Image = global::Restaurante___reporte.Properties.Resources.editar1;
+            this.pbModificar.Location = new System.Drawing.Point(14, 24);
+            this.pbModificar.Name = "pbModificar";
+            this.pbModificar.Size = new System.Drawing.Size(36, 30);
+            this.pbModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbModificar.TabIndex = 75;
+            this.pbModificar.TabStop = false;
+            // 
+            // cmdAgregarPaso
+            // 
+            this.cmdAgregarPaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.cmdAgregarPaso.Image = global::Restaurante___reporte.Properties.Resources.agregar;
+            this.cmdAgregarPaso.Location = new System.Drawing.Point(750, 285);
+            this.cmdAgregarPaso.Name = "cmdAgregarPaso";
+            this.cmdAgregarPaso.Size = new System.Drawing.Size(26, 27);
+            this.cmdAgregarPaso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdAgregarPaso.TabIndex = 73;
+            this.cmdAgregarPaso.TabStop = false;
+            // 
+            // cmdCerrar
+            // 
+            this.cmdCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.cmdCerrar.Image = global::Restaurante___reporte.Properties.Resources.Equis;
+            this.cmdCerrar.ImageActive = null;
+            this.cmdCerrar.Location = new System.Drawing.Point(757, 7);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(34, 27);
+            this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdCerrar.TabIndex = 72;
+            this.cmdCerrar.TabStop = false;
+            this.cmdCerrar.Zoom = 10;
+            this.cmdCerrar.Click += new System.EventHandler(this.cmdCerrar_Click);
             // 
             // bunifuThinButton21
             // 
@@ -648,40 +779,26 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(181)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(0)))), ((int)(((byte)(181)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(636, 14);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 7);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(151, 34);
-            this.bunifuThinButton21.TabIndex = 71;
+            this.bunifuThinButton21.TabIndex = 18;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // agregarIngrediente
+            // cmdAgregarIngrediente
             // 
-            this.agregarIngrediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.agregarIngrediente.Image = global::Restaurante___reporte.Properties.Resources.agregar;
-            this.agregarIngrediente.Location = new System.Drawing.Point(702, 89);
-            this.agregarIngrediente.Name = "agregarIngrediente";
-            this.agregarIngrediente.Size = new System.Drawing.Size(26, 27);
-            this.agregarIngrediente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.agregarIngrediente.TabIndex = 64;
-            this.agregarIngrediente.TabStop = false;
-            this.agregarIngrediente.Click += new System.EventHandler(this.agregarIngrediente_Click);
-            this.agregarIngrediente.MouseLeave += new System.EventHandler(this.agregarIngrediente_MouseLeave);
-            this.agregarIngrediente.MouseHover += new System.EventHandler(this.agregarIngrediente_MouseHover);
-            // 
-            // pbListo
-            // 
-            this.pbListo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pbListo.Image = global::Restaurante___reporte.Properties.Resources.marca_de_verificacion__1_;
-            this.pbListo.Location = new System.Drawing.Point(391, 143);
-            this.pbListo.Name = "pbListo";
-            this.pbListo.Size = new System.Drawing.Size(36, 30);
-            this.pbListo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbListo.TabIndex = 54;
-            this.pbListo.TabStop = false;
-            this.pbListo.Click += new System.EventHandler(this.pbListo_Click);
-            this.pbListo.MouseLeave += new System.EventHandler(this.cmdListo_MouseLeave);
-            this.pbListo.MouseHover += new System.EventHandler(this.cmdListo_MouseHover);
+            this.cmdAgregarIngrediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.cmdAgregarIngrediente.Image = global::Restaurante___reporte.Properties.Resources.agregar;
+            this.cmdAgregarIngrediente.Location = new System.Drawing.Point(702, 89);
+            this.cmdAgregarIngrediente.Name = "cmdAgregarIngrediente";
+            this.cmdAgregarIngrediente.Size = new System.Drawing.Size(26, 27);
+            this.cmdAgregarIngrediente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdAgregarIngrediente.TabIndex = 64;
+            this.cmdAgregarIngrediente.TabStop = false;
+            this.cmdAgregarIngrediente.Click += new System.EventHandler(this.agregarIngrediente_Click);
+            this.cmdAgregarIngrediente.MouseLeave += new System.EventHandler(this.agregarIngrediente_MouseLeave);
+            this.cmdAgregarIngrediente.MouseHover += new System.EventHandler(this.agregarIngrediente_MouseHover);
             // 
             // pbFotoPlatillo
             // 
@@ -716,14 +833,9 @@
             this.cmdExaminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmdExaminar.Name = "cmdExaminar";
             this.cmdExaminar.Size = new System.Drawing.Size(151, 34);
-            this.cmdExaminar.TabIndex = 23;
+            this.cmdExaminar.TabIndex = 6;
             this.cmdExaminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.cmdExaminar.Click += new System.EventHandler(this.cmdExaminar_Click);
-            // 
-            // error
-            // 
-            this.error.ContainerControl = this;
-            this.error.Icon = ((System.Drawing.Icon)(resources.GetObject("error.Icon")));
             // 
             // frmEditarPlatillo
             // 
@@ -732,13 +844,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnModificar);
+            this.Controls.Add(this.pnAgregar);
+            this.Controls.Add(this.cmdAgregarPaso);
+            this.Controls.Add(this.cmdCerrar);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.txtInstruccion);
             this.Controls.Add(this.lblInstruccion);
             this.Controls.Add(this.txtPaso_no);
             this.Controls.Add(this.lblPaso_no);
-            this.Controls.Add(this.agregarIngrediente);
+            this.Controls.Add(this.cmdAgregarIngrediente);
             this.Controls.Add(this.dgvIngredientes);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
@@ -747,8 +863,6 @@
             this.Controls.Add(this.dgvProcedimiento);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.pbListo);
-            this.Controls.Add(this.lblListo);
             this.Controls.Add(this.lblUnidad_Medida);
             this.Controls.Add(this.lblMN);
             this.Controls.Add(this.lblsigno_pesos);
@@ -778,14 +892,23 @@
             this.Controls.Add(this.panel13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditarPlatillo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarPlatillo";
             this.Load += new System.EventHandler(this.frmEditarPlatillo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcedimiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.agregarIngrediente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbListo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
+            this.pnAgregar.ResumeLayout(false);
+            this.pnAgregar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbListo)).EndInit();
+            this.pnModificar.ResumeLayout(false);
+            this.pnModificar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPaso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarIngrediente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,7 +956,7 @@
         public System.Windows.Forms.DataGridView dgvIngredientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.PictureBox agregarIngrediente;
+        private System.Windows.Forms.PictureBox cmdAgregarIngrediente;
         private System.Windows.Forms.TextBox txtPaso_no;
         private System.Windows.Forms.Label lblPaso_no;
         private System.Windows.Forms.TextBox txtInstruccion;
@@ -843,5 +966,13 @@
         private System.Windows.Forms.Label lblTitle;
         private ns1.BunifuElipse rdPanel;
         private System.Windows.Forms.ErrorProvider error;
+        private ns1.BunifuImageButton cmdCerrar;
+        private System.Windows.Forms.PictureBox cmdAgregarPaso;
+        private System.Windows.Forms.Panel pnModificar;
+        private System.Windows.Forms.PictureBox pbModificar;
+        private System.Windows.Forms.Label lblModificar;
+        private System.Windows.Forms.Panel pnAgregar;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

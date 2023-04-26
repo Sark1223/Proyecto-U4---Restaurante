@@ -154,7 +154,6 @@ namespace Restaurante___reporte
         private void cmdPlatillo_Click(object sender, EventArgs e)
         {
             platillos.dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];
-            platillos.txtProcedimiento.Text = mostrar.MuestraPlatillos_Tabla().ToString();
             AbrirForm(platillos);
             PanelActual = cmdPlatillo;
             Ponerfoco();

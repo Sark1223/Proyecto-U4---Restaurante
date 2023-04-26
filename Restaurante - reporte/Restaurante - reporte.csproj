@@ -245,5 +245,14 @@
   <ItemGroup>
     <None Include="Resources\buscar categoria.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

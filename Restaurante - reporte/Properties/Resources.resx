@@ -145,6 +145,9 @@
   <data name="restaurante" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restaurante.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="editar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\editar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Equis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Equis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,6 +156,9 @@
   </data>
   <data name="agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ingredientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ingredientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -165,6 +171,9 @@
   </data>
   <data name="forma-abstracta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forma-abstracta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buscar categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buscar categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forma-abstracta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forma-abstracta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +205,11 @@
   <data name="marca-de-verificacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marca-de-verificacion (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="modificar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\modificar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="agregar-archivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\agregar-archivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sale-de" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sale-de.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +223,7 @@
   <data name="aplicaciones-anadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aplicaciones-anadir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buscar categoria" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buscar categoria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="borrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

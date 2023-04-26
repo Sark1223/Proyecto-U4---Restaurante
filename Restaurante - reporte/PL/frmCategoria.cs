@@ -123,6 +123,7 @@ namespace Restaurante___reporte.PL
 
         private void txtidCategoria_KeyPress(object sender, KeyPressEventArgs e)
         {
+            
             if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
             {
                 MessageBox.Show("Solo se admiten valores numericos", "ALERTA!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

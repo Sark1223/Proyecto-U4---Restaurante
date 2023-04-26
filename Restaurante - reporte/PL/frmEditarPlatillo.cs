@@ -43,7 +43,7 @@ namespace Restaurante___reporte.PL
         Conexion conexion = new Conexion();
 
         //Variables auxiliares
-        string ID_Actual, id_categoria;
+        string ID_Actual, nombre;
         bool primeraApertura = true;
 
 
@@ -52,14 +52,31 @@ namespace Restaurante___reporte.PL
             if (lblTitle.Text == "AGREGAR PLATILLO")
             {
                 editar_plato.LlenarCBCategoria(cbCategoria);
-                //conexion.RellenarCB_1(cbCiudad, "SELECT * FROM CIUDAD", "-- Selecione Ciudad --");
-                //conexion.RellenarCB_2(cbPropietario, "SELECT * FROM PROPIETARIO", "-- Selecione Propietario --");
+                cmdAgregarIngrediente.Enabled = false;
+                cmdAgregarPaso.Enabled = false;
+                pnAgregar.Visible = true;
+                pnModificar.Visible = false;
+            }
+            else
+            {
+                pnModificar.Visible = true;
+                pnAgregar.Visible = false;
+
+                if (txtId_platillo.Text != "")
+                {
+                    ID_Actual = txtId_platillo.Text;
+                }
+
+                if(txtNombre.Text != "")
+                {
+                    nombre = txtNombre.Text;
+                }
             }
             primeraApertura = false;
         }
 
 
-        //METODOS PLATILLO-------------------------------------------
+        //METODOS PLATILLO---------------------------------------------------------------
         public void RecuperarInforcionPlatillo()
         {
             platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
@@ -127,6 +144,103 @@ namespace Restaurante___reporte.PL
             }
         }
 
+        //VALIDACIONES DE ID PLATILLO
+        private void txtId_platillo_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese SOLO NUMEROS.", "ERROR DE FORMATO");
+                txtId_platillo.SelectAll();
+            }
+        }
+
+        private void txtId_platillo_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtId_platillo, "");
+        }
+
+        private void txtId_platillo_Validating(object sender, CancelEventArgs e)
+        {
+            if(primeraApertura == false)
+            {
+                if (lblTitle.Text == "GREGAR PLATILLO")
+                {
+                    if (!conexion.BuscarEnTabla_AGREGAR("SELECT * FROM PLATILLO", txtId_platillo.Text, 0, txtId_platillo, error) && txtId_platillo.Text != "")
+                    {
+                        // Cancel the event and select the text to be corrected by the user.
+                        e.Cancel = true;
+                        txtId_platillo.Select(0, txtId_platillo.Text.Length);
+                    }
+                    else
+                    {
+                        platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
+                    }
+                }
+                else
+                {
+                    //VERIFICAR QUE LOS DATOS UNICOS NO SE REPITAN
+                    if (!conexion.BuscarEnTabla_MODIFICAR("SELECT * FROM PLATILLO", txtId_platillo.Text, 0, ID_Actual, txtId_platillo, error) && txtId_platillo.Text != "")
+                    {
+                        e.Cancel = true;
+                        txtId_platillo.Select(0, txtId_platillo.Text.Length);
+                    }
+                    else
+                    {
+                        platilloBLL.plato_id = int.Parse(txtId_platillo.Text);
+                    }
+
+                }
+
+            }
+        }
+
+        //VALIDACIONES DE NOMBRE PLATILLO
+
+        private void txtNombre_Validated(object sender, EventArgs e)
+        {
+            error.SetError(txtNombre, "");
+        }
+
+        private void txtNombre_Validating(object sender, CancelEventArgs e)
+        {
+            if (primeraApertura == false)
+            {
+                if (lblTitle.Text == "GREGAR PLATILLO")
+                {
+                    if (!conexion.BuscarEnTabla_AGREGAR("SELECT * FROM PLATILLO", txtNombre.Text, 1, txtNombre, error) && txtNombre.Text != "")
+                    {
+                        // Cancel the event and select the text to be corrected by the user.
+                        e.Cancel = true;
+                        txtNombre.Select(0, txtNombre.Text.Length);
+                    }
+                    else
+                    {
+                        platilloBLL.plato_nombre = txtNombre.Text;
+                    }
+                }
+                else
+                {
+                    //VERIFICAR QUE LOS DATOS UNICOS NO SE REPITAN
+                    if (!conexion.BuscarEnTabla_MODIFICAR("SELECT * FROM PLATILLO", txtNombre.Text, 1, nombre, txtNombre, error) && txtNombre.Text != "")
+                    {
+                        e.Cancel = true;
+                        txtNombre.Select(0, txtNombre.Text.Length);
+                    }
+                    else
+                    {
+                        platilloBLL.plato_nombre = txtNombre.Text;
+                    }
+
+                }
+
+            }
+        }
+
+        //INGRESAR IMAGEN
         private void cmdExaminar_Click(object sender, EventArgs e)
         {
             OpenFileDialog selectorImagen = new OpenFileDialog();
@@ -143,15 +257,28 @@ namespace Restaurante___reporte.PL
             }
         }
 
+        //AGREGAR PLATILLO
         private void pbListo_Click(object sender, EventArgs e)
         {
             if (!ValoresVaciosPlatillo())
             {
                 RecuperarInforcionPlatillo();
-                editar_plato.AgregarPlatillo(platilloBLL);
+                if (editar_plato.AgregarPlatillo(platilloBLL))
+                {
+                    MessageBox.Show("Se INGRESARON los datos del platillo CORRECTAMENTE","Platillo Agregado");
+                    pbListo.Enabled = false;
+                    cmdAgregarIngrediente.Enabled = true;
+                    cmdAgregarPaso.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("NO se pudo ingresar la informacion del platillo","Error al ingresar platillo");
+                }
             }
             
         }
+
+
 
         //accion de botones
         private void cmdListo_MouseHover(object sender, EventArgs e)
@@ -168,169 +295,104 @@ namespace Restaurante___reporte.PL
 
 
         //METODOS INGREDIENTES--------------------------------------------------
+
+        //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
+        public bool ValoresVaciosIngrediente()
+        {
+            string valoresVacios = "";
+            int no_vacios = 0;
+            //VERIFICACION DE VALORES VACIOS
+            {
+                if (cbIngredientes.Text == "-- Ingrediente --")
+                {
+                    valoresVacios += "Ingrediente, ";
+                    no_vacios++;
+                }
+                if (txtCantidad.Text == "")
+                {
+                    valoresVacios += "Cantidad ";
+                    no_vacios++;
+                }
+
+            }
+            if (no_vacios > 0)
+            {
+                MessageBox.Show("No puede dejar información en blanco \r\n\r\n" +
+                                "No. de valores vacios: " + no_vacios + "\r\n" +
+                                "Valores vacios: " + valoresVacios, "ERROR AL INGRESAR VALORES");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void RecuperarInformacionIngrediente()
+        {
+            ingre_platoBLL.platillo_id = int.Parse(txtId_platillo.Text);
+            ingre_platoBLL.ingrediente_id = conexion.GuardarInfoCB_Tabla("SELECT ingrediente_id FROM INGREDIENTE WHERE ingrediente_nombre='" + cbIngredientes.Text + "'"); ;
+            ingre_platoBLL.cantidad_ingre_plato = float.Parse(txtCantidad.Text);
+        }
+
         private void agregarIngrediente_Click(object sender, EventArgs e)
         {
-            
+            if (!ValoresVaciosIngrediente())
+            {
+                RecuperarInformacionIngrediente();
+                if (editar_plato.AgregarIngrediente(ingre_platoBLL))
+                {
+                    MessageBox.Show("Se INGRESARON los ingredientes CORRECTAMENTE", "Ingrediente Agregado");
+                    
+                }
+                else
+                {
+                    MessageBox.Show("NO se pudo ingresar la informacion del platillo", "Error al ingresar platillo");
+                }
+            }
         }
 
         //accion de botones
         private void agregarIngrediente_MouseHover(object sender, EventArgs e)
         {
-             this.agregarIngrediente.Size = new Size(29, 31);
-        }
-
-        private void txtId_platillo_TextChanged(object sender, EventArgs e)
-        {
-            //if (primeraApertura == false)
-            //{
-            //    try
-            //    {
-            //        if (lblTitle.Text == "MODIFICAR SUCURSAL")
-            //        {
-            //            //VERIFICAR QUE LOS DATOS UNICOS NO SE REPITAN 
-            //            if (conexion.BuscarEnTabla_MODIFICAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, ID_Actual, lblFarmacia.Text) < 1 && txtIdFarmacia.Text != "")
-            //            {
-            //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
-            //            }
-            //            else
-            //            {
-            //                txtIdFarmacia.SelectAll();
-            //            }
-
-            //        }
-            //        else
-            //        {
-            //            if (conexion.BuscarEnTabla_AGREGAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, lblFarmacia.Text) && txtIdFarmacia.Text != "")
-            //            {
-            //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
-            //            }
-            //            else
-            //            {
-            //                txtIdFarmacia.SelectAll();
-            //            }
-            //        }
-            //    }
-            //    catch (FormatException)
-            //    {
-            //        MessageBox.Show("Ingrese SOLO NUMEROS.", "ERROR DE FORMATO");
-            //        txtIdFarmacia.SelectAll();
-            //    }
-            //}
+             this.cmdAgregarIngrediente.Size = new Size(29, 31);
         }
 
         private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbCategoria.SelectedIndex > 0)
             {
-                platilloBLL.categoria_id = conexion.GuardarInfoCB_Tabla("SELECT * FROM CATEGORIA WHERE categoria_id='" + cbCategoria.Text + "'");
+                platilloBLL.categoria_id = conexion.GuardarInfoCB_Tabla("SELECT * FROM CATEGORIA WHERE categoria_nombre='" + cbCategoria.Text + "'");
 
             }
         }
 
-        private void txtId_platillo_Validated(object sender, EventArgs e)
+        private void cmdCerrar_Click(object sender, EventArgs e)
         {
-            error.SetError(txtId_platillo, "");
+            Close();
         }
 
-        private void txtId_platillo_Validating(object sender, CancelEventArgs e)
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
         {
-            if(primeraApertura == false)
+            try
             {
-
-                if (lblTitle.Text == "MODIFICAR PLATILLO")
-                {
-                    string errorMsg;
-                    if (!conexion.BuscarEnTabla_AGREGAR("SELECT * FROM PLATILLO", txtId_platillo.Text, 0, txtId_platillo, error)  && txtId_platillo.Text != "") 
-                    {
-                        // Cancel the event and select the text to be corrected by the user.
-                        e.Cancel = true;
-                        txtId_platillo.Select(0, txtId_platillo.Text.Length);
-
-                        // Set the ErrorProvider error with the text to display. 
-                        //this.error.SetError(txtId_platillo, errorMsg);
-                    }
-                    else
-                    {
-
-                    }
-                    //            //VERIFICAR QUE LOS DATOS UNICOS NO SE REPITAN 
-                    //            if (conexion.BuscarEnTabla_MODIFICAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, ID_Actual, lblFarmacia.Text) < 1 && txtIdFarmacia.Text != "")
-                    //            {
-                    //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
-                    //            }
-                    //            else
-                    //            {
-                    //                txtIdFarmacia.SelectAll();
-                    //            }
-
-                    //        }
-                    //        else
-                    //        {
-                    //            if (conexion.BuscarEnTabla_AGREGAR("SELECT * FROM FARMACIA", txtIdFarmacia.Text, 0, lblFarmacia.Text) && txtIdFarmacia.Text != "")
-                    //            {
-                    //                objSucursal.id_propi_farm = int.Parse(txtIdFarmacia.Text);
-                    //            }
-                    //            else
-                    //            {
-                    //                txtIdFarmacia.SelectAll();
-                    //            }
-                    //        }
-
-
-                }
-           
+                platilloBLL.plato_preciof = float.Parse(txtPrecio.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese SOLO NUMEROS.", "ERROR DE FORMATO");
+                txtPrecio.SelectAll();
+            }
         }
 
-        //private void textBox1_Validating(object sender, CancelEventArgs e)
-        //{
-        //    string errorMsg;
-        //    if (!ValidEmailAddress(textBox1.Text, out errorMsg))
-        //    {
-        //        // Cancel the event and select the text to be corrected by the user.
-        //        e.Cancel = true;
-        //        textBox1.Select(0, textBox1.Text.Length);
-
-        //        // Set the ErrorProvider error with the text to display. 
-        //        this.errorProvider1.SetError(textBox1, errorMsg);
-        //    }
-
-        //}
-
-        //private void textBox1_Validated(object sender, EventArgs e)
-        //{
-        //    // If all conditions have been met, clear the ErrorProvider of errors.
-        //    errorProvider1.SetError(textBox1, "");
-        //}
-
-        //public bool ValidEmailAddress(string emailAddress, out string errorMessage)
-        //{
-        //    // Confirm that the email address string is not empty.
-        //    if (emailAddress.Length == 0)
-        //    {
-        //        errorMessage = "email address is required.";
-        //        return false;
-        //    }
-
-        //    // Confirm that there is an "@" and a "." in the email address, and in the correct order.
-        //    if (emailAddress.IndexOf("@") > -1)
-        //    {
-        //        if (emailAddress.IndexOf(".", emailAddress.IndexOf("@")) > emailAddress.IndexOf("@"))
-        //        {
-        //            errorMessage = "";
-        //            return true;
-        //        }
-        //    }
-
-        //    errorMessage = "email address must be valid email address format.\n" +
-        //       "For example 'someone@example.com' ";
-        //    return false;
-        }
 
         private void agregarIngrediente_MouseLeave(object sender, EventArgs e)
         {
-            this.agregarIngrediente.Size = new Size(26, 27);
+            this.cmdAgregarIngrediente.Size = new Size(26, 27);
         }
 
-       
+
+
+
     }
 }

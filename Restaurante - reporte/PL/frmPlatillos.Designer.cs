@@ -33,7 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblNombrePlatillo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblDificultad = new System.Windows.Forms.Label();
@@ -42,31 +42,31 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtIngredientes_Platillo = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblPrecio = new System.Windows.Forms.Label();
             this.txtProcedimiento = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbImagenPlato = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvPlatillos_muestra = new System.Windows.Forms.DataGridView();
             this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).BeginInit();
             this.SuspendLayout();
             // 
-            // label8
+            // lblNombrePlatillo
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(416, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 28);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "CHILAQUILES";
+            this.lblNombrePlatillo.AutoSize = true;
+            this.lblNombrePlatillo.Font = new System.Drawing.Font("MV Boli", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombrePlatillo.Location = new System.Drawing.Point(416, 3);
+            this.lblNombrePlatillo.Name = "lblNombrePlatillo";
+            this.lblNombrePlatillo.Size = new System.Drawing.Size(149, 28);
+            this.lblNombrePlatillo.TabIndex = 5;
+            this.lblNombrePlatillo.Text = "CHILAQUILES";
             // 
             // label1
             // 
@@ -104,15 +104,15 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtIngredientes_Platillo);
+            this.panel1.Controls.Add(this.lblCategoria);
+            this.panel1.Controls.Add(this.lblPrecio);
             this.panel1.Controls.Add(this.txtProcedimiento);
             this.panel1.Controls.Add(this.txtDescripcion);
             this.panel1.Controls.Add(this.lblDificultad);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.pbImagenPlato);
             this.panel1.Location = new System.Drawing.Point(234, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(634, 514);
@@ -150,37 +150,37 @@
             this.panel4.Size = new System.Drawing.Size(179, 2);
             this.panel4.TabIndex = 63;
             // 
-            // textBox2
+            // txtIngredientes_Platillo
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
-            this.textBox2.Location = new System.Drawing.Point(207, 44);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(241, 222);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.Text = "Totillas fritas bañadas en salsa de tomate.";
+            this.txtIngredientes_Platillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.txtIngredientes_Platillo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIngredientes_Platillo.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
+            this.txtIngredientes_Platillo.Location = new System.Drawing.Point(207, 44);
+            this.txtIngredientes_Platillo.Multiline = true;
+            this.txtIngredientes_Platillo.Name = "txtIngredientes_Platillo";
+            this.txtIngredientes_Platillo.Size = new System.Drawing.Size(241, 222);
+            this.txtIngredientes_Platillo.TabIndex = 18;
+            this.txtIngredientes_Platillo.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
-            // label5
+            // lblCategoria
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(467, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 19);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Categoria: Desayunos";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(467, 44);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(152, 19);
+            this.lblCategoria.TabIndex = 17;
+            this.lblCategoria.Text = "Categoria: Desayunos";
             // 
-            // label3
+            // lblPrecio
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(467, 146);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 19);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Precio: $105";
+            this.lblPrecio.AutoSize = true;
+            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(467, 146);
+            this.lblPrecio.Name = "lblPrecio";
+            this.lblPrecio.Size = new System.Drawing.Size(89, 19);
+            this.lblPrecio.TabIndex = 16;
+            this.lblPrecio.Text = "Precio: $105";
             // 
             // txtProcedimiento
             // 
@@ -206,15 +206,15 @@
             this.txtDescripcion.TabIndex = 14;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
-            // pictureBox1
+            // pbImagenPlato
             // 
-            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.foto;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 171);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.pbImagenPlato.Image = global::Restaurante___reporte.Properties.Resources.foto;
+            this.pbImagenPlato.Location = new System.Drawing.Point(15, 22);
+            this.pbImagenPlato.Name = "pbImagenPlato";
+            this.pbImagenPlato.Size = new System.Drawing.Size(180, 171);
+            this.pbImagenPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbImagenPlato.TabIndex = 7;
+            this.pbImagenPlato.TabStop = false;
             // 
             // label4
             // 
@@ -276,6 +276,7 @@
             this.dgvPlatillos_muestra.Size = new System.Drawing.Size(202, 509);
             this.dgvPlatillos_muestra.TabIndex = 29;
             this.toolTip1.SetToolTip(this.dgvPlatillos_muestra, "Click sobre cualquier registro para mostar receta\r\nDoble click para modificar");
+            this.dgvPlatillos_muestra.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlatillos_muestra_CellMouseClick);
             // 
             // cmdAgregarPatillo
             // 
@@ -298,14 +299,14 @@
             this.Controls.Add(this.cmdAgregarPatillo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblNombrePlatillo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPlatillos";
             this.Text = "Platillos";
             this.Load += new System.EventHandler(this.frmPlatillos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).EndInit();
             this.ResumeLayout(false);
@@ -315,8 +316,8 @@
 
         #endregion
 
-        public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.Label lblNombrePlatillo;
+        public System.Windows.Forms.PictureBox pbImagenPlato;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblDificultad;
@@ -324,9 +325,9 @@
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtDescripcion;
         public System.Windows.Forms.ToolTip toolTip1;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.TextBox txtIngredientes_Platillo;
+        public System.Windows.Forms.Label lblCategoria;
+        public System.Windows.Forms.Label lblPrecio;
         public System.Windows.Forms.TextBox txtProcedimiento;
         public System.Windows.Forms.PictureBox cmdAgregarPatillo;
         public System.Windows.Forms.DataGridView dgvPlatillos_muestra;

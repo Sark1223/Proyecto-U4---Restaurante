@@ -34,9 +34,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.Panel_encabezado = new System.Windows.Forms.Panel();
+            this.cmdCerrar = new ns1.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_Menu = new System.Windows.Forms.Panel();
+            this.cmdReporte = new System.Windows.Forms.Panel();
+            this.lblReporte = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.linea_menu = new System.Windows.Forms.Panel();
             this.cmdIngredientes = new System.Windows.Forms.Panel();
             this.lblIngrediente = new System.Windows.Forms.Label();
@@ -44,6 +48,9 @@
             this.cmdPlatillo = new System.Windows.Forms.Panel();
             this.lblPlatillo = new System.Windows.Forms.Label();
             this.pbPlatillo = new System.Windows.Forms.PictureBox();
+            this.cmdCategorias = new System.Windows.Forms.Panel();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.pbcategoria = new System.Windows.Forms.PictureBox();
             this.forma_redondeada = new ns1.BunifuElipse(this.components);
             this.menu = new ns1.BunifuElipse(this.components);
             this.mas_menos = new System.Windows.Forms.Panel();
@@ -65,19 +72,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Contenedor_menu = new System.Windows.Forms.Panel();
-            this.pbcategoria = new System.Windows.Forms.PictureBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.cmdCategorias = new System.Windows.Forms.Panel();
-            this.cmdReporte = new System.Windows.Forms.Panel();
-            this.lblReporte = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Panel_encabezado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Menu.SuspendLayout();
+            this.cmdReporte.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.cmdIngredientes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).BeginInit();
             this.cmdPlatillo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).BeginInit();
+            this.cmdCategorias.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).BeginInit();
             this.mas_menos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).BeginInit();
             this.Panel_Contenedor.SuspendLayout();
@@ -90,10 +96,6 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Contenedor_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).BeginInit();
-            this.cmdCategorias.SuspendLayout();
-            this.cmdReporte.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -111,9 +113,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
             this.panel1.Location = new System.Drawing.Point(308, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(530, 10);
+            this.panel1.Size = new System.Drawing.Size(616, 10);
             this.panel1.TabIndex = 1;
             // 
             // lblTitle
@@ -129,6 +131,7 @@
             // 
             // Panel_encabezado
             // 
+            this.Panel_encabezado.Controls.Add(this.cmdCerrar);
             this.Panel_encabezado.Controls.Add(this.panel2);
             this.Panel_encabezado.Controls.Add(this.lblTitle);
             this.Panel_encabezado.Controls.Add(this.pictureBox1);
@@ -136,9 +139,22 @@
             this.Panel_encabezado.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_encabezado.Location = new System.Drawing.Point(0, 0);
             this.Panel_encabezado.Name = "Panel_encabezado";
-            this.Panel_encabezado.Size = new System.Drawing.Size(985, 65);
+            this.Panel_encabezado.Size = new System.Drawing.Size(991, 65);
             this.Panel_encabezado.TabIndex = 4;
             this.Panel_encabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
+            // 
+            // cmdCerrar
+            // 
+            this.cmdCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.cmdCerrar.Image = global::Restaurante___reporte.Properties.Resources.Equis;
+            this.cmdCerrar.ImageActive = null;
+            this.cmdCerrar.Location = new System.Drawing.Point(943, 18);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(34, 27);
+            this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdCerrar.TabIndex = 73;
+            this.cmdCerrar.TabStop = false;
+            this.cmdCerrar.Zoom = 10;
             // 
             // panel2
             // 
@@ -146,7 +162,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(985, 2);
+            this.panel2.Size = new System.Drawing.Size(991, 2);
             this.panel2.TabIndex = 4;
             // 
             // pictureBox1
@@ -172,8 +188,40 @@
             this.Panel_Menu.Location = new System.Drawing.Point(0, 0);
             this.Panel_Menu.Margin = new System.Windows.Forms.Padding(0);
             this.Panel_Menu.Name = "Panel_Menu";
-            this.Panel_Menu.Size = new System.Drawing.Size(79, 565);
+            this.Panel_Menu.Size = new System.Drawing.Size(79, 567);
             this.Panel_Menu.TabIndex = 4;
+            // 
+            // cmdReporte
+            // 
+            this.cmdReporte.Controls.Add(this.lblReporte);
+            this.cmdReporte.Controls.Add(this.pictureBox3);
+            this.cmdReporte.Location = new System.Drawing.Point(2, 360);
+            this.cmdReporte.Name = "cmdReporte";
+            this.cmdReporte.Size = new System.Drawing.Size(72, 65);
+            this.cmdReporte.TabIndex = 12;
+            this.cmdReporte.Click += new System.EventHandler(this.cmdReporte_Click);
+            // 
+            // lblReporte
+            // 
+            this.lblReporte.AutoSize = true;
+            this.lblReporte.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReporte.Location = new System.Drawing.Point(8, 30);
+            this.lblReporte.Name = "lblReporte";
+            this.lblReporte.Size = new System.Drawing.Size(51, 16);
+            this.lblReporte.TabIndex = 6;
+            this.lblReporte.Text = "Reporte";
+            this.lblReporte.Click += new System.EventHandler(this.cmdReporte_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Restaurante___reporte.Properties.Resources.categorias;
+            this.pictureBox3.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(71, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 5;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.cmdReporte_Click);
             // 
             // linea_menu
             // 
@@ -181,7 +229,7 @@
             this.linea_menu.Dock = System.Windows.Forms.DockStyle.Right;
             this.linea_menu.Location = new System.Drawing.Point(77, 0);
             this.linea_menu.Name = "linea_menu";
-            this.linea_menu.Size = new System.Drawing.Size(2, 565);
+            this.linea_menu.Size = new System.Drawing.Size(2, 567);
             this.linea_menu.TabIndex = 11;
             // 
             // cmdIngredientes
@@ -247,6 +295,37 @@
             this.pbPlatillo.TabStop = false;
             this.pbPlatillo.Click += new System.EventHandler(this.cmdPlatillo_Click);
             // 
+            // cmdCategorias
+            // 
+            this.cmdCategorias.Controls.Add(this.lblCategoria);
+            this.cmdCategorias.Controls.Add(this.pbcategoria);
+            this.cmdCategorias.Location = new System.Drawing.Point(1, 271);
+            this.cmdCategorias.Name = "cmdCategorias";
+            this.cmdCategorias.Size = new System.Drawing.Size(72, 65);
+            this.cmdCategorias.TabIndex = 7;
+            // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(8, 30);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(61, 16);
+            this.lblCategoria.TabIndex = 6;
+            this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
+            // 
+            // pbcategoria
+            // 
+            this.pbcategoria.Image = global::Restaurante___reporte.Properties.Resources.categorias;
+            this.pbcategoria.Location = new System.Drawing.Point(1, 1);
+            this.pbcategoria.Name = "pbcategoria";
+            this.pbcategoria.Size = new System.Drawing.Size(71, 64);
+            this.pbcategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbcategoria.TabIndex = 5;
+            this.pbcategoria.TabStop = false;
+            this.pbcategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
+            // 
             // forma_redondeada
             // 
             this.forma_redondeada.ElipseRadius = 10;
@@ -284,7 +363,7 @@
             this.Panel_Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Contenedor.Location = new System.Drawing.Point(105, 65);
             this.Panel_Contenedor.Name = "Panel_Contenedor";
-            this.Panel_Contenedor.Size = new System.Drawing.Size(880, 565);
+            this.Panel_Contenedor.Size = new System.Drawing.Size(886, 567);
             this.Panel_Contenedor.TabIndex = 11;
             // 
             // Panel_datos_restaurante
@@ -447,78 +526,15 @@
             this.Contenedor_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Contenedor_menu.Location = new System.Drawing.Point(0, 65);
             this.Contenedor_menu.Name = "Contenedor_menu";
-            this.Contenedor_menu.Size = new System.Drawing.Size(105, 565);
+            this.Contenedor_menu.Size = new System.Drawing.Size(105, 567);
             this.Contenedor_menu.TabIndex = 12;
-            // 
-            // pbcategoria
-            // 
-            this.pbcategoria.Image = global::Restaurante___reporte.Properties.Resources.categorias;
-            this.pbcategoria.Location = new System.Drawing.Point(1, 1);
-            this.pbcategoria.Name = "pbcategoria";
-            this.pbcategoria.Size = new System.Drawing.Size(71, 64);
-            this.pbcategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbcategoria.TabIndex = 5;
-            this.pbcategoria.TabStop = false;
-            this.pbcategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(8, 30);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(61, 16);
-            this.lblCategoria.TabIndex = 6;
-            this.lblCategoria.Text = "Categoria";
-            this.lblCategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
-            // 
-            // cmdCategorias
-            // 
-            this.cmdCategorias.Controls.Add(this.lblCategoria);
-            this.cmdCategorias.Controls.Add(this.pbcategoria);
-            this.cmdCategorias.Location = new System.Drawing.Point(1, 271);
-            this.cmdCategorias.Name = "cmdCategorias";
-            this.cmdCategorias.Size = new System.Drawing.Size(72, 65);
-            this.cmdCategorias.TabIndex = 7;
-            // 
-            // cmdReporte
-            // 
-            this.cmdReporte.Controls.Add(this.lblReporte);
-            this.cmdReporte.Controls.Add(this.pictureBox3);
-            this.cmdReporte.Location = new System.Drawing.Point(2, 360);
-            this.cmdReporte.Name = "cmdReporte";
-            this.cmdReporte.Size = new System.Drawing.Size(72, 65);
-            this.cmdReporte.TabIndex = 12;
-            this.cmdReporte.Click += new System.EventHandler(this.cmdReporte_Click);
-            // 
-            // lblReporte
-            // 
-            this.lblReporte.AutoSize = true;
-            this.lblReporte.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReporte.Location = new System.Drawing.Point(8, 30);
-            this.lblReporte.Name = "lblReporte";
-            this.lblReporte.Size = new System.Drawing.Size(51, 16);
-            this.lblReporte.TabIndex = 6;
-            this.lblReporte.Text = "Reporte";
-            this.lblReporte.Click += new System.EventHandler(this.cmdReporte_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Restaurante___reporte.Properties.Resources.categorias;
-            this.pictureBox3.Location = new System.Drawing.Point(2, 1);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(71, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.cmdReporte_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.ClientSize = new System.Drawing.Size(985, 630);
+            this.ClientSize = new System.Drawing.Size(991, 632);
             this.Controls.Add(this.Panel_Contenedor);
             this.Controls.Add(this.Contenedor_menu);
             this.Controls.Add(this.Panel_encabezado);
@@ -527,14 +543,21 @@
             this.Text = "Form1";
             this.Panel_encabezado.ResumeLayout(false);
             this.Panel_encabezado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel_Menu.ResumeLayout(false);
+            this.cmdReporte.ResumeLayout(false);
+            this.cmdReporte.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.cmdIngredientes.ResumeLayout(false);
             this.cmdIngredientes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).EndInit();
             this.cmdPlatillo.ResumeLayout(false);
             this.cmdPlatillo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).EndInit();
+            this.cmdCategorias.ResumeLayout(false);
+            this.cmdCategorias.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).EndInit();
             this.mas_menos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).EndInit();
             this.Panel_Contenedor.ResumeLayout(false);
@@ -551,12 +574,6 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Contenedor_menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).EndInit();
-            this.cmdCategorias.ResumeLayout(false);
-            this.cmdCategorias.PerformLayout();
-            this.cmdReporte.ResumeLayout(false);
-            this.cmdReporte.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -604,6 +621,7 @@
         private System.Windows.Forms.Panel cmdCategorias;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.PictureBox pbcategoria;
+        private ns1.BunifuImageButton cmdCerrar;
     }
 }
 

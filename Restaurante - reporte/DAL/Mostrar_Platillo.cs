@@ -45,5 +45,43 @@ namespace Restaurante___reporte.DAL
             }
             cmd.Connection.Close();
         }
+
+        //Recuperar informacion PLATILLO
+        public string[] Retornar_info_1(string sentencia)
+        {
+            SqlCommand cmd = new SqlCommand(sentencia);
+            cmd.Connection = conexion.EstablecerConexion();
+            cmd.Connection.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            string[] informacion = new string[10];
+
+            while (dr.Read())
+            {
+                for(int i = 0; i < dr.FieldCount; i++)
+                {
+                    informacion[i] = dr[i].ToString();
+                }
+            }
+            cmd.Connection.Close();
+            return informacion;
+        }//para el metodo modificar
+
+        //Obtener categoria
+        public string Buscar_Retornar(string sentencia)
+        {
+            SqlCommand cmd = new SqlCommand(sentencia);
+            cmd.Connection = conexion.EstablecerConexion();
+            cmd.Connection.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            string nombre_categoria = "";
+            while (dr.Read())
+            {
+                nombre_categoria = dr[0].ToString();
+            }
+            cmd.Connection.Close();
+            return nombre_categoria;
+        }
     }
 }

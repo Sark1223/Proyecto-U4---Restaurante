@@ -20,7 +20,7 @@ namespace Restaurante___reporte.DAL
             conexion = new Conexion();
         }
 
-        //METODOS CIUDAD
+        //METODOS PLATILLO
         public bool AgregarPlatillo(PlatilloBLL platillo)
         {
             SqlCommand agregar = new SqlCommand(
@@ -47,7 +47,7 @@ namespace Restaurante___reporte.DAL
 
         }
 
-        public void Modificar(PlatilloBLL platillo, int idAnterior)
+        public void ModificarPlatillo(PlatilloBLL platillo, int idAnterior)
         {
 
             try
@@ -83,5 +83,58 @@ namespace Restaurante___reporte.DAL
             conexion.RellenarCB(cbCategoria, "SELECT * FROM CATEGORIA", "-- Categoria --", 1);
         }
 
+
+        //METODOS INGREDIENTES
+        public bool AgregarIngrediente(Platillo_IngredienteBLL ingrediente)
+        {
+            SqlCommand agregar = new SqlCommand(
+            "insert into PLATILLO_INGREDIENTE(platillo_id," +
+                                         "ingrediente_id," +
+                                         "cantidad_ingre_plato)" +
+            "values(@id_plato,@id_ingrediente,@cantidad)");
+            {
+                agregar.Parameters.AddWithValue("id_plato", ingrediente.platillo_id);
+                agregar.Parameters.AddWithValue("id_ingrediente", ingrediente.ingrediente_id);
+                agregar.Parameters.AddWithValue("cantidad", ingrediente.cantidad_ingre_plato);
+                
+                conexion.ejecutarComandoSinRetorno(agregar);
+            }
+            return true;
+
+        }
+
+        public void ModificarPlatillo(Platillo_IngredienteBLL ingrediente, int idAnterior)
+        {
+
+            try
+            {
+                SqlCommand modificar = new SqlCommand(
+                         "update PLATILLO set platillo_id =  @id_plato, " +
+                                           "ingrediente_id = @id_ingrediente," +
+                                           "cantidad_ingre_plato = @cantidad " +
+                                           "WHERE plato_id =" + idAnterior);
+
+                modificar.Parameters.AddWithValue("id_plato", ingrediente.platillo_id);
+                modificar.Parameters.AddWithValue("id_ingrediente", ingrediente.ingrediente_id);
+                modificar.Parameters.AddWithValue("cantidad", ingrediente.cantidad_ingre_plato);
+
+                conexion.ejecutarComandoSinRetorno(modificar);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void LlenarCBIngrediete(ComboBox cbIngrediente) 
+        {
+            conexion.RellenarCB(cbIngrediente, "SELECT * FROM INGREDIENTE", "-- Ingrediente --", 1);
+        }
+
+        public DataSet MuestraIngredientesPlato()
+        {
+            SqlCommand sentencia = new SqlCommand("SELECT plato_nombre,plato_descripcion FROM PLATILLO");
+            return conexion.EjecutarSentenciaConRetorno(sentencia);
+        }
     }
 }
