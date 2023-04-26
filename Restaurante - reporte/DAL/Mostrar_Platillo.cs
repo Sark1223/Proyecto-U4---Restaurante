@@ -67,6 +67,39 @@ namespace Restaurante___reporte.DAL
             return informacion;
         }//para el metodo modificar
 
+
+        //public byte[] BuscarCliId(string sentencia)
+        //{
+        //    //DataTable tb = new DataTable();
+        //    //SqlDataAdapter da = new SqlDataAdapter("usp_BuscarCliId '" + xid + "'", cn);
+        //    //da.Fill(tb);
+        //    //return tb;
+
+        //    SqlCommand cmd = new SqlCommand(sentencia);
+        //    //cmd.Connection = conexion.EstablecerConexion();
+        //    //cmd.Connection.Open();
+
+        //    //SqlDataReader dr = cmd.ExecuteReader();
+        //    //byte[] foto = null;
+
+        //    //while (dr.Read())
+        //    //{
+        //    //    foto = (byte[])dr[0];
+        //    //}
+        //    //cmd.Connection.Close();
+        //    //return foto;
+        //}
+
+        public DataTable BuscarCliId(string xid)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = conexion.EstablecerConexion();
+            DataTable tb = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter($"Select plato_foto From PLATILLO WHERE plato_id = {xid}", cmd.Connection);
+            da.Fill(tb);
+            return tb;
+        }
+
         //Obtener categoria
         public string Buscar_Retornar(string sentencia)
         {

@@ -56,7 +56,13 @@ namespace Restaurante___reporte.PL
             //
             //
             lblCategoria.Text = "Categoria: " + mostrar.Buscar_Retornar("SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id =" + informacion[6].ToString());
-            byte[] imgen = (byte[])informacion[4].;
+            //byte[] imagen = mostrar.BuscarCliId($"SELECT plato_foto FROM PLATILLO WHERE plato_id = {informacion[4]}");
+            DataTable tb = new DataTable();
+            tb = mostrar.BuscarCliId(informacion[0].ToString());
+            byte[] img = (byte[])tb.Rows[0]["plato_foto"];
+
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(img);
+            pbImagenPlato.Image = Image.FromStream(ms);
         }
     }
 }

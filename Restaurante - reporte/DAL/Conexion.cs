@@ -12,7 +12,7 @@ namespace Restaurante___reporte.DLL
     internal class Conexion
     {
         //Conexion Santos Karla♥
-        private string CadenaConexion = @"server = ANVORGUEZA\SQLEXPRESS; Initial Catalog = RESTAURANTE; Integrated Security = true";
+        public string CadenaConexion = @"server = ANVORGUEZA\SQLEXPRESS; Initial Catalog = RESTAURANTE; Integrated Security = true";
         SqlConnection conexion;
 
         ////Conexion Villada Edwin

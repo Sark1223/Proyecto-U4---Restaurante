@@ -251,9 +251,9 @@ namespace Restaurante___reporte.PL
                 pbFotoPlatillo.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbFotoPlatillo.Image = Image.FromStream(selectorImagen.OpenFile());
                 MemoryStream memoria = new MemoryStream();
-                pbFotoPlatillo.Image.Save(memoria, System.Drawing.Imaging.ImageFormat.Jpeg);
+                pbFotoPlatillo.Image.Save(memoria, System.Drawing.Imaging.ImageFormat.Png);
 
-                platilloBLL.plato_foto = memoria.ToArray();
+                platilloBLL.plato_foto = memoria.GetBuffer();
             }
         }
 

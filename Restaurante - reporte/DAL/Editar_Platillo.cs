@@ -84,6 +84,7 @@ namespace Restaurante___reporte.DAL
         }
 
 
+
         //METODOS INGREDIENTES
         public bool AgregarIngrediente(Platillo_IngredienteBLL ingrediente)
         {
