@@ -61,6 +61,12 @@
     <Compile Include="BLL\PlatilloBLL.cs" />
     <Compile Include="BLL\Platillo_IngredienteBLL.cs" />
     <Compile Include="BLL\Platillo_ProcedimientoBLL.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DAL\Conexion.cs" />
     <Compile Include="DAL\Editar_Categoria.cs" />
     <Compile Include="DAL\Editar_Ingrediente.cs" />
@@ -96,14 +102,12 @@
     <Compile Include="PL\frmIngredientes.Designer.cs">
       <DependentUpon>frmIngredientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="PL\frmReporte.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PL\frmReporte.Designer.cs">
-      <DependentUpon>frmReporte.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmPlatillos.resx">
       <DependentUpon>frmPlatillos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PL\frmReporte.resx">
-      <DependentUpon>frmReporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -253,6 +254,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -123,7 +123,7 @@ namespace Restaurante___reporte
         frmCategoria categoria = new frmCategoria();
         Editar_Categoria editar_categoria = new Editar_Categoria();
         Editar_Ingrediente editar_ingrediente = new Editar_Ingrediente();
-        frmReporte reporte = new frmReporte();
+        //frmReporte reporte = new frmReporte();
         Mostrar_Platillo mostrar = new Mostrar_Platillo();
 
         private void cmdIngrediente_Click(object sender, EventArgs e)
@@ -148,7 +148,7 @@ namespace Restaurante___reporte
 
         private void cmdReporte_Click(object sender, EventArgs e)
         {
-            reporte.ShowDialog();
+            //reporte.ShowDialog();
         }
 
         private void cmdPlatillo_Click(object sender, EventArgs e)

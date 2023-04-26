@@ -48,4 +48,3 @@ C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaura
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\stdole.dll
-C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.PL.frmReporte.resources

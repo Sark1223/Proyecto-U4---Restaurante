@@ -56,6 +56,7 @@ namespace Restaurante___reporte.PL
             //
             //
             lblCategoria.Text = "Categoria: " + mostrar.Buscar_Retornar("SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id =" + informacion[6].ToString());
+            byte[] imgen = (byte[])informacion[4].;
         }
     }
 }
