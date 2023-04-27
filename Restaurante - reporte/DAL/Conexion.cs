@@ -81,17 +81,17 @@ namespace Restaurante___reporte.DLL
             cb.SelectedIndex = 0;
         }
 
-        public int GuardarInfoCB_Tabla(string sentencia)
+        public string GuardarInfoCB_Tabla(string sentencia)
         {
             SqlCommand cmd = new SqlCommand(sentencia);
             cmd.Connection = EstablecerConexion();
             conexion.Open();
 
             SqlDataReader dr = cmd.ExecuteReader();
-            int ID = 0;
+            string ID = "";
             while (dr.Read())
             {
-                ID = int.Parse(dr[0].ToString());
+                ID = dr[0].ToString();
             }
             conexion.Close();
             return ID;

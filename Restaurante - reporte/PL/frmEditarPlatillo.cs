@@ -45,6 +45,7 @@ namespace Restaurante___reporte.PL
         //Variables auxiliares
         string ID_Actual, nombre;
         bool primeraApertura = true;
+        bool imagen = false;
 
 
         private void frmEditarPlatillo_Load(object sender, EventArgs e)
@@ -52,15 +53,34 @@ namespace Restaurante___reporte.PL
             if (lblTitle.Text == "AGREGAR PLATILLO")
             {
                 editar_plato.LlenarCBCategoria(cbCategoria);
+                editar_plato.LlenarCBIngrediete(cbIngredientes);
                 cmdAgregarIngrediente.Enabled = false;
                 cmdAgregarPaso.Enabled = false;
+
+                //Habilitar paneles de añadir
+                pnAñadirIngre.Visible = true;
+                pnAñadirPaso.Visible = true;
                 pnAgregar.Visible = true;
+
+                //Inabilitar paneles modificar
                 pnModificar.Visible = false;
+                pnModifiIngre.Visible = false;
+                pnModifiPaso.Visible = false;
+                imagen = false;
             }
             else
             {
-                pnModificar.Visible = true;
+                //Inabilitar paneles de añadir
+                pnAñadirIngre.Visible = false;
+                pnAñadirPaso.Visible = false;
                 pnAgregar.Visible = false;
+
+                //Mostrar paneles modificar
+                pnModificar.Visible = true;
+                pnModifiIngre.Visible = true;
+                pnModifiPaso.Visible = true;
+
+                imagen = true;
 
                 if (txtId_platillo.Text != "")
                 {
@@ -124,7 +144,7 @@ namespace Restaurante___reporte.PL
                     valoresVacios += "Descripcion,";
                     no_vacios++;
                 }
-                if(pbFotoPlatillo.Image == Properties.Resources.estilo_grafico__1_)
+                if(imagen == false)
                 {
                     valoresVacios += "Imagen";
                     no_vacios++;
@@ -254,6 +274,8 @@ namespace Restaurante___reporte.PL
                 pbFotoPlatillo.Image.Save(memoria, System.Drawing.Imaging.ImageFormat.Png);
 
                 platilloBLL.plato_foto = memoria.GetBuffer();
+
+                imagen = true;
             }
         }
 
@@ -278,7 +300,14 @@ namespace Restaurante___reporte.PL
             
         }
 
+        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategoria.SelectedIndex > 0)
+            {
+                platilloBLL.categoria_id = int.Parse(conexion.GuardarInfoCB_Tabla("SELECT * FROM CATEGORIA WHERE categoria_nombre='" + cbCategoria.Text + "'"));
 
+            }
+        }
 
         //accion de botones
         private void cmdListo_MouseHover(object sender, EventArgs e)
@@ -292,10 +321,25 @@ namespace Restaurante___reporte.PL
             this.pbListo.Image = Properties.Resources.marca_de_verificacion__1_;
             lblListo.ForeColor = Color.Black;
         }
+      
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                platilloBLL.plato_preciof = float.Parse(txtPrecio.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Ingrese SOLO NUMEROS.", "ERROR DE FORMATO");
+                txtPrecio.SelectAll();
+            }
+        }
 
-
-        //METODOS INGREDIENTES--------------------------------------------------
-
+        
+        
+        //METODOS INGREDIENTES ---------------------------------------------------------
+        List<APIngrediente> TablaIngre = new List<APIngrediente>();
+        APIngrediente ingre;
         //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
         public bool ValoresVaciosIngrediente()
         {
@@ -331,10 +375,11 @@ namespace Restaurante___reporte.PL
         public void RecuperarInformacionIngrediente()
         {
             ingre_platoBLL.platillo_id = int.Parse(txtId_platillo.Text);
-            ingre_platoBLL.ingrediente_id = conexion.GuardarInfoCB_Tabla("SELECT ingrediente_id FROM INGREDIENTE WHERE ingrediente_nombre='" + cbIngredientes.Text + "'"); ;
+            ingre_platoBLL.ingrediente_id = int.Parse(conexion.GuardarInfoCB_Tabla("SELECT ingrediente_id FROM INGREDIENTE WHERE ingrediente_nombre='" + cbIngredientes.Text + "'"));
             ingre_platoBLL.cantidad_ingre_plato = float.Parse(txtCantidad.Text);
         }
-
+        
+        int pos=0;
         private void agregarIngrediente_Click(object sender, EventArgs e)
         {
             if (!ValoresVaciosIngrediente())
@@ -343,7 +388,23 @@ namespace Restaurante___reporte.PL
                 if (editar_plato.AgregarIngrediente(ingre_platoBLL))
                 {
                     MessageBox.Show("Se INGRESARON los ingredientes CORRECTAMENTE", "Ingrediente Agregado");
-                    
+
+                    ingre = new APIngrediente
+                    {
+                        nombre_ingrediente = cbIngredientes.Text,
+                        unidad = conexion.GuardarInfoCB_Tabla("SELECT ingrediente_unidad_medida FROM INGREDIENTE WHERE ingrediente_nombre='" + cbIngredientes.Text + "'"),
+                        cantidad = ingre_platoBLL.cantidad_ingre_plato.ToString()
+                    };
+
+                    TablaIngre.Add(ingre);
+
+                    //Agrega valores a las filas de la tabla
+                    int n= dgvIngredientes.Rows.Add();
+                    dgvIngredientes.Rows[n].Cells[0].Value = TablaIngre[pos].nombre_ingrediente;
+                    dgvIngredientes.Rows[n].Cells[1].Value = TablaIngre[pos].cantidad;
+                    dgvIngredientes.Rows[n].Cells[2].Value = TablaIngre[pos].unidad;
+
+                    pos++;
                 }
                 else
                 {
@@ -352,45 +413,94 @@ namespace Restaurante___reporte.PL
             }
         }
 
+        private void cbIngredientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbIngredientes.SelectedIndex > 0)
+            {
+                ingre_platoBLL.ingrediente_id = int.Parse(conexion.GuardarInfoCB_Tabla("SELECT ingrediente_id FROM INGREDIENTE WHERE ingrediente_nombre ='" + cbIngredientes.Text + "'"));
+
+                lblUnidad_Medida.Text = conexion.GuardarInfoCB_Tabla("SELECT ingrediente_unidad_medida FROM INGREDIENTE WHERE ingrediente_nombre ='" + cbIngredientes.Text + "'");
+            }
+        }
+
+
+        //METODOS RECETA ---------------------------------------------------------------
+        public bool ValoresVaciosPasos()
+        {
+            string valoresVacios = "";
+            int no_vacios = 0;
+            //VERIFICACION DE VALORES VACIOS
+            {
+                if (txtInstruccion.Text == "")
+                {
+                    valoresVacios += "Instruccion";
+                    no_vacios++;
+                }
+            }
+            if (no_vacios > 0)
+            {
+                MessageBox.Show("No puede dejar información en blanco \r\n\r\n" +
+                                "No. de valores vacios: " + no_vacios + "\r\n" +
+                                "Valores vacios: " + valoresVacios, "ERROR AL INGRESAR VALORES");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void RecuperarInfoPASO()
+        {txtPaso_no.Text = paso.ToString();
+            pro_platoBLL.plato_id = int.Parse(txtId_platillo.Text);
+            pro_platoBLL.no_paso = int.Parse(txtPaso_no.Text);
+            pro_platoBLL.descripcion = txtInstruccion.Text; 
+        }
+
+        int paso = 0;
+        private void cmdAgregarPaso_Click(object sender, EventArgs e)
+        {
+            if (!ValoresVaciosPasos())
+            {
+                RecuperarInfoPASO();
+                if (editar_plato.AgregarPaso(pro_platoBLL))
+                {
+                    MessageBox.Show("La instruccion se agrego CORRECTAMENTE", "Instruccion Agregada");
+
+                    paso++;
+                    //Agrega valores a las filas de la tabla
+                    int n = dgvProcedimiento.Rows.Add();
+                    dgvProcedimiento.Rows[n].Cells[0].Value = paso;
+                    dgvProcedimiento.Rows[n].Cells[1].Value = pro_platoBLL.descripcion;
+
+                    txtPaso_no.Text = paso.ToString();
+
+                }
+                else
+                {
+                    MessageBox.Show("NO se pudo ingresar la informacion del platillo", "Error al ingresar platillo");
+                }
+            }
+        }
+
+
+
+
         //accion de botones
         private void agregarIngrediente_MouseHover(object sender, EventArgs e)
         {
              this.cmdAgregarIngrediente.Size = new Size(29, 31);
         }
 
-        private void cbCategoria_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbCategoria.SelectedIndex > 0)
-            {
-                platilloBLL.categoria_id = conexion.GuardarInfoCB_Tabla("SELECT * FROM CATEGORIA WHERE categoria_nombre='" + cbCategoria.Text + "'");
-
-            }
-        }
-
-        private void cmdCerrar_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void txtPrecio_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                platilloBLL.plato_preciof = float.Parse(txtPrecio.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Ingrese SOLO NUMEROS.", "ERROR DE FORMATO");
-                txtPrecio.SelectAll();
-            }
-        }
-
-
         private void agregarIngrediente_MouseLeave(object sender, EventArgs e)
         {
             this.cmdAgregarIngrediente.Size = new Size(26, 27);
         }
-
+        
+        private void cmdCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
 
 
 

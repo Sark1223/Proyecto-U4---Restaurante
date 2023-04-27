@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,37 +33,59 @@ namespace Restaurante___reporte.PL
         private void cmdAgregarPatillo_Click(object sender, EventArgs e)
         {
             frmEditarPlatillo.ShowDialog();
+
+            dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];
         }
 
         private void dgvPlatillos_muestra_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            /*plato_id               VARCHAR(3) NOT NULL,
-    plato_nombre           VARCHAR(50) NOT NULL,
-    plato_descripcion      VARCHAR(200) NOT NULL,
-    plato_dificultad       VARCHAR(8) NOT NULL,
-    plato_foto             IMAGE NOT NULL,
-    plato_preciof          DECIMAL(6, 2),
-    categoria_id VARCHAR(3) NOT NULL*/
-            int indice = e.RowIndex;
-            string nombre_plato = dgvPlatillos_muestra.Rows[indice].Cells[0].Value.ToString();
-            string[] informacion = mostrar.Retornar_info_1("SELECT * FROM PLATILLO WHERE plato_nombre = '" + nombre_plato + "'");
+            string id = "";
+            //OBTENER INFORMACION DEL PLATILLO -----------------------------------------------------------
+            {
+                int indice = e.RowIndex;
+                //Indicar el nombre del platillo en la pantalla
+                string nombre_plato = dgvPlatillos_muestra.Rows[indice].Cells[0].Value.ToString();
 
-            lblNombrePlatillo.Text = informacion[0].ToString() + " " + informacion[1].ToString();
-            txtDescripcion.Text = informacion[2].ToString();
-            lblDificultad.Text = "Dificultad: " + informacion[3].ToString();
-            //pbImagenPlato.Image = informacion[4];
-            lblPrecio.Text = "Precio: $" + informacion[5].ToString();
-            //mostrar.ObtenerProcedimiento(,txtDescripcion);
-            //
-            //
-            lblCategoria.Text = "Categoria: " + mostrar.Buscar_Retornar("SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id =" + informacion[6].ToString());
-            //byte[] imagen = mostrar.BuscarCliId($"SELECT plato_foto FROM PLATILLO WHERE plato_id = {informacion[4]}");
-            DataTable tb = new DataTable();
-            tb = mostrar.BuscarCliId(informacion[0].ToString());
-            byte[] img = (byte[])tb.Rows[0]["plato_foto"];
+                //Recuperar el "id" del platillo por medio del nombre del plato
+                id = mostrar.RetornarID("SELECT plato_id FROM PLATILLO WHERE plato_nombre = '" + nombre_plato + "'");
 
-            System.IO.MemoryStream ms = new System.IO.MemoryStream(img);
-            pbImagenPlato.Image = Image.FromStream(ms);
+                //Obtener toda la informacion por medio de plato_id 
+                DataTable tb = mostrar.InformacionID($"Select * From PLATILLO WHERE plato_id = {id}");
+                //Mostrar ID y Nombre del plato
+                lblNombrePlatillo.Text = tb.Rows[0]["plato_id"].ToString() + " " + tb.Rows[0]["plato_nombre"].ToString();
+                //Desccripcion
+                txtDescripcion.Text = tb.Rows[0]["plato_descripcion"].ToString();
+                //Dificultad
+                lblDificultad.Text = "Dificultad: " + tb.Rows[0]["plato_dificultad"].ToString();
+                //Precio
+                lblPrecio.Text = "Precio: $" + tb.Rows[0]["plato_preciof"].ToString();
+
+                //Obtener el nombre de la categoria por medio del id que se almaceno en la tabla
+                string Comando = "SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id =" + tb.Rows[0]["categoria_id"].ToString();
+                lblCategoria.Text = "Categoria: " + mostrar.Buscar_Retornar(Comando);
+
+                //Obtener el arreglo de Bytes 
+                byte[] img = (byte[])tb.Rows[0]["plato_foto"];
+
+                //Convertir el arreglo a imagen
+                System.IO.MemoryStream ms = new System.IO.MemoryStream(img);
+                pbImagenPlato.Image = Image.FromStream(ms);
+            }
+
+            //OBTENER INGREDIENTES DEL PLATILLO DEL PLATILLO -----------------------------------------------------------
+            {
+                /*DataTable tb = */mostrar.RetornarProcedimiento($"Select * From RECETA WHERE plato_id = {id}", txtProcedimiento);
+                //int cantidad = tb.Rows.Count;
+
+                //for( int i = 0; i < cantidad; i++)
+                //{
+                //    txtProcedimiento.Text = txtProcedimiento.Text +"\r\n"+ tb.Rows[i]["no_paso"].ToString() +" "+ tb.Rows[i]["descripcion"].ToString();
+                //}
+               
+            }
+
+            //OBTENER RECETA DEL PLATILLO DEL PLATILLO -----------------------------------------------------------
+            { }
         }
     }
 }

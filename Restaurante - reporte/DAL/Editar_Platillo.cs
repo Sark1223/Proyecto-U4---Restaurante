@@ -84,8 +84,7 @@ namespace Restaurante___reporte.DAL
         }
 
 
-
-        //METODOS INGREDIENTES
+        //METODOS INGREDIENTES -------------------------------------------------------------------
         public bool AgregarIngrediente(Platillo_IngredienteBLL ingrediente)
         {
             SqlCommand agregar = new SqlCommand(
@@ -137,5 +136,54 @@ namespace Restaurante___reporte.DAL
             SqlCommand sentencia = new SqlCommand("SELECT plato_nombre,plato_descripcion FROM PLATILLO");
             return conexion.EjecutarSentenciaConRetorno(sentencia);
         }
+
+
+        //METODOS PROCEDIMIENTO--------------------------------------------------------------
+        public bool AgregarPaso(Platillo_ProcedimientoBLL paso)
+        {
+            /*CREATE TABLE RECETA (
+    no_paso        VARCHAR(2) NOT NULL,
+    plato_id VARCHAR(3) NOT NULL,
+    descripcion    VARCHAR(200) NOT NULL
+);
+*/
+            SqlCommand agregar = new SqlCommand(
+            "insert into RECETA(no_paso," +
+                               "plato_id," +
+                               "descripcion)" +
+            "values(@id_paso,@id_plato,@descripcion)");
+            {
+                agregar.Parameters.AddWithValue("id_paso", paso.no_paso);
+                agregar.Parameters.AddWithValue("id_plato", paso.plato_id);
+                agregar.Parameters.AddWithValue("descripcion", paso.descripcion);
+
+                conexion.ejecutarComandoSinRetorno(agregar);
+            }
+            return true;
+
+        }
+
+        public void ModificarPaso(Platillo_ProcedimientoBLL paso, int idAnterior)
+        {
+            try
+            {
+                SqlCommand modificar = new SqlCommand(
+                         "update RECETA set no_paso =  @id_paso, " +
+                                           "plato_id = @id_plato," +
+                                           "descripcion = @descripcion " +
+                                           "WHERE no_paso =" + idAnterior);
+
+                modificar.Parameters.AddWithValue("id_paso", paso.no_paso);
+                modificar.Parameters.AddWithValue("id_plato", paso.plato_id);
+                modificar.Parameters.AddWithValue("descripcion", paso.descripcion);
+
+                conexion.ejecutarComandoSinRetorno(modificar);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }

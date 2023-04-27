@@ -113,7 +113,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
             this.panel1.Location = new System.Drawing.Point(308, 28);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(616, 10);
             this.panel1.TabIndex = 1;
@@ -155,6 +155,7 @@
             this.cmdCerrar.TabIndex = 73;
             this.cmdCerrar.TabStop = false;
             this.cmdCerrar.Zoom = 10;
+            this.cmdCerrar.Click += new System.EventHandler(this.Cerrar);
             // 
             // panel2
             // 

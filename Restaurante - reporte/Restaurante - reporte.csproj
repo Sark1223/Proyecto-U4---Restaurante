@@ -67,6 +67,7 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DAL\APIngrediente.cs" />
     <Compile Include="DAL\Conexion.cs" />
     <Compile Include="DAL\Editar_Categoria.cs" />
     <Compile Include="DAL\Editar_Ingrediente.cs" />

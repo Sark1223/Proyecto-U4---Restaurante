@@ -6,7 +6,9 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace Restaurante___reporte.DAL
 {
@@ -26,8 +28,8 @@ namespace Restaurante___reporte.DAL
             return conexion.EjecutarSentenciaConRetorno(sentencia);
         }
 
-        //METODOS COMBO BOX - COMPLEJO
-        public void ObtenerProcedimiento(string id_platillo, TextBox text)
+        //Recuperar RECETA -----------------------------------------------------------
+        public void ObtenerProcedimiento(string id_ingrediente, System.Windows.Forms.TextBox text)
         {
             string sentencia = "Select * from RECETA";
             SqlCommand cmd = new SqlCommand(sentencia);
@@ -37,7 +39,7 @@ namespace Restaurante___reporte.DAL
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                if (dr[0].ToString() == id_platillo)
+                if (dr[0].ToString() == id_ingrediente)
                 {
                     text.Text = text.Text + dr[0].ToString() + "  " + dr[0].ToString() +"\r\n";
                 }
@@ -46,56 +48,32 @@ namespace Restaurante___reporte.DAL
             cmd.Connection.Close();
         }
 
-        //Recuperar informacion PLATILLO
-        public string[] Retornar_info_1(string sentencia)
+        //Recuperar ID del platillo
+        public string RetornarID(string sentencia)
         {
             SqlCommand cmd = new SqlCommand(sentencia);
             cmd.Connection = conexion.EstablecerConexion();
             cmd.Connection.Open();
 
             SqlDataReader dr = cmd.ExecuteReader();
-            string[] informacion = new string[10];
+            string id = "";
 
             while (dr.Read())
             {
-                for(int i = 0; i < dr.FieldCount; i++)
-                {
-                    informacion[i] = dr[i].ToString();
-                }
+                id = dr[0].ToString();
             }
             cmd.Connection.Close();
-            return informacion;
+            return id;
         }//para el metodo modificar
 
-
-        //public byte[] BuscarCliId(string sentencia)
-        //{
-        //    //DataTable tb = new DataTable();
-        //    //SqlDataAdapter da = new SqlDataAdapter("usp_BuscarCliId '" + xid + "'", cn);
-        //    //da.Fill(tb);
-        //    //return tb;
-
-        //    SqlCommand cmd = new SqlCommand(sentencia);
-        //    //cmd.Connection = conexion.EstablecerConexion();
-        //    //cmd.Connection.Open();
-
-        //    //SqlDataReader dr = cmd.ExecuteReader();
-        //    //byte[] foto = null;
-
-        //    //while (dr.Read())
-        //    //{
-        //    //    foto = (byte[])dr[0];
-        //    //}
-        //    //cmd.Connection.Close();
-        //    //return foto;
-        //}
-
-        public DataTable BuscarCliId(string xid)
+        public DataTable InformacionID(string sentencia)
         {
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conexion.EstablecerConexion();
+            SqlCommand cmd = new SqlCommand
+            {
+                Connection = conexion.EstablecerConexion()
+            };
             DataTable tb = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter($"Select plato_foto From PLATILLO WHERE plato_id = {xid}", cmd.Connection);
+            SqlDataAdapter da = new SqlDataAdapter(sentencia, cmd.Connection);
             da.Fill(tb);
             return tb;
         }
@@ -116,5 +94,19 @@ namespace Restaurante___reporte.DAL
             cmd.Connection.Close();
             return nombre_categoria;
         }
+
+        public void RetornarProcedimiento(string sentencia, System.Windows.Forms.TextBox text)
+        {
+            SqlCommand cmd = new SqlCommand(sentencia);
+            cmd.Connection = conexion.EstablecerConexion();
+            cmd.Connection.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                text.Text = text.Text + "\r\n" + dr[0].ToString() +" " + dr[2].ToString();
+            }
+            cmd.Connection.Close();
+        }//lo que se guarda en la tabla
     }
 }

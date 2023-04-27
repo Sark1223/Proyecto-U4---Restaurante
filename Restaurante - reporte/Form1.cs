@@ -151,6 +151,11 @@ namespace Restaurante___reporte
             //reporte.ShowDialog();
         }
 
+        private void Cerrar(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void cmdPlatillo_Click(object sender, EventArgs e)
         {
             platillos.dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];

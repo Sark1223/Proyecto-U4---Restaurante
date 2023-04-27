@@ -55,12 +55,12 @@
             this.RadioIngredientes = new ns1.BunifuElipse(this.components);
             this.dgvTablaDB = new System.Windows.Forms.DataGridView();
             this.Panel = new System.Windows.Forms.Panel();
+            this.comboMed = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.RadioPanel = new ns1.BunifuElipse(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new ns1.BunifuImageButton();
-            this.comboMed = new System.Windows.Forms.ComboBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -420,6 +420,32 @@
             this.Panel.Size = new System.Drawing.Size(563, 406);
             this.Panel.TabIndex = 44;
             // 
+            // comboMed
+            // 
+            this.comboMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.comboMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.comboMed.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.comboMed.FormattingEnabled = true;
+            this.comboMed.Items.AddRange(new object[] {
+            "Kg",
+            "L",
+            "gr",
+            "ml"});
+            this.comboMed.Location = new System.Drawing.Point(20, 132);
+            this.comboMed.Name = "comboMed";
+            this.comboMed.Size = new System.Drawing.Size(148, 26);
+            this.comboMed.TabIndex = 74;
+            this.comboMed.Text = "-- Medida --";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            this.panel4.Location = new System.Drawing.Point(20, 162);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(148, 2);
+            this.panel4.TabIndex = 73;
+            // 
             // bunifuThinButton21
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
@@ -472,31 +498,6 @@
             this.bunifuImageButton1.TabStop = false;
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
-            // 
-            // comboMed
-            // 
-            this.comboMed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.comboMed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.comboMed.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.comboMed.FormattingEnabled = true;
-            this.comboMed.Items.AddRange(new object[] {
-            "Facil",
-            "Media",
-            "Dificil"});
-            this.comboMed.Location = new System.Drawing.Point(20, 132);
-            this.comboMed.Name = "comboMed";
-            this.comboMed.Size = new System.Drawing.Size(148, 26);
-            this.comboMed.TabIndex = 74;
-            this.comboMed.Text = "-- Medida --";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            this.panel4.Location = new System.Drawing.Point(20, 162);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(148, 2);
-            this.panel4.TabIndex = 73;
             // 
             // frmIngredientes
             // 
