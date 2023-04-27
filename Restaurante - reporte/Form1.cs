@@ -148,7 +148,8 @@ namespace Restaurante___reporte
 
         private void cmdReporte_Click(object sender, EventArgs e)
         {
-            //reporte.ShowDialog();
+
+            CrystalReport2.ShowDialog();
         }
 
         private void Cerrar(object sender, EventArgs e)
