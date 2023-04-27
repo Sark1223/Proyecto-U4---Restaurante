@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlatillos));
             this.lblNombrePlatillo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,15 +48,16 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.txtProcedimiento = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.pbImagenPlato = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvPlatillos_muestra = new System.Windows.Forms.DataGridView();
             this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
+            this.pbImagenPlato = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombrePlatillo
@@ -100,6 +102,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.bunifuThinButton21);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel12);
@@ -207,16 +210,6 @@
             this.txtDescripcion.TabIndex = 14;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
             // 
-            // pbImagenPlato
-            // 
-            this.pbImagenPlato.Image = global::Restaurante___reporte.Properties.Resources.foto;
-            this.pbImagenPlato.Location = new System.Drawing.Point(15, 22);
-            this.pbImagenPlato.Name = "pbImagenPlato";
-            this.pbImagenPlato.Size = new System.Drawing.Size(180, 171);
-            this.pbImagenPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbImagenPlato.TabIndex = 7;
-            this.pbImagenPlato.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -229,48 +222,48 @@
             // 
             // dgvPlatillos_muestra
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvPlatillos_muestra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(217)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvPlatillos_muestra.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPlatillos_muestra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvPlatillos_muestra.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvPlatillos_muestra.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.dgvPlatillos_muestra.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvPlatillos_muestra.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvPlatillos_muestra.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(194)))), ((int)(((byte)(170)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPlatillos_muestra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(181)))), ((int)(((byte)(151)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(194)))), ((int)(((byte)(170)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPlatillos_muestra.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPlatillos_muestra.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPlatillos_muestra.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(237)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPlatillos_muestra.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPlatillos_muestra.EnableHeadersVisualStyles = false;
             this.dgvPlatillos_muestra.Location = new System.Drawing.Point(13, 42);
             this.dgvPlatillos_muestra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvPlatillos_muestra.Name = "dgvPlatillos_muestra";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPlatillos_muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPlatillos_muestra.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPlatillos_muestra.RowHeadersVisible = false;
             this.dgvPlatillos_muestra.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvPlatillos_muestra.RowTemplate.Height = 30;
@@ -290,6 +283,42 @@
             this.cmdAgregarPatillo.TabStop = false;
             this.cmdAgregarPatillo.Click += new System.EventHandler(this.cmdAgregarPatillo_Click);
             // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Mostrar Receta";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(505, 199);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(98, 66);
+            this.bunifuThinButton21.TabIndex = 67;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // pbImagenPlato
+            // 
+            this.pbImagenPlato.Image = global::Restaurante___reporte.Properties.Resources.foto;
+            this.pbImagenPlato.Location = new System.Drawing.Point(15, 22);
+            this.pbImagenPlato.Name = "pbImagenPlato";
+            this.pbImagenPlato.Size = new System.Drawing.Size(180, 171);
+            this.pbImagenPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbImagenPlato.TabIndex = 7;
+            this.pbImagenPlato.TabStop = false;
+            // 
             // frmPlatillos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,9 +336,9 @@
             this.Load += new System.EventHandler(this.frmPlatillos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +365,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel4;
+        private ns1.BunifuThinButton2 bunifuThinButton21;
     }
 }

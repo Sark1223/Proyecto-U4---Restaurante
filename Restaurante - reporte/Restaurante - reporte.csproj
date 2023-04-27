@@ -67,6 +67,12 @@
       <DependentUpon>CrystalReport2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DAL\APIngrediente.cs" />
     <Compile Include="DAL\Conexion.cs" />
     <Compile Include="DAL\Editar_Categoria.cs" />
@@ -78,6 +84,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecetaPlatillo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecetaPlatillo.Designer.cs">
+      <DependentUpon>frmRecetaPlatillo.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\frmCategoria.cs">
       <SubType>Form</SubType>
@@ -115,8 +127,15 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport2.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecetaPlatillo.resx">
+      <DependentUpon>frmRecetaPlatillo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\frmCategoria.resx">
       <DependentUpon>frmCategoria.cs</DependentUpon>

@@ -1,4 +1,5 @@
-﻿using Restaurante___reporte.DAL;
+﻿using CrystalDecisions.Windows.Forms;
+using Restaurante___reporte.DAL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,10 +37,10 @@ namespace Restaurante___reporte.PL
 
             dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];
         }
-
+        string id;
         private void dgvPlatillos_muestra_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            string id = "";
+            /*string*/ id = "";
             //OBTENER INFORMACION DEL PLATILLO -----------------------------------------------------------
             {
                 int indice = e.RowIndex;
@@ -86,6 +87,10 @@ namespace Restaurante___reporte.PL
 
             //OBTENER RECETA DEL PLATILLO DEL PLATILLO -----------------------------------------------------------
             { }
+        }
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

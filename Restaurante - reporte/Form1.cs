@@ -59,6 +59,7 @@ namespace Restaurante___reporte
 
         //VARIABLES AUXILIARES - OPCIONES DEL MENU
         Panel PanelAnterior, PanelActual, Panel1cmd;
+        Reporte reporte = new Reporte();
         bool primerCmd = true;
 
         //colores de los comandos elegidos
@@ -149,7 +150,7 @@ namespace Restaurante___reporte
         private void cmdReporte_Click(object sender, EventArgs e)
         {
 
-            CrystalReport2.ShowDialog();
+            reporte.ShowDialog();
         }
 
         private void Cerrar(object sender, EventArgs e)
