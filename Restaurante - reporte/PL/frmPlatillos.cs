@@ -101,10 +101,6 @@ namespace Restaurante___reporte.PL
                 }
             }
         }
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void dgvPlatillos_muestra_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -203,6 +199,19 @@ namespace Restaurante___reporte.PL
 
             ep.ShowDialog();
             dgvPlatillos_muestra.DataSource = mostrar.MuestraPlatillos_Tabla().Tables[0];
+        }
+
+        private void cmdImprimirReceta_Click(object sender, EventArgs e)
+        {
+            frmRecetaPlatillo receta = new frmRecetaPlatillo();
+            CrystalReport1 reporte = new CrystalReport1();
+
+            DataSet dst = mostrar.Reporte("Select * From RECETA WHERE plato_id=" + id);
+            //DataSet dst = mostrar.Reporte("Select * From RECETA WHERE plato_id=" + id);
+
+            reporte.SetDataSource(dst.Tables[0]);
+            receta.crystalReportViewer1.ReportSource = reporte;
+            receta.ShowDialog();
         }
     }
 }

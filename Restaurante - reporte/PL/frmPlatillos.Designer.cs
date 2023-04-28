@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblDificultad = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
+            this.cmdImprimirReceta = new ns1.BunifuThinButton2();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -102,7 +102,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuThinButton21);
+            this.panel1.Controls.Add(this.cmdImprimirReceta);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel12);
@@ -121,31 +121,31 @@
             this.panel1.Size = new System.Drawing.Size(634, 514);
             this.panel1.TabIndex = 13;
             // 
-            // bunifuThinButton21
+            // cmdImprimirReceta
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 40;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Imprimir Receta";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 40;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(471, 213);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(132, 52);
-            this.bunifuThinButton21.TabIndex = 67;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            this.cmdImprimirReceta.ActiveBorderThickness = 1;
+            this.cmdImprimirReceta.ActiveCornerRadius = 40;
+            this.cmdImprimirReceta.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.cmdImprimirReceta.ActiveForecolor = System.Drawing.Color.White;
+            this.cmdImprimirReceta.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.cmdImprimirReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.cmdImprimirReceta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cmdImprimirReceta.BackgroundImage")));
+            this.cmdImprimirReceta.ButtonText = "Imprimir Receta";
+            this.cmdImprimirReceta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdImprimirReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdImprimirReceta.ForeColor = System.Drawing.Color.SeaGreen;
+            this.cmdImprimirReceta.IdleBorderThickness = 1;
+            this.cmdImprimirReceta.IdleCornerRadius = 40;
+            this.cmdImprimirReceta.IdleFillColor = System.Drawing.Color.White;
+            this.cmdImprimirReceta.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.cmdImprimirReceta.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.cmdImprimirReceta.Location = new System.Drawing.Point(471, 213);
+            this.cmdImprimirReceta.Margin = new System.Windows.Forms.Padding(5);
+            this.cmdImprimirReceta.Name = "cmdImprimirReceta";
+            this.cmdImprimirReceta.Size = new System.Drawing.Size(132, 52);
+            this.cmdImprimirReceta.TabIndex = 67;
+            this.cmdImprimirReceta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmdImprimirReceta.Click += new System.EventHandler(this.cmdImprimirReceta_Click);
             // 
             // panel3
             // 
@@ -183,7 +183,7 @@
             // 
             this.txtIngredientes_Platillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtIngredientes_Platillo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIngredientes_Platillo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngredientes_Platillo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredientes_Platillo.Location = new System.Drawing.Point(207, 44);
             this.txtIngredientes_Platillo.Multiline = true;
             this.txtIngredientes_Platillo.Name = "txtIngredientes_Platillo";
@@ -216,7 +216,7 @@
             // 
             this.txtProcedimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProcedimiento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProcedimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcedimiento.Location = new System.Drawing.Point(6, 340);
             this.txtProcedimiento.Multiline = true;
             this.txtProcedimiento.Name = "txtProcedimiento";
@@ -368,6 +368,6 @@
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Panel panel12;
         public System.Windows.Forms.Panel panel4;
-        public ns1.BunifuThinButton2 bunifuThinButton21;
+        public ns1.BunifuThinButton2 cmdImprimirReceta;
     }
 }

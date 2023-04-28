@@ -93,6 +93,11 @@ namespace Restaurante___reporte.DAL
         }//lo que se guarda en la tabla
 
         //Recuperar RECETA -----------------------------------------------------------
+        public DataSet Reporte(string comando)
+        {
+            SqlCommand comando = new SqlCommand(comando);
+            return conexion.EjecutarSentenciaConRetorno(comando);
+        }
 
 
         //Recuperar PLATILLO -----------------------------------------------------------
@@ -102,9 +107,6 @@ namespace Restaurante___reporte.DAL
             
             return Buscar_Retornar("SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id=" + id);
             
-        }
-    
-    
-    
+        } 
     }
 }
