@@ -93,9 +93,9 @@ namespace Restaurante___reporte.DAL
         }//lo que se guarda en la tabla
 
         //Recuperar RECETA -----------------------------------------------------------
-        public DataSet Reporte(string comando)
+        public DataSet Reporte(string comand)
         {
-            SqlCommand comando = new SqlCommand(comando);
+            SqlCommand comando = new SqlCommand(comand);
             return conexion.EjecutarSentenciaConRetorno(comando);
         }
 
