@@ -28,58 +28,43 @@ namespace Restaurante___reporte.PL
         //VALIDACION DE VALORES INGRESADOS POR EL USUARIO
         public bool ValoresVaciosIngredientes()
         {
-            //string valoresVacios = "";
-            //int no_vacios = 0;
-            ////VERIFICACION DE VALORES VACIOS
-            //{
-            //    if (txtIngredienteId.Text == "")
-            //    {
-            //        valoresVacios += "id_platillo, ";
-            //        no_vacios++;
-            //    }
-            //    if (txtNombre.Text == "")
-            //    {
-            //        valoresVacios += "Nombre, ";
-            //        no_vacios++;
-            //    }
-            //    if (cbCategoria.Text == "-- Categoria --")
-            //    {
-            //        valoresVacios += "Categoria, ";
-            //        no_vacios++;
-            //    }
-            //    if (cbDificultad.Text == "-- Dificultad --")
-            //    {
-            //        valoresVacios += "Dificultad, ";
-            //        no_vacios++;
-            //    }
-            //    if (txtPrecio.Text == "")
-            //    {
-            //        valoresVacios += "Precio, ";
-            //        no_vacios++;
-            //    }
-            //    if (txtDescripcion.Text == "")
-            //    {
-            //        valoresVacios += "Descripcion,";
-            //        no_vacios++;
-            //    }
-            //    if (pbFotoPlatillo.Image == Properties.Resources.estilo_grafico__1_)
-            //    {
-            //        valoresVacios += "Imagen";
-            //        no_vacios++;
-            //    }
+            string valoresVacios = "";
+            int no_vacios = 0;
+            //VERIFICACION DE VALORES VACIOS
+            {
+                if (txtIngredienteId.Text == "")
+                {
+                    valoresVacios += "id_ingrediente, ";
+                    no_vacios++;
+                }
+                if (txtIngredienteNombre.Text == "")
+                {
+                    valoresVacios += "Nombre, ";
+                    no_vacios++;
+                }
+                if (comboMed.Text == "-- Medida --")
+                {
+                    valoresVacios += "Unidad de medida, ";
+                    
+                }
+                if (txtIngredienteCant.Text == "")
+                {
+                    valoresVacios += "cantidad, ";
 
-            //}
-            //if (no_vacios > 0)
-            //{
-            //    MessageBox.Show("No puede dejar información en blanco \r\n\r\n" +
-            //                    "No. de valores vacios: " + no_vacios + "\r\n" +
-            //                    "Valores vacios: " + valoresVacios, "ERROR AL INGRESAR VALORES");
-            //    return true;
-            //}
-            //else
-            //{
-            return false;
-            //}
+                }
+
+            }
+            if (no_vacios > 0)
+            {
+                MessageBox.Show("No puede dejar información en blanco \r\n\r\n" +
+                                "No. de valores vacios: " + no_vacios + "\r\n" +
+                                "Valores vacios: " + valoresVacios, "ERROR AL INGRESAR VALORES");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
 
@@ -131,7 +116,7 @@ namespace Restaurante___reporte.PL
             RecuperarInforcion();
             editar_Ingrediente.AgregarIngrediente(ingredienteBLL);
             //Refrescar tabla
-            dgvTablaDB.DataSource = editar_Ingrediente.TablaIngredientes().Tables[0];
+            dgvIngredientes.DataSource = editar_Ingrediente.TablaIngredientes().Tables[0];
         }
 
         private void frmIngredientes_Load(object sender, EventArgs e)
@@ -177,6 +162,60 @@ namespace Restaurante___reporte.PL
         }
 
         private void cmdLimpiar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvIngredientes_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            /*CREATE TABLE INGREDIENTE (
+    ingrediente_id               VARCHAR(4) NOT NULL,
+    ingrediente_nombre           VARCHAR(30) UNIQUE,
+    ingrediente_unidad_medida           VARCHAR(20) NOT NULL,
+    ingrediente_cantidad_almacen VARCHAR(4) NOT NULL
+);
+*/
+            int indice = e.RowIndex;
+            id_actual = dgvIngredientes.Rows[indice].Cells[0].Value.ToString();
+            txtIngredienteId.Text = id_actual.ToString();
+            txtIngredienteNombre.Text = dgvIngredientes.Rows[indice].Cells[1].Value.ToString();
+
+            //Dificultad
+            bool bandera = false;
+            int i = 0;
+            while (bandera == false)
+            {
+                comboMed.SelectedIndex = i;
+                if (comboMed.SelectedItem.ToString() == dgvIngredientes.Rows[indice].Cells[2].Value.ToString())
+                {
+                    bandera = true;
+                }
+                i++;
+            };
+
+            txtIngredienteCant.Text = dgvIngredientes.Rows[indice].Cells[3].Value.ToString();
+        }
+
+        string id_actual;
+        private void btnEditarIngrediente_Click(object sender, EventArgs e)
+        {
+            if (!ValoresVaciosIngredientes())
+            {
+                RecuperarInforcion();
+
+                if (editar_Ingrediente.ModificarIngrediente(ingredienteBLL, id_actual))
+                {
+                    MessageBox.Show($"El ingrediente {txtIngredienteNombre.Text} ha sido modificado", "ingrediente MODIFICADO");
+
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo MODIFICAR el ingrediente.", "ERROR DE MODIFICACIÓN");
+                }
+            }
+        }
+
+        private void btnEliminarIngrediente_Click(object sender, EventArgs e)
         {
 
         }

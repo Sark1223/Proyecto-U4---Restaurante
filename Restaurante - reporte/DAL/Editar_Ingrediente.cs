@@ -41,7 +41,7 @@ namespace Restaurante___reporte.DAL
         }
 
         //Metodo para modificar ingrediente
-        public void ModificarIngrediente(IngredienteBLL ingrediente, int idAnterior)
+        public bool ModificarIngrediente(IngredienteBLL ingrediente, string idAnterior)
         {
             try
             {
@@ -58,10 +58,12 @@ namespace Restaurante___reporte.DAL
                 modificar.Parameters.AddWithValue("cantidadAlmacen", ingrediente.ingrediente_cantidad_almacen);
 
                 conexion.ejecutarComandoSinRetorno(modificar);
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return false;
             }
         }
 

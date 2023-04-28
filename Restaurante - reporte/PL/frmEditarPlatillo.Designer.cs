@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEditarPlatillo));
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -89,7 +89,7 @@
             this.pnAgregar = new System.Windows.Forms.Panel();
             this.pbListo = new System.Windows.Forms.PictureBox();
             this.pnModificar = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbEliminarPlato = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pbModificar = new System.Windows.Forms.PictureBox();
             this.cmdAgregarPaso = new System.Windows.Forms.PictureBox();
@@ -99,18 +99,18 @@
             this.pbFotoPlatillo = new System.Windows.Forms.PictureBox();
             this.cmdExaminar = new ns1.BunifuThinButton2();
             this.pnAñadirIngre = new System.Windows.Forms.Panel();
-            this.pnModifiIngre = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pnModifiIngre = new System.Windows.Forms.Panel();
+            this.pbEliminarIngrediente = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pbModificarIngrediente = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnAñadirPaso = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pnModifiPaso = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbEliminarPaso = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pbModificarPaso = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcedimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
@@ -118,7 +118,7 @@
             this.pnAgregar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbListo)).BeginInit();
             this.pnModificar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarPlato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbModificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPaso)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
@@ -126,12 +126,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPlatillo)).BeginInit();
             this.pnAñadirIngre.SuspendLayout();
             this.pnModifiIngre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarIngrediente)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificarIngrediente)).BeginInit();
             this.pnAñadirPaso.SuspendLayout();
             this.pnModifiPaso.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarPaso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificarPaso)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDescripcion
@@ -151,7 +151,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.label2.Font = new System.Drawing.Font("MV Boli", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 285);
+            this.label2.Location = new System.Drawing.Point(22, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 25);
             this.label2.TabIndex = 16;
@@ -442,59 +442,61 @@
             // 
             // dgvProcedimiento
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvProcedimiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvProcedimiento.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvProcedimiento.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvProcedimiento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvProcedimiento.BackgroundColor = System.Drawing.Color.White;
             this.dgvProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvProcedimiento.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvProcedimiento.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProcedimiento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProcedimiento.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvProcedimiento.ColumnHeadersHeight = 30;
             this.dgvProcedimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column3,
             this.Column4});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvProcedimiento.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProcedimiento.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvProcedimiento.EnableHeadersVisualStyles = false;
             this.dgvProcedimiento.Location = new System.Drawing.Point(26, 315);
             this.dgvProcedimiento.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvProcedimiento.Name = "dgvProcedimiento";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProcedimiento.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProcedimiento.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProcedimiento.RowHeadersVisible = false;
             this.dgvProcedimiento.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvProcedimiento.RowTemplate.Height = 30;
             this.dgvProcedimiento.Size = new System.Drawing.Size(689, 114);
             this.dgvProcedimiento.TabIndex = 15;
+            this.dgvProcedimiento.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvProcedimiento_CellMouseDoubleClick);
             // 
             // Column3
             // 
+            this.Column3.FillWeight = 23.51233F;
             this.Column3.HeaderText = "No_Paso";
             this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
@@ -502,6 +504,7 @@
             // 
             // Column4
             // 
+            this.Column4.FillWeight = 176.4876F;
             this.Column4.HeaderText = "Instruccion";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
@@ -541,57 +544,58 @@
             // 
             // dgvIngredientes
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvIngredientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIngredientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvIngredientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvIngredientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvIngredientes.BackgroundColor = System.Drawing.Color.White;
             this.dgvIngredientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvIngredientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvIngredientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvIngredientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvIngredientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvIngredientes.ColumnHeadersHeight = 30;
             this.dgvIngredientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.Unidad_Medida});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvIngredientes.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvIngredientes.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvIngredientes.EnableHeadersVisualStyles = false;
             this.dgvIngredientes.Location = new System.Drawing.Point(460, 120);
             this.dgvIngredientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvIngredientes.Name = "dgvIngredientes";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIngredientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIngredientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvIngredientes.RowHeadersVisible = false;
             this.dgvIngredientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvIngredientes.RowTemplate.Height = 30;
             this.dgvIngredientes.Size = new System.Drawing.Size(255, 143);
             this.dgvIngredientes.TabIndex = 32;
+            this.dgvIngredientes.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvIngredientes_CellMouseDoubleClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -618,7 +622,7 @@
             this.txtPaso_no.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.txtPaso_no.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPaso_no.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaso_no.Location = new System.Drawing.Point(283, 290);
+            this.txtPaso_no.Location = new System.Drawing.Point(253, 290);
             this.txtPaso_no.Name = "txtPaso_no";
             this.txtPaso_no.ReadOnly = true;
             this.txtPaso_no.Size = new System.Drawing.Size(36, 17);
@@ -630,7 +634,7 @@
             this.lblPaso_no.AutoSize = true;
             this.lblPaso_no.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.lblPaso_no.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaso_no.Location = new System.Drawing.Point(192, 287);
+            this.lblPaso_no.Location = new System.Drawing.Point(162, 287);
             this.lblPaso_no.Name = "lblPaso_no";
             this.lblPaso_no.Size = new System.Drawing.Size(85, 21);
             this.lblPaso_no.TabIndex = 14;
@@ -641,10 +645,10 @@
             this.txtInstruccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.txtInstruccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInstruccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInstruccion.Location = new System.Drawing.Point(412, 288);
+            this.txtInstruccion.Location = new System.Drawing.Point(382, 288);
             this.txtInstruccion.Name = "txtInstruccion";
             this.txtInstruccion.ShortcutsEnabled = false;
-            this.txtInstruccion.Size = new System.Drawing.Size(303, 17);
+            this.txtInstruccion.Size = new System.Drawing.Size(333, 17);
             this.txtInstruccion.TabIndex = 12;
             this.txtInstruccion.Text = "Agregar todos los ingredientes en una olla y ponerlos a hervir por 10 min";
             // 
@@ -653,7 +657,7 @@
             this.lblInstruccion.AutoSize = true;
             this.lblInstruccion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.lblInstruccion.Font = new System.Drawing.Font("Microsoft Yi Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInstruccion.Location = new System.Drawing.Point(314, 287);
+            this.lblInstruccion.Location = new System.Drawing.Point(284, 287);
             this.lblInstruccion.Name = "lblInstruccion";
             this.lblInstruccion.Size = new System.Drawing.Size(92, 21);
             this.lblInstruccion.TabIndex = 38;
@@ -662,9 +666,9 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            this.panel13.Location = new System.Drawing.Point(411, 308);
+            this.panel13.Location = new System.Drawing.Point(381, 308);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(304, 2);
+            this.panel13.Size = new System.Drawing.Size(334, 2);
             this.panel13.TabIndex = 13;
             // 
             // lblTitle
@@ -724,7 +728,7 @@
             // 
             // pnModificar
             // 
-            this.pnModificar.Controls.Add(this.pictureBox1);
+            this.pnModificar.Controls.Add(this.pbEliminarPlato);
             this.pnModificar.Controls.Add(this.label3);
             this.pnModificar.Controls.Add(this.pbModificar);
             this.pnModificar.Controls.Add(this.lblModificar);
@@ -733,16 +737,17 @@
             this.pnModificar.Size = new System.Drawing.Size(64, 169);
             this.pnModificar.TabIndex = 77;
             // 
-            // pictureBox1
+            // pbEliminarPlato
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.borrar;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 96);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 77;
-            this.pictureBox1.TabStop = false;
+            this.pbEliminarPlato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbEliminarPlato.Image = global::Restaurante___reporte.Properties.Resources.borrar;
+            this.pbEliminarPlato.Location = new System.Drawing.Point(14, 96);
+            this.pbEliminarPlato.Name = "pbEliminarPlato";
+            this.pbEliminarPlato.Size = new System.Drawing.Size(36, 30);
+            this.pbEliminarPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEliminarPlato.TabIndex = 77;
+            this.pbEliminarPlato.TabStop = false;
+            this.pbEliminarPlato.Click += new System.EventHandler(this.pbEliminarPlato_Click);
             // 
             // label3
             // 
@@ -766,12 +771,13 @@
             this.pbModificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbModificar.TabIndex = 75;
             this.pbModificar.TabStop = false;
+            this.pbModificar.Click += new System.EventHandler(this.pbModificar_Click);
             // 
             // cmdAgregarPaso
             // 
             this.cmdAgregarPaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.cmdAgregarPaso.Image = global::Restaurante___reporte.Properties.Resources.agregar;
-            this.cmdAgregarPaso.Location = new System.Drawing.Point(14, 21);
+            this.cmdAgregarPaso.Location = new System.Drawing.Point(18, 3);
             this.cmdAgregarPaso.Name = "cmdAgregarPaso";
             this.cmdAgregarPaso.Size = new System.Drawing.Size(26, 27);
             this.cmdAgregarPaso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -873,67 +879,10 @@
             // 
             this.pnAñadirIngre.Controls.Add(this.label6);
             this.pnAñadirIngre.Controls.Add(this.cmdAgregarIngrediente);
-            this.pnAñadirIngre.Location = new System.Drawing.Point(723, 150);
+            this.pnAñadirIngre.Location = new System.Drawing.Point(722, 93);
             this.pnAñadirIngre.Name = "pnAñadirIngre";
             this.pnAñadirIngre.Size = new System.Drawing.Size(65, 58);
             this.pnAñadirIngre.TabIndex = 78;
-            // 
-            // pnModifiIngre
-            // 
-            this.pnModifiIngre.Controls.Add(this.pictureBox2);
-            this.pnModifiIngre.Controls.Add(this.label4);
-            this.pnModifiIngre.Controls.Add(this.pictureBox3);
-            this.pnModifiIngre.Controls.Add(this.label5);
-            this.pnModifiIngre.Location = new System.Drawing.Point(723, 89);
-            this.pnModifiIngre.Name = "pnModifiIngre";
-            this.pnModifiIngre.Size = new System.Drawing.Size(67, 164);
-            this.pnModifiIngre.TabIndex = 79;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pictureBox2.Image = global::Restaurante___reporte.Properties.Resources.borrar;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 96);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 81;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.label4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(7, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 16);
-            this.label4.TabIndex = 80;
-            this.label4.Text = "eliminar";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pictureBox3.Image = global::Restaurante___reporte.Properties.Resources.editar1;
-            this.pictureBox3.Location = new System.Drawing.Point(16, 24);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 79;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(5, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 16);
-            this.label5.TabIndex = 78;
-            this.label5.Text = "modificar";
             // 
             // label6
             // 
@@ -947,13 +896,72 @@
             this.label6.TabIndex = 77;
             this.label6.Text = "añadir";
             // 
+            // pnModifiIngre
+            // 
+            this.pnModifiIngre.Controls.Add(this.pbEliminarIngrediente);
+            this.pnModifiIngre.Controls.Add(this.label4);
+            this.pnModifiIngre.Controls.Add(this.pbModificarIngrediente);
+            this.pnModifiIngre.Controls.Add(this.label5);
+            this.pnModifiIngre.Location = new System.Drawing.Point(722, 145);
+            this.pnModifiIngre.Name = "pnModifiIngre";
+            this.pnModifiIngre.Size = new System.Drawing.Size(67, 103);
+            this.pnModifiIngre.TabIndex = 79;
+            // 
+            // pbEliminarIngrediente
+            // 
+            this.pbEliminarIngrediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbEliminarIngrediente.Image = global::Restaurante___reporte.Properties.Resources.borrar;
+            this.pbEliminarIngrediente.Location = new System.Drawing.Point(15, 52);
+            this.pbEliminarIngrediente.Name = "pbEliminarIngrediente";
+            this.pbEliminarIngrediente.Size = new System.Drawing.Size(36, 30);
+            this.pbEliminarIngrediente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEliminarIngrediente.TabIndex = 81;
+            this.pbEliminarIngrediente.TabStop = false;
+            this.pbEliminarIngrediente.Click += new System.EventHandler(this.pbEliminarIngrediente_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(6, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 16);
+            this.label4.TabIndex = 80;
+            this.label4.Text = "eliminar";
+            // 
+            // pbModificarIngrediente
+            // 
+            this.pbModificarIngrediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbModificarIngrediente.Image = global::Restaurante___reporte.Properties.Resources.editar1;
+            this.pbModificarIngrediente.Location = new System.Drawing.Point(16, 4);
+            this.pbModificarIngrediente.Name = "pbModificarIngrediente";
+            this.pbModificarIngrediente.Size = new System.Drawing.Size(36, 30);
+            this.pbModificarIngrediente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbModificarIngrediente.TabIndex = 79;
+            this.pbModificarIngrediente.TabStop = false;
+            this.pbModificarIngrediente.Click += new System.EventHandler(this.pbModificarIngrediente_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(5, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 16);
+            this.label5.TabIndex = 78;
+            this.label5.Text = "modificar";
+            // 
             // pnAñadirPaso
             // 
             this.pnAñadirPaso.Controls.Add(this.label7);
             this.pnAñadirPaso.Controls.Add(this.cmdAgregarPaso);
-            this.pnAñadirPaso.Location = new System.Drawing.Point(735, 328);
+            this.pnAñadirPaso.Location = new System.Drawing.Point(727, 285);
             this.pnAñadirPaso.Name = "pnAñadirPaso";
-            this.pnAñadirPaso.Size = new System.Drawing.Size(54, 73);
+            this.pnAñadirPaso.Size = new System.Drawing.Size(54, 53);
             this.pnAñadirPaso.TabIndex = 80;
             // 
             // label7
@@ -962,7 +970,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(5, 51);
+            this.label7.Location = new System.Drawing.Point(9, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 16);
             this.label7.TabIndex = 77;
@@ -970,25 +978,26 @@
             // 
             // pnModifiPaso
             // 
-            this.pnModifiPaso.Controls.Add(this.pictureBox4);
+            this.pnModifiPaso.Controls.Add(this.pbEliminarPaso);
             this.pnModifiPaso.Controls.Add(this.label8);
-            this.pnModifiPaso.Controls.Add(this.pictureBox5);
+            this.pnModifiPaso.Controls.Add(this.pbModificarPaso);
             this.pnModifiPaso.Controls.Add(this.label9);
-            this.pnModifiPaso.Location = new System.Drawing.Point(724, 288);
+            this.pnModifiPaso.Location = new System.Drawing.Point(727, 337);
             this.pnModifiPaso.Name = "pnModifiPaso";
-            this.pnModifiPaso.Size = new System.Drawing.Size(67, 144);
+            this.pnModifiPaso.Size = new System.Drawing.Size(64, 104);
             this.pnModifiPaso.TabIndex = 81;
             // 
-            // pictureBox4
+            // pbEliminarPaso
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pictureBox4.Image = global::Restaurante___reporte.Properties.Resources.borrar;
-            this.pictureBox4.Location = new System.Drawing.Point(16, 90);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 81;
-            this.pictureBox4.TabStop = false;
+            this.pbEliminarPaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbEliminarPaso.Image = global::Restaurante___reporte.Properties.Resources.borrar;
+            this.pbEliminarPaso.Location = new System.Drawing.Point(13, 52);
+            this.pbEliminarPaso.Name = "pbEliminarPaso";
+            this.pbEliminarPaso.Size = new System.Drawing.Size(36, 30);
+            this.pbEliminarPaso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbEliminarPaso.TabIndex = 81;
+            this.pbEliminarPaso.TabStop = false;
+            this.pbEliminarPaso.Click += new System.EventHandler(this.pbEliminarPaso_Click);
             // 
             // label8
             // 
@@ -996,22 +1005,23 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.label8.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(7, 119);
+            this.label8.Location = new System.Drawing.Point(4, 81);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(51, 16);
             this.label8.TabIndex = 80;
             this.label8.Text = "eliminar";
             // 
-            // pictureBox5
+            // pbModificarPaso
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
-            this.pictureBox5.Image = global::Restaurante___reporte.Properties.Resources.editar1;
-            this.pictureBox5.Location = new System.Drawing.Point(16, 18);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 30);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 79;
-            this.pictureBox5.TabStop = false;
+            this.pbModificarPaso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
+            this.pbModificarPaso.Image = global::Restaurante___reporte.Properties.Resources.editar1;
+            this.pbModificarPaso.Location = new System.Drawing.Point(14, 4);
+            this.pbModificarPaso.Name = "pbModificarPaso";
+            this.pbModificarPaso.Size = new System.Drawing.Size(36, 30);
+            this.pbModificarPaso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbModificarPaso.TabIndex = 79;
+            this.pbModificarPaso.TabStop = false;
+            this.pbModificarPaso.Click += new System.EventHandler(this.pbModificarPaso_Click);
             // 
             // label9
             // 
@@ -1019,7 +1029,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(238)))), ((int)(((byte)(242)))));
             this.label9.Font = new System.Drawing.Font("Microsoft Yi Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(5, 47);
+            this.label9.Location = new System.Drawing.Point(3, 33);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(57, 16);
             this.label9.TabIndex = 78;
@@ -1085,6 +1095,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmEditarPlatillo";
             this.Load += new System.EventHandler(this.frmEditarPlatillo_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProcedimiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
@@ -1093,7 +1104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbListo)).EndInit();
             this.pnModificar.ResumeLayout(false);
             this.pnModificar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarPlato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbModificar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPaso)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
@@ -1103,93 +1114,93 @@
             this.pnAñadirIngre.PerformLayout();
             this.pnModifiIngre.ResumeLayout(false);
             this.pnModifiIngre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarIngrediente)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificarIngrediente)).EndInit();
             this.pnAñadirPaso.ResumeLayout(false);
             this.pnAñadirPaso.PerformLayout();
             this.pnModifiPaso.ResumeLayout(false);
             this.pnModifiPaso.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbEliminarPaso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbModificarPaso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbFotoPlatillo;
-        private ns1.BunifuThinButton2 cmdExaminar;
-        private System.Windows.Forms.ComboBox cbIngredientes;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.ComboBox cbDificultad;
-        private System.Windows.Forms.ComboBox cbCategoria;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtId_platillo;
-        private System.Windows.Forms.Label lblId_platillo;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.Label lblsigno_pesos;
-        private System.Windows.Forms.Label lblMN;
-        private System.Windows.Forms.Label lblUnidad_Medida;
-        private ns1.BunifuElipse radiocomandoListo;
-        private System.Windows.Forms.PictureBox pbListo;
-        private System.Windows.Forms.Label lblListo;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label lblDescripcion;
+        public  System.Windows.Forms.TextBox txtDescripcion;
+        public  System.Windows.Forms.Label label2;
+        public  System.Windows.Forms.Label label1;
+        public  System.Windows.Forms.PictureBox pbFotoPlatillo;
+        public  ns1.BunifuThinButton2 cmdExaminar;
+        public  System.Windows.Forms.ComboBox cbIngredientes;
+        public  System.Windows.Forms.Label lblPrecio;
+        public  System.Windows.Forms.Panel panel2;
+        public  System.Windows.Forms.Panel panel3;
+        public  System.Windows.Forms.TextBox txtPrecio;
+        public  System.Windows.Forms.Label lblNombre;
+        public  System.Windows.Forms.Panel panel5;
+        public  System.Windows.Forms.TextBox txtNombre;
+        public  System.Windows.Forms.ComboBox cbDificultad;
+        public  System.Windows.Forms.ComboBox cbCategoria;
+        public  System.Windows.Forms.Panel panel1;
+        public  System.Windows.Forms.Panel panel6;
+        public  System.Windows.Forms.TextBox txtId_platillo;
+        public  System.Windows.Forms.Label lblId_platillo;
+        public  System.Windows.Forms.Panel panel7;
+        public  System.Windows.Forms.Panel panel8;
+        public  System.Windows.Forms.TextBox txtCantidad;
+        public  System.Windows.Forms.Label lblCantidad;
+        public  System.Windows.Forms.Label lblsigno_pesos;
+        public  System.Windows.Forms.Label lblMN;
+        public  System.Windows.Forms.Label lblUnidad_Medida;
+        public  ns1.BunifuElipse radiocomandoListo;
+        public  System.Windows.Forms.PictureBox pbListo;
+        public  System.Windows.Forms.Label lblListo;
+        public  System.Windows.Forms.Panel panel9;
+        public  System.Windows.Forms.Label lblDescripcion;
         public System.Windows.Forms.DataGridView dgvProcedimiento;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel12;
+        public  System.Windows.Forms.Panel panel4;
+        public  System.Windows.Forms.Panel panel10;
+        public  System.Windows.Forms.Panel panel11;
+        public  System.Windows.Forms.Panel panel12;
         public System.Windows.Forms.DataGridView dgvIngredientes;
-        private System.Windows.Forms.PictureBox cmdAgregarIngrediente;
-        private System.Windows.Forms.TextBox txtPaso_no;
-        private System.Windows.Forms.Label lblPaso_no;
-        private System.Windows.Forms.TextBox txtInstruccion;
-        private System.Windows.Forms.Label lblInstruccion;
-        private System.Windows.Forms.Panel panel13;
-        private ns1.BunifuThinButton2 bunifuThinButton21;
-        private System.Windows.Forms.Label lblTitle;
-        private ns1.BunifuElipse rdPanel;
-        private System.Windows.Forms.ErrorProvider error;
-        private ns1.BunifuImageButton cmdCerrar;
-        private System.Windows.Forms.PictureBox cmdAgregarPaso;
-        private System.Windows.Forms.Panel pnModificar;
-        private System.Windows.Forms.PictureBox pbModificar;
-        private System.Windows.Forms.Label lblModificar;
-        private System.Windows.Forms.Panel pnAgregar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Unidad_Medida;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Panel pnModifiIngre;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel pnAñadirIngre;
-        private System.Windows.Forms.Panel pnModifiPaso;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel pnAñadirPaso;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        public  System.Windows.Forms.PictureBox cmdAgregarIngrediente;
+        public  System.Windows.Forms.TextBox txtPaso_no;
+        public  System.Windows.Forms.Label lblPaso_no;
+        public  System.Windows.Forms.TextBox txtInstruccion;
+        public  System.Windows.Forms.Label lblInstruccion;
+        public  System.Windows.Forms.Panel panel13;
+        public  ns1.BunifuThinButton2 bunifuThinButton21;
+        public  System.Windows.Forms.Label lblTitle;
+        public  ns1.BunifuElipse rdPanel;
+        public  System.Windows.Forms.ErrorProvider error;
+        public  ns1.BunifuImageButton cmdCerrar;
+        public  System.Windows.Forms.PictureBox cmdAgregarPaso;
+        public  System.Windows.Forms.Panel pnModificar;
+        public  System.Windows.Forms.PictureBox pbModificar;
+        public  System.Windows.Forms.Label lblModificar;
+        public  System.Windows.Forms.Panel pnAgregar;
+        public  System.Windows.Forms.PictureBox pbEliminarPlato;
+        public  System.Windows.Forms.Label label3;
+        public  System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        public  System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        public  System.Windows.Forms.DataGridViewTextBoxColumn Unidad_Medida;
+        public  System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        public  System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        public  System.Windows.Forms.Panel pnModifiIngre;
+        public  System.Windows.Forms.PictureBox pbEliminarIngrediente;
+        public  System.Windows.Forms.Label label4;
+        public  System.Windows.Forms.PictureBox pbModificarIngrediente;
+        public  System.Windows.Forms.Label label5;
+        public  System.Windows.Forms.Panel pnAñadirIngre;
+        public  System.Windows.Forms.Panel pnModifiPaso;
+        public  System.Windows.Forms.PictureBox pbEliminarPaso;
+        public  System.Windows.Forms.Label label8;
+        public  System.Windows.Forms.PictureBox pbModificarPaso;
+        public  System.Windows.Forms.Label label9;
+        public  System.Windows.Forms.Panel pnAñadirPaso;
+        public  System.Windows.Forms.Label label7;
+        public  System.Windows.Forms.Label label6;
     }
 }

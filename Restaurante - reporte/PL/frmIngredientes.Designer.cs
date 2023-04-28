@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngredientes));
             this.label8 = new System.Windows.Forms.Label();
             this.lblIgredienteId = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.RadioEliminar = new ns1.BunifuElipse(this.components);
             this.btnEliminarIngrediente = new ns1.BunifuFlatButton();
             this.RadioIngredientes = new ns1.BunifuElipse(this.components);
-            this.dgvTablaDB = new System.Windows.Forms.DataGridView();
+            this.dgvIngredientes = new System.Windows.Forms.DataGridView();
             this.Panel = new System.Windows.Forms.Panel();
             this.comboMed = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -61,7 +61,7 @@
             this.RadioPanel = new ns1.BunifuElipse(this.components);
             this.panel9 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new ns1.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).BeginInit();
             this.Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -259,6 +259,7 @@
             this.btnEditarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditarIngrediente.Textcolor = System.Drawing.Color.Black;
             this.btnEditarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarIngrediente.Click += new System.EventHandler(this.btnEditarIngrediente_Click);
             // 
             // RadioBuscar
             // 
@@ -339,61 +340,63 @@
             this.btnEliminarIngrediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminarIngrediente.Textcolor = System.Drawing.Color.Black;
             this.btnEliminarIngrediente.TextFont = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarIngrediente.Click += new System.EventHandler(this.btnEliminarIngrediente_Click);
             // 
             // RadioIngredientes
             // 
             this.RadioIngredientes.ElipseRadius = 10;
             this.RadioIngredientes.TargetControl = this;
             // 
-            // dgvTablaDB
+            // dgvIngredientes
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvTablaDB.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTablaDB.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dgvTablaDB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvTablaDB.BackgroundColor = System.Drawing.Color.White;
-            this.dgvTablaDB.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvTablaDB.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvTablaDB.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTablaDB.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTablaDB.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTablaDB.EnableHeadersVisualStyles = false;
-            this.dgvTablaDB.Location = new System.Drawing.Point(18, 240);
-            this.dgvTablaDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvTablaDB.Name = "dgvTablaDB";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTablaDB.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvTablaDB.RowHeadersVisible = false;
-            this.dgvTablaDB.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvTablaDB.RowTemplate.Height = 30;
-            this.dgvTablaDB.Size = new System.Drawing.Size(525, 160);
-            this.dgvTablaDB.TabIndex = 43;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(168)))), ((int)(((byte)(193)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvIngredientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvIngredientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvIngredientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvIngredientes.BackgroundColor = System.Drawing.Color.White;
+            this.dgvIngredientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvIngredientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvIngredientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 11.25F);
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvIngredientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvIngredientes.ColumnHeadersHeight = 30;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(197)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvIngredientes.DefaultCellStyle = dataGridViewCellStyle19;
+            this.dgvIngredientes.EnableHeadersVisualStyles = false;
+            this.dgvIngredientes.Location = new System.Drawing.Point(18, 240);
+            this.dgvIngredientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvIngredientes.Name = "dgvIngredientes";
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(88)))), ((int)(((byte)(113)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIngredientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            this.dgvIngredientes.RowHeadersVisible = false;
+            this.dgvIngredientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvIngredientes.RowTemplate.Height = 30;
+            this.dgvIngredientes.Size = new System.Drawing.Size(525, 160);
+            this.dgvIngredientes.TabIndex = 43;
+            this.dgvIngredientes.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvIngredientes_CellMouseDoubleClick);
             // 
             // Panel
             // 
@@ -401,7 +404,7 @@
             this.Panel.Controls.Add(this.comboMed);
             this.Panel.Controls.Add(this.panel4);
             this.Panel.Controls.Add(this.bunifuThinButton21);
-            this.Panel.Controls.Add(this.dgvTablaDB);
+            this.Panel.Controls.Add(this.dgvIngredientes);
             this.Panel.Controls.Add(this.btnBuscarIngrediente);
             this.Panel.Controls.Add(this.btnEliminarIngrediente);
             this.Panel.Controls.Add(this.btnEditarIngrediente);
@@ -514,7 +517,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingredientes";
             this.Load += new System.EventHandler(this.frmIngredientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTablaDB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIngredientes)).EndInit();
             this.Panel.ResumeLayout(false);
             this.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
@@ -544,7 +547,7 @@
         private ns1.BunifuElipse RadioBuscar;
         private ns1.BunifuElipse RadioEliminar;
         private ns1.BunifuElipse RadioIngredientes;
-        public System.Windows.Forms.DataGridView dgvTablaDB;
+        public System.Windows.Forms.DataGridView dgvIngredientes;
         private System.Windows.Forms.Panel Panel;
         private ns1.BunifuElipse RadioPanel;
         private System.Windows.Forms.Panel panel9;

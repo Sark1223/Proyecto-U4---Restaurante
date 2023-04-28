@@ -28,27 +28,8 @@ namespace Restaurante___reporte.DAL
             return conexion.EjecutarSentenciaConRetorno(sentencia);
         }
 
-        //Recuperar RECETA -----------------------------------------------------------
-        public void ObtenerProcedimiento(string id_ingrediente, System.Windows.Forms.TextBox text)
-        {
-            string sentencia = "Select * from RECETA";
-            SqlCommand cmd = new SqlCommand(sentencia);
-            cmd.Connection = conexion.EstablecerConexion();
-            cmd.Connection.Open();
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
-            {
-                if (dr[0].ToString() == id_ingrediente)
-                {
-                    text.Text = text.Text + dr[0].ToString() + "  " + dr[0].ToString() +"\r\n";
-                }
-
-            }
-            cmd.Connection.Close();
-        }
-
-        //Recuperar ID del platillo
+       
+        //Recuperar ID
         public string RetornarID(string sentencia)
         {
             SqlCommand cmd = new SqlCommand(sentencia);
@@ -86,15 +67,17 @@ namespace Restaurante___reporte.DAL
             cmd.Connection.Open();
 
             SqlDataReader dr = cmd.ExecuteReader();
-            string nombre_categoria = "";
+            string dato = "";
             while (dr.Read())
             {
-                nombre_categoria = dr[0].ToString();
+                dato = dr[0].ToString();
             }
             cmd.Connection.Close();
-            return nombre_categoria;
+            return dato;
         }
 
+
+        //Recuperar PROCEDIMIENTO -----------------------------------------------------------
         public void RetornarProcedimiento(string sentencia, System.Windows.Forms.TextBox text)
         {
             SqlCommand cmd = new SqlCommand(sentencia);
@@ -108,5 +91,20 @@ namespace Restaurante___reporte.DAL
             }
             cmd.Connection.Close();
         }//lo que se guarda en la tabla
+
+        //Recuperar RECETA -----------------------------------------------------------
+
+
+        //Recuperar PLATILLO -----------------------------------------------------------
+        public string ObtenerCategoria(ComboBox cbCategoria, string id) 
+        {
+            conexion.RellenarCB(cbCategoria, "SELECT * FROM CATEGORIA", "-- Categoria --", 1);
+            
+            return Buscar_Retornar("SELECT categoria_nombre FROM CATEGORIA WHERE categoria_id=" + id);
+            
+        }
+    
+    
+    
     }
 }

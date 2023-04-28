@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlatillos));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlatillos));
             this.lblNombrePlatillo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblDificultad = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -48,16 +49,15 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.txtProcedimiento = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.pbImagenPlato = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.dgvPlatillos_muestra = new System.Windows.Forms.DataGridView();
             this.cmdAgregarPatillo = new System.Windows.Forms.PictureBox();
-            this.bunifuThinButton21 = new ns1.BunifuThinButton2();
-            this.pbImagenPlato = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNombrePlatillo
@@ -121,6 +121,32 @@
             this.panel1.Size = new System.Drawing.Size(634, 514);
             this.panel1.TabIndex = 13;
             // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 40;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Imprimir Receta";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 40;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(471, 213);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(132, 52);
+            this.bunifuThinButton21.TabIndex = 67;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
@@ -157,10 +183,11 @@
             // 
             this.txtIngredientes_Platillo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtIngredientes_Platillo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIngredientes_Platillo.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
+            this.txtIngredientes_Platillo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngredientes_Platillo.Location = new System.Drawing.Point(207, 44);
             this.txtIngredientes_Platillo.Multiline = true;
             this.txtIngredientes_Platillo.Name = "txtIngredientes_Platillo";
+            this.txtIngredientes_Platillo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtIngredientes_Platillo.Size = new System.Drawing.Size(241, 222);
             this.txtIngredientes_Platillo.TabIndex = 18;
             this.txtIngredientes_Platillo.Text = "Totillas fritas bañadas en salsa de tomate.";
@@ -189,7 +216,7 @@
             // 
             this.txtProcedimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
             this.txtProcedimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtProcedimiento.Font = new System.Drawing.Font("Microsoft Yi Baiti", 13F);
+            this.txtProcedimiento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcedimiento.Location = new System.Drawing.Point(6, 340);
             this.txtProcedimiento.Multiline = true;
             this.txtProcedimiento.Name = "txtProcedimiento";
@@ -206,9 +233,20 @@
             this.txtDescripcion.Location = new System.Drawing.Point(15, 199);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtDescripcion.Size = new System.Drawing.Size(180, 67);
             this.txtDescripcion.TabIndex = 14;
             this.txtDescripcion.Text = "Totillas fritas bañadas en salsa de tomate.";
+            // 
+            // pbImagenPlato
+            // 
+            this.pbImagenPlato.Image = global::Restaurante___reporte.Properties.Resources.foto;
+            this.pbImagenPlato.Location = new System.Drawing.Point(15, 22);
+            this.pbImagenPlato.Name = "pbImagenPlato";
+            this.pbImagenPlato.Size = new System.Drawing.Size(180, 171);
+            this.pbImagenPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbImagenPlato.TabIndex = 7;
+            this.pbImagenPlato.TabStop = false;
             // 
             // label4
             // 
@@ -271,6 +309,7 @@
             this.dgvPlatillos_muestra.TabIndex = 29;
             this.toolTip1.SetToolTip(this.dgvPlatillos_muestra, "Click sobre cualquier registro para mostar receta\r\nDoble click para modificar");
             this.dgvPlatillos_muestra.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlatillos_muestra_CellMouseClick);
+            this.dgvPlatillos_muestra.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvPlatillos_muestra_CellMouseDoubleClick);
             // 
             // cmdAgregarPatillo
             // 
@@ -282,42 +321,6 @@
             this.cmdAgregarPatillo.TabIndex = 15;
             this.cmdAgregarPatillo.TabStop = false;
             this.cmdAgregarPatillo.Click += new System.EventHandler(this.cmdAgregarPatillo_Click);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(237)))), ((int)(((byte)(228)))));
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Mostrar Receta";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(505, 199);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(98, 66);
-            this.bunifuThinButton21.TabIndex = 67;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // pbImagenPlato
-            // 
-            this.pbImagenPlato.Image = global::Restaurante___reporte.Properties.Resources.foto;
-            this.pbImagenPlato.Location = new System.Drawing.Point(15, 22);
-            this.pbImagenPlato.Name = "pbImagenPlato";
-            this.pbImagenPlato.Size = new System.Drawing.Size(180, 171);
-            this.pbImagenPlato.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbImagenPlato.TabIndex = 7;
-            this.pbImagenPlato.TabStop = false;
             // 
             // frmPlatillos
             // 
@@ -336,9 +339,9 @@
             this.Load += new System.EventHandler(this.frmPlatillos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlatillos_muestra)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdAgregarPatillo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagenPlato)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,10 +364,10 @@
         public System.Windows.Forms.TextBox txtProcedimiento;
         public System.Windows.Forms.PictureBox cmdAgregarPatillo;
         public System.Windows.Forms.DataGridView dgvPlatillos_muestra;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel4;
-        private ns1.BunifuThinButton2 bunifuThinButton21;
+        public System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Panel panel12;
+        public System.Windows.Forms.Panel panel4;
+        public ns1.BunifuThinButton2 bunifuThinButton21;
     }
 }

@@ -47,13 +47,13 @@ namespace Restaurante___reporte.DAL
 
         }
 
-        public void ModificarPlatillo(PlatilloBLL platillo, int idAnterior)
+        public bool ModificarPlatillo(PlatilloBLL platillo, string idAnterior)
         {
 
             try
             {
                 SqlCommand modificar = new SqlCommand(
-                         "update PLATILLO set plato_id =  @id, " +
+                         "update PLATILLO set plato_id = @id, " +
                                            "plato_nombre = @nombre," +
                                            "plato_descripcion = @descripcion," +
                                            "plato_dificultad = @dififultad, " +
@@ -71,10 +71,42 @@ namespace Restaurante___reporte.DAL
                 modificar.Parameters.AddWithValue("categoria", platillo.categoria_id);
 
                 conexion.ejecutarComandoSinRetorno(modificar);
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        public bool EliminarPlatillo(string id)
+        {
+            try
+            {
+                if (MessageBox.Show("EL platillo sera eliminado permanentemente y con el su receta y los ingredintes del mismo, ¿Desea CONTINUAR?", "ATENCION", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                {
+                    return false;
+                }
+                else
+                {
+                    //Eliminar Receta
+                    SqlCommand eliminarpasos = new SqlCommand($"DELETE FROM RECETA WHERE plato_id = {id}");
+                    conexion.ejecutarComandoSinRetorno(eliminarpasos);
+
+                    //Eliminar Ingredientes
+                    SqlCommand eliminaringredientes = new SqlCommand($"DELETE FROM PLATILLO_INGREDIENTE WHERE platillo_id = {id}");
+                    conexion.ejecutarComandoSinRetorno(eliminaringredientes);
+
+                    //Eliminar platillo
+                    SqlCommand eliminarplato = new SqlCommand($"DELETE FROM PLATILLO WHERE plato_id = {id}");
+                    conexion.ejecutarComandoSinRetorno(eliminarplato);
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
             }
         }
 
@@ -103,26 +135,43 @@ namespace Restaurante___reporte.DAL
 
         }
 
-        public void ModificarPlatillo(Platillo_IngredienteBLL ingrediente, int idAnterior)
+        public bool ModificarIngrediente(Platillo_IngredienteBLL ingrediente, string id)
         {
 
             try
             {
                 SqlCommand modificar = new SqlCommand(
-                         "update PLATILLO set platillo_id =  @id_plato, " +
+                         "update PLATILLO_INGREDIENTE set platillo_id =  @id_plato, " +
                                            "ingrediente_id = @id_ingrediente," +
                                            "cantidad_ingre_plato = @cantidad " +
-                                           "WHERE plato_id =" + idAnterior);
+                                           "WHERE ingrediente_id = " + id);
 
                 modificar.Parameters.AddWithValue("id_plato", ingrediente.platillo_id);
                 modificar.Parameters.AddWithValue("id_ingrediente", ingrediente.ingrediente_id);
                 modificar.Parameters.AddWithValue("cantidad", ingrediente.cantidad_ingre_plato);
 
                 conexion.ejecutarComandoSinRetorno(modificar);
+                return true;
             }
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
+        public bool EliminarIngrediente(string id)
+        {
+            try
+            {
+                SqlCommand eliminar = new SqlCommand($"DELETE FROM PLATILLO_INGREDIENTE WHERE ingrediente_id = {id}");
+                conexion.ejecutarComandoSinRetorno(eliminar);
+                return true;
+            }
+            catch
+            {
+                return false;
             }
         }
 
@@ -137,16 +186,34 @@ namespace Restaurante___reporte.DAL
             return conexion.EjecutarSentenciaConRetorno(sentencia);
         }
 
+        public bool Eliminar(string codigoSQL)
+        {
+            try
+            {
+                if (MessageBox.Show("El registro sera eliminado permanente, ¿Desea CONTINUAR?", "ATENCION", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                {
+                    return false;
+                }
+                else
+                {
+                    SqlCommand sentencia = new SqlCommand(codigoSQL);
+                    conexion.ejecutarComandoSinRetorno(sentencia);
+                    return true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+
+            }
+        }
+
 
         //METODOS PROCEDIMIENTO--------------------------------------------------------------
         public bool AgregarPaso(Platillo_ProcedimientoBLL paso)
         {
-            /*CREATE TABLE RECETA (
-    no_paso        VARCHAR(2) NOT NULL,
-    plato_id VARCHAR(3) NOT NULL,
-    descripcion    VARCHAR(200) NOT NULL
-);
-*/
             SqlCommand agregar = new SqlCommand(
             "insert into RECETA(no_paso," +
                                "plato_id," +
@@ -163,7 +230,7 @@ namespace Restaurante___reporte.DAL
 
         }
 
-        public void ModificarPaso(Platillo_ProcedimientoBLL paso, int idAnterior)
+        public bool ModificarPaso(Platillo_ProcedimientoBLL paso, string id)
         {
             try
             {
@@ -171,18 +238,37 @@ namespace Restaurante___reporte.DAL
                          "update RECETA set no_paso =  @id_paso, " +
                                            "plato_id = @id_plato," +
                                            "descripcion = @descripcion " +
-                                           "WHERE no_paso =" + idAnterior);
+                                           "WHERE no_paso =" + id);
 
                 modificar.Parameters.AddWithValue("id_paso", paso.no_paso);
                 modificar.Parameters.AddWithValue("id_plato", paso.plato_id);
                 modificar.Parameters.AddWithValue("descripcion", paso.descripcion);
 
                 conexion.ejecutarComandoSinRetorno(modificar);
+
+                return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                return false;
             }
+        }
+
+        public bool EliminarPaso(string id)
+        {
+            try
+            {
+                SqlCommand eliminar = new SqlCommand($"DELETE FROM RECETA WHERE no_paso = {id}");
+                conexion.ejecutarComandoSinRetorno(eliminar);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+            
         }
 
     }
