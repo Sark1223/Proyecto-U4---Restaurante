@@ -65,7 +65,6 @@ C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Pro
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.Reporte.resources
-C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.DAL.frmReporteReceta.resources
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.frmRecetaPlatillo.resources
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.frmRecetaPlatillo.resources
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante___reporte.Reporte.resources
