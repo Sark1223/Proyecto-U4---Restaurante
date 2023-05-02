@@ -31,6 +31,18 @@ namespace Restaurante___reporte
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            lblPlatillo.Parent = pbPlatillo;
+            lblPlatillo.BackColor = Color.Transparent;
+
+            lblIngrediente.Parent = pbIngredientes;
+            lblIngrediente.BackColor = Color.Transparent;
+
+            lblCategoria.Parent = pbcategoria;
+            lblCategoria.BackColor = Color.Transparent;
+
+            lblReporte.Parent = pbReporte;
+            lblReporte.BackColor = Color.Transparent;
+
             lblNoPla.Text =  mos.Buscar_Retornar("select COUNT(plato_id) FROM PLATILLO");
             lblNoIngre.Text = mos.Buscar_Retornar("select COUNT(ingrediente_id) FROM INGREDIENTE");
             lblNoCate.Text = mos.Buscar_Retornar("select COUNT(categoria_id) FROM CATEGORIA");
@@ -184,50 +196,42 @@ namespace Restaurante___reporte
         private void pbIngredientes_MouseHover(object sender, EventArgs e)
         {
             lblIngrediente.Visible = true;
-            pbIngredientes.Visible = false;
         }
 
         private void pbcategoria_MouseHover(object sender, EventArgs e)
         {
             lblCategoria.Visible = true;
-            pbcategoria.Visible = false;
         }
 
         private void lblReporte_MouseHover(object sender, EventArgs e)
         {
             lblReporte.Visible = true;
-            pbReporte.Visible = false;
         }
 
         private void pbPlatillo_MouseHover(object sender, EventArgs e)
         {
             lblPlatillo.Visible = true;
-            pbPlatillo.Visible = false;
         }
         
         private void pbPlatillo_MouseLeave(object sender, EventArgs e)
         {
             lblPlatillo.Visible = false;
-            pbPlatillo.Visible = true;
         }
 
 
         private void pbIngredientes_MouseLeave(object sender, EventArgs e)
         {
             lblIngrediente.Visible = false;
-            pbIngredientes.Visible = true;
         }
 
         private void pbcategoria_MouseLeave(object sender, EventArgs e)
         {
             lblCategoria.Visible = false;
-            pbcategoria.Visible = true;
         }
 
         private void pbReporte_MouseLeave(object sender, EventArgs e)
         {
             lblReporte.Visible = false;
-            pbReporte.Visible = true;
         }
     }
 }

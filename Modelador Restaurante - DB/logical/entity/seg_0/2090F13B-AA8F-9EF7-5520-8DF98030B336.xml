@@ -28,7 +28,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>3</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="INGREDIENTE_ID" id="9083B050-FDAC-BEF0-47A7-2C369E8590EE">
 <createdBy>perro</createdBy>
@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CANTIDAD_INGRE_PLATO" id="21360FC4-7C60-F3D4-D187-3DB7F41DDB97">
 <createdBy>perro</createdBy>

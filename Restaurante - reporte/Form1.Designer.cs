@@ -32,68 +32,68 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.Panel_encabezado = new System.Windows.Forms.Panel();
+            this.cmdCerrar = new ns1.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_Menu = new System.Windows.Forms.Panel();
             this.cmdReporte = new System.Windows.Forms.Panel();
             this.lblReporte = new System.Windows.Forms.Label();
+            this.pbReporte = new System.Windows.Forms.PictureBox();
             this.linea_menu = new System.Windows.Forms.Panel();
             this.cmdIngredientes = new System.Windows.Forms.Panel();
             this.lblIngrediente = new System.Windows.Forms.Label();
+            this.pbIngredientes = new System.Windows.Forms.PictureBox();
             this.cmdPlatillo = new System.Windows.Forms.Panel();
             this.lblPlatillo = new System.Windows.Forms.Label();
+            this.pbPlatillo = new System.Windows.Forms.PictureBox();
             this.cmdCategorias = new System.Windows.Forms.Panel();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.pbcategoria = new System.Windows.Forms.PictureBox();
             this.forma_redondeada = new ns1.BunifuElipse(this.components);
             this.menu = new ns1.BunifuElipse(this.components);
             this.mas_menos = new System.Windows.Forms.Panel();
+            this.pbMasMenos = new System.Windows.Forms.PictureBox();
             this.Panel_Contenedor = new System.Windows.Forms.Panel();
             this.Panel_datos_restaurante = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblNoCate = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblNoIngre = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblNoPla = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Contenedor_menu = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbReporte = new System.Windows.Forms.PictureBox();
-            this.pbIngredientes = new System.Windows.Forms.PictureBox();
-            this.pbPlatillo = new System.Windows.Forms.PictureBox();
-            this.pbcategoria = new System.Windows.Forms.PictureBox();
-            this.pbMasMenos = new System.Windows.Forms.PictureBox();
-            this.cmdCerrar = new ns1.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Contenedor_menu = new System.Windows.Forms.Panel();
             this.Panel_encabezado.SuspendLayout();
-            this.Panel_Menu.SuspendLayout();
-            this.cmdReporte.SuspendLayout();
-            this.cmdIngredientes.SuspendLayout();
-            this.cmdPlatillo.SuspendLayout();
-            this.cmdCategorias.SuspendLayout();
-            this.mas_menos.SuspendLayout();
-            this.Panel_Contenedor.SuspendLayout();
-            this.Panel_datos_restaurante.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.Contenedor_menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReporte)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Panel_Menu.SuspendLayout();
+            this.cmdReporte.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReporte)).BeginInit();
+            this.cmdIngredientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).BeginInit();
+            this.cmdPlatillo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).BeginInit();
+            this.cmdCategorias.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).BeginInit();
+            this.mas_menos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).BeginInit();
+            this.Panel_Contenedor.SuspendLayout();
+            this.Panel_datos_restaurante.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Contenedor_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,6 +130,20 @@
             this.Panel_encabezado.TabIndex = 4;
             this.Panel_encabezado.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Mover);
             // 
+            // cmdCerrar
+            // 
+            this.cmdCerrar.BackColor = System.Drawing.Color.Transparent;
+            this.cmdCerrar.Image = global::Restaurante___reporte.Properties.Resources.Equis;
+            this.cmdCerrar.ImageActive = null;
+            this.cmdCerrar.Location = new System.Drawing.Point(943, 18);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(34, 27);
+            this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdCerrar.TabIndex = 73;
+            this.cmdCerrar.TabStop = false;
+            this.cmdCerrar.Zoom = 10;
+            this.cmdCerrar.Click += new System.EventHandler(this.Cerrar);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -138,6 +152,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(991, 2);
             this.panel2.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.limon;
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(75, 82);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Panel_Menu
             // 
@@ -179,7 +204,20 @@
             this.lblReporte.Visible = false;
             this.lblReporte.Click += new System.EventHandler(this.cmdReporte_Click);
             this.lblReporte.MouseLeave += new System.EventHandler(this.pbcategoria_MouseLeave);
-            this.lblReporte.MouseHover += new System.EventHandler(this.lblReporte_MouseHover);
+            this.lblReporte.MouseHover += new System.EventHandler(this.pbcategoria_MouseLeave);
+            // 
+            // pbReporte
+            // 
+            this.pbReporte.Image = global::Restaurante___reporte.Properties.Resources.reporte_de_negocios;
+            this.pbReporte.Location = new System.Drawing.Point(2, 1);
+            this.pbReporte.Name = "pbReporte";
+            this.pbReporte.Size = new System.Drawing.Size(71, 64);
+            this.pbReporte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbReporte.TabIndex = 5;
+            this.pbReporte.TabStop = false;
+            this.pbReporte.Click += new System.EventHandler(this.cmdReporte_Click);
+            this.pbReporte.MouseLeave += new System.EventHandler(this.pbReporte_MouseLeave);
+            this.pbReporte.MouseHover += new System.EventHandler(this.pbReporte_MouseLeave);
             // 
             // linea_menu
             // 
@@ -216,6 +254,19 @@
             this.lblIngrediente.MouseLeave += new System.EventHandler(this.pbIngredientes_MouseLeave);
             this.lblIngrediente.MouseHover += new System.EventHandler(this.pbIngredientes_MouseHover);
             // 
+            // pbIngredientes
+            // 
+            this.pbIngredientes.Image = global::Restaurante___reporte.Properties.Resources.ingredientes;
+            this.pbIngredientes.Location = new System.Drawing.Point(1, 1);
+            this.pbIngredientes.Name = "pbIngredientes";
+            this.pbIngredientes.Size = new System.Drawing.Size(71, 64);
+            this.pbIngredientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbIngredientes.TabIndex = 5;
+            this.pbIngredientes.TabStop = false;
+            this.pbIngredientes.Click += new System.EventHandler(this.cmdIngrediente_Click);
+            this.pbIngredientes.MouseLeave += new System.EventHandler(this.pbIngredientes_MouseLeave);
+            this.pbIngredientes.MouseHover += new System.EventHandler(this.pbIngredientes_MouseHover);
+            // 
             // cmdPlatillo
             // 
             this.cmdPlatillo.Controls.Add(this.lblPlatillo);
@@ -243,6 +294,19 @@
             this.lblPlatillo.MouseLeave += new System.EventHandler(this.pbPlatillo_MouseLeave);
             this.lblPlatillo.MouseHover += new System.EventHandler(this.pbPlatillo_MouseHover);
             // 
+            // pbPlatillo
+            // 
+            this.pbPlatillo.Image = global::Restaurante___reporte.Properties.Resources.restaurante;
+            this.pbPlatillo.Location = new System.Drawing.Point(1, 0);
+            this.pbPlatillo.Name = "pbPlatillo";
+            this.pbPlatillo.Size = new System.Drawing.Size(71, 64);
+            this.pbPlatillo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPlatillo.TabIndex = 0;
+            this.pbPlatillo.TabStop = false;
+            this.pbPlatillo.Click += new System.EventHandler(this.cmdPlatillo_Click);
+            this.pbPlatillo.MouseLeave += new System.EventHandler(this.pbPlatillo_MouseLeave);
+            this.pbPlatillo.MouseHover += new System.EventHandler(this.pbPlatillo_MouseHover);
+            // 
             // cmdCategorias
             // 
             this.cmdCategorias.Controls.Add(this.lblCategoria);
@@ -269,6 +333,19 @@
             this.lblCategoria.MouseLeave += new System.EventHandler(this.pbcategoria_MouseLeave);
             this.lblCategoria.MouseHover += new System.EventHandler(this.pbcategoria_MouseHover);
             // 
+            // pbcategoria
+            // 
+            this.pbcategoria.Image = global::Restaurante___reporte.Properties.Resources.categorias;
+            this.pbcategoria.Location = new System.Drawing.Point(1, 1);
+            this.pbcategoria.Name = "pbcategoria";
+            this.pbcategoria.Size = new System.Drawing.Size(71, 64);
+            this.pbcategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbcategoria.TabIndex = 5;
+            this.pbcategoria.TabStop = false;
+            this.pbcategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
+            this.pbcategoria.MouseLeave += new System.EventHandler(this.pbcategoria_MouseLeave);
+            this.pbcategoria.MouseHover += new System.EventHandler(this.pbcategoria_MouseHover);
+            // 
             // forma_redondeada
             // 
             this.forma_redondeada.ElipseRadius = 10;
@@ -288,6 +365,17 @@
             this.mas_menos.Size = new System.Drawing.Size(33, 44);
             this.mas_menos.TabIndex = 10;
             this.mas_menos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mas_menos_MouseClick);
+            // 
+            // pbMasMenos
+            // 
+            this.pbMasMenos.Image = global::Restaurante___reporte.Properties.Resources.eliminar_aplicaciones__1_;
+            this.pbMasMenos.Location = new System.Drawing.Point(8, 10);
+            this.pbMasMenos.Name = "pbMasMenos";
+            this.pbMasMenos.Size = new System.Drawing.Size(22, 24);
+            this.pbMasMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMasMenos.TabIndex = 9;
+            this.pbMasMenos.TabStop = false;
+            this.pbMasMenos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mas_menos_MouseClick);
             // 
             // Panel_Contenedor
             // 
@@ -309,6 +397,16 @@
             this.Panel_datos_restaurante.Name = "Panel_datos_restaurante";
             this.Panel_datos_restaurante.Size = new System.Drawing.Size(828, 542);
             this.Panel_datos_restaurante.TabIndex = 6;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Restaurante___reporte.Properties.Resources.sale_de;
+            this.pictureBox6.Location = new System.Drawing.Point(250, 246);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(351, 293);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
             // 
             // label8
             // 
@@ -350,6 +448,16 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "No. de categorias";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Restaurante___reporte.Properties.Resources.libro_abierto;
+            this.pictureBox5.Location = new System.Drawing.Point(17, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 83);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblNoIngre);
@@ -379,6 +487,16 @@
             this.label5.Size = new System.Drawing.Size(123, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "No. de ingredientes";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Restaurante___reporte.Properties.Resources.hamburguesa;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 3);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(100, 83);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
             // 
             // panel3
             // 
@@ -410,46 +528,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "No. de platillos";
             // 
-            // Contenedor_menu
-            // 
-            this.Contenedor_menu.Controls.Add(this.Panel_Menu);
-            this.Contenedor_menu.Controls.Add(this.mas_menos);
-            this.Contenedor_menu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Contenedor_menu.Location = new System.Drawing.Point(0, 65);
-            this.Contenedor_menu.Name = "Contenedor_menu";
-            this.Contenedor_menu.Size = new System.Drawing.Size(105, 567);
-            this.Contenedor_menu.TabIndex = 12;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Restaurante___reporte.Properties.Resources.sale_de;
-            this.pictureBox6.Location = new System.Drawing.Point(250, 246);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(351, 293);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Restaurante___reporte.Properties.Resources.libro_abierto;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 83);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Restaurante___reporte.Properties.Resources.hamburguesa;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 83);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Restaurante___reporte.Properties.Resources.restaurante__2_;
@@ -460,93 +538,15 @@
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // pbReporte
+            // Contenedor_menu
             // 
-            this.pbReporte.Image = global::Restaurante___reporte.Properties.Resources.reporte_de_negocios;
-            this.pbReporte.Location = new System.Drawing.Point(2, 1);
-            this.pbReporte.Name = "pbReporte";
-            this.pbReporte.Size = new System.Drawing.Size(71, 64);
-            this.pbReporte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbReporte.TabIndex = 5;
-            this.pbReporte.TabStop = false;
-            this.pbReporte.Click += new System.EventHandler(this.cmdReporte_Click);
-            this.pbReporte.MouseLeave += new System.EventHandler(this.pbReporte_MouseLeave);
-            this.pbReporte.MouseHover += new System.EventHandler(this.lblReporte_MouseHover);
-            // 
-            // pbIngredientes
-            // 
-            this.pbIngredientes.Image = global::Restaurante___reporte.Properties.Resources.ingredientes;
-            this.pbIngredientes.Location = new System.Drawing.Point(1, 1);
-            this.pbIngredientes.Name = "pbIngredientes";
-            this.pbIngredientes.Size = new System.Drawing.Size(71, 64);
-            this.pbIngredientes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbIngredientes.TabIndex = 5;
-            this.pbIngredientes.TabStop = false;
-            this.pbIngredientes.Click += new System.EventHandler(this.cmdIngrediente_Click);
-            this.pbIngredientes.MouseLeave += new System.EventHandler(this.pbIngredientes_MouseLeave);
-            this.pbIngredientes.MouseHover += new System.EventHandler(this.pbIngredientes_MouseHover);
-            // 
-            // pbPlatillo
-            // 
-            this.pbPlatillo.Image = global::Restaurante___reporte.Properties.Resources.restaurante;
-            this.pbPlatillo.Location = new System.Drawing.Point(1, 0);
-            this.pbPlatillo.Name = "pbPlatillo";
-            this.pbPlatillo.Size = new System.Drawing.Size(71, 64);
-            this.pbPlatillo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlatillo.TabIndex = 0;
-            this.pbPlatillo.TabStop = false;
-            this.pbPlatillo.Click += new System.EventHandler(this.cmdPlatillo_Click);
-            this.pbPlatillo.MouseLeave += new System.EventHandler(this.pbPlatillo_MouseLeave);
-            this.pbPlatillo.MouseHover += new System.EventHandler(this.pbPlatillo_MouseHover);
-            // 
-            // pbcategoria
-            // 
-            this.pbcategoria.Image = global::Restaurante___reporte.Properties.Resources.categorias;
-            this.pbcategoria.Location = new System.Drawing.Point(1, 1);
-            this.pbcategoria.Name = "pbcategoria";
-            this.pbcategoria.Size = new System.Drawing.Size(71, 64);
-            this.pbcategoria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbcategoria.TabIndex = 5;
-            this.pbcategoria.TabStop = false;
-            this.pbcategoria.Click += new System.EventHandler(this.cmdCategoria_Click);
-            this.pbcategoria.MouseLeave += new System.EventHandler(this.pbcategoria_MouseLeave);
-            this.pbcategoria.MouseHover += new System.EventHandler(this.pbcategoria_MouseHover);
-            // 
-            // pbMasMenos
-            // 
-            this.pbMasMenos.Image = global::Restaurante___reporte.Properties.Resources.eliminar_aplicaciones__1_;
-            this.pbMasMenos.Location = new System.Drawing.Point(8, 10);
-            this.pbMasMenos.Name = "pbMasMenos";
-            this.pbMasMenos.Size = new System.Drawing.Size(22, 24);
-            this.pbMasMenos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMasMenos.TabIndex = 9;
-            this.pbMasMenos.TabStop = false;
-            this.pbMasMenos.MouseClick += new System.Windows.Forms.MouseEventHandler(this.mas_menos_MouseClick);
-            // 
-            // cmdCerrar
-            // 
-            this.cmdCerrar.BackColor = System.Drawing.Color.Transparent;
-            this.cmdCerrar.Image = global::Restaurante___reporte.Properties.Resources.Equis;
-            this.cmdCerrar.ImageActive = null;
-            this.cmdCerrar.Location = new System.Drawing.Point(943, 18);
-            this.cmdCerrar.Name = "cmdCerrar";
-            this.cmdCerrar.Size = new System.Drawing.Size(34, 27);
-            this.cmdCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cmdCerrar.TabIndex = 73;
-            this.cmdCerrar.TabStop = false;
-            this.cmdCerrar.Zoom = 10;
-            this.cmdCerrar.Click += new System.EventHandler(this.Cerrar);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Restaurante___reporte.Properties.Resources.limon;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 82);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Contenedor_menu.Controls.Add(this.Panel_Menu);
+            this.Contenedor_menu.Controls.Add(this.mas_menos);
+            this.Contenedor_menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Contenedor_menu.Location = new System.Drawing.Point(0, 65);
+            this.Contenedor_menu.Name = "Contenedor_menu";
+            this.Contenedor_menu.Size = new System.Drawing.Size(105, 567);
+            this.Contenedor_menu.TabIndex = 12;
             // 
             // Form1
             // 
@@ -563,37 +563,37 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Panel_encabezado.ResumeLayout(false);
             this.Panel_encabezado.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel_Menu.ResumeLayout(false);
             this.cmdReporte.ResumeLayout(false);
             this.cmdReporte.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbReporte)).EndInit();
             this.cmdIngredientes.ResumeLayout(false);
             this.cmdIngredientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).EndInit();
             this.cmdPlatillo.ResumeLayout(false);
             this.cmdPlatillo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).EndInit();
             this.cmdCategorias.ResumeLayout(false);
             this.cmdCategorias.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).EndInit();
             this.mas_menos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).EndInit();
             this.Panel_Contenedor.ResumeLayout(false);
             this.Panel_datos_restaurante.ResumeLayout(false);
             this.Panel_datos_restaurante.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.Contenedor_menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbReporte)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIngredientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlatillo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbcategoria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMasMenos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmdCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Contenedor_menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
