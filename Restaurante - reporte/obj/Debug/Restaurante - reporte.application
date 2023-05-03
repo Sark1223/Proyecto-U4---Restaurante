@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Restaurante - reporte.exe.manifest" size="16740">
+    <dependentAssembly dependencyType="install" codebase="Restaurante - reporte.exe.manifest" size="16102">
       <assemblyIdentity name="Restaurante - reporte.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Kf1rNzCgisBSpwwdypVZcdPUloSGMxD7ouXtBrw9CWc=</dsig:DigestValue>
+        <dsig:DigestValue>DR5Z9F5/2L4m7O5fyDra/caDNNdGTxWGCJli25xVWlE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

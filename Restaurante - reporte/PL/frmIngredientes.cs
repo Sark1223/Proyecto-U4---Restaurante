@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,9 @@ namespace Restaurante___reporte.PL
         {
             InitializeComponent();
         }
+
+        SqlConnection cone = new SqlConnection(@"server=DESKTOP-BNMO14B; 
+        Initial Catalog=RESTAURANTE; integrated security=true");
 
         //Creacion de objetos
         IngredienteBLL ingredienteBLL = new IngredienteBLL();
@@ -217,7 +221,43 @@ namespace Restaurante___reporte.PL
 
         private void btnEliminarIngrediente_Click(object sender, EventArgs e)
         {
+            string baja = "DELETE FROM INGREDIENTE WHERE ingrediente_id = @ingrediente_id";
 
+            SqlCommand cmdIns = new SqlCommand(baja, cone);
+            cmdIns.Parameters.Add("ingrediente_id", txtIngredienteId.Text);
+            cone.Open();
+            cmdIns.ExecuteNonQuery();
+
+            cmdIns.Dispose();
+            cmdIns = null;
+            txtIngredienteId.Clear();
+            cone.Close();
+
+            MessageBox.Show("Ingrediente eliminado");
+        }
+
+        private void cmdBuscarIngrediente(object sender, EventArgs e)
+        {
+            cone.Open();
+
+            string busca = "select * from INGREDIENTE where ingrediente_id=" + txtIngredienteId.Text + "";
+            SqlDataAdapter adaptador = new SqlDataAdapter(busca, cone);
+            DataTable data = new DataTable();
+            //lenar la tabla con lo que se almacena en adaptador
+            adaptador.Fill(data);
+            //mostrar en datagridview
+            dgvIngredientes.DataSource = data;
+            SqlCommand com = new SqlCommand(busca, cone);
+            SqlDataReader lector;
+            lector = com.ExecuteReader();
+            if (lector.Read())
+            {
+                txtIngredienteId.Text = lector["ingrediente_id"].ToString();
+                txtIngredienteNombre.Text = lector["ingrediente_nombre"].ToString();
+                txtIngredienteCant.Text = lector["ingrediente_cantidad_almacen"].ToString();
+                comboMed.DisplayMember = lector["ingrediente_unidad_medida"].ToString();
+            }
+            cone.Close();
         }
     }
 }

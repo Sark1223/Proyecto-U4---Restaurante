@@ -72,3 +72,7 @@ C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaura
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.application
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.exe.manifest
 C:\Users\perro\OneDrive - tec tijuana\TOPICOS\RESTAURANTE\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.application
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.exe.manifest
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\bin\Debug\Restaurante - reporte.application
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.exe.manifest
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Topicos avanzados de programacion\Proyecto Restaurante\Proyecto-U4---Restaurante\Restaurante - reporte\obj\Debug\Restaurante - reporte.application
